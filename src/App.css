@@ -66,10 +66,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-.btn-my {
+.btn-white {
     background: 0 0;
     padding: 11px 25px;
-    font-family: Open sans;
+    font-family: 'Open sans';
     font-size: 15px;
     color: #fff;
     text-align: center;
@@ -80,6 +80,22 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 4px;
     border: 2px solid #fff;
 }
+
+.btn-white-negativ {
+    background: #fff;
+    padding: 11px 25px;
+    font-family: 'Open sans';
+    font-size: 15px;
+    color: #37927a;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border: 2px solid #fff;
+}
+
 
 .header-section button:hover{
     text-decoration: none;
@@ -308,7 +324,7 @@ h1, h2, h3, h4, h5, h6 {
   min-width: 0;
   min-height: 140px;
   word-wrap: break-word;
-  background-color: #ececec;
+  background-color: #c2c3d51f;
   background-clip: border-box;
   border:  solid ;
   border-color:  #c1c1c1; 
@@ -316,6 +332,11 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+.card-additions :hover .material-icons.md-100{
+    font-size: 100px;
+    color: #37927a;
+    z-index: 10;
+}
 
 .card-additions-body {
 
@@ -334,6 +355,7 @@ a.hover-additions:hover {
     background: #fff;
     color: #fff;
 }
+
 
 
 .card-additions h5{
@@ -629,17 +651,6 @@ button, input {
     
 }
 
-.curses-card :hover{
-    background: #f24903;
-    border: 0;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-    will-change: transform, opacity;
-    
-}
-
-
 .heading-devider {
     margin: 10px;
     width: 10rem;
@@ -647,6 +658,26 @@ button, input {
     border: 0;
     background: #f24903;
 }
+
+.curses-card :hover{
+    background: #f24903;
+    border: 0;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    will-change: transform, opacity;
+    }
+
+.curses-card :hover .heading-devider {
+     margin: 10px;
+     width: 18rem;
+     height: 2px;
+     border: 0;
+     background: #fff;
+ }
+
+
+
 
 .curses-card h3{
     color: #fff;

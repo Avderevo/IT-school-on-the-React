@@ -2,8 +2,8 @@
 import React, { Component } from 'react';
 
 class Navbar extends Component {
-  render() {
-    return (
+    render() {
+        return (
       
             <header id="header-1" className="navbar-wrap">
                 <nav className="navbar navbar-expand-lg navbar-dark">
@@ -14,7 +14,7 @@ class Navbar extends Component {
                         </button>
                         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                             <div className="navbar-nav">
-                                <a className="nav-item nav-link" href="all_curses.html">Курсы<span class="sr-only">(current)</span></a>
+                                <a className="nav-item nav-link" href="all_curses.html">Курсы<span className="sr-only">(current)</span></a>
                                 <a className="nav-item nav-link" href="calendar.html">Расписание</a>
                                 <a className="nav-item nav-link" href="#">Обучение</a>
                                 <a className="nav-item nav-link" href="#">Работа в компаниях</a>
@@ -25,8 +25,6 @@ class Navbar extends Component {
                                     <div className="nav-item dropdown">
 
                                        <button className="nav-item btn btn-outline-success" href="#" data-toggle="modal" data-target="#modalLRForm">вход или регистрация</button>
-
-                                       
 
                                         <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                                             <a className="dropdown-item" href="#">Мои курсы</a>

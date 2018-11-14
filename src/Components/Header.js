@@ -1,8 +1,8 @@
 // Header.js
 import React, { Component } from 'react';
-import headerimg from "../img/itv2.png"
-
-
+import headerimg from "../img/itv2.png";
+import WhiteBotton from "./WhiteBotton";
+import WhiteNegativBotton from "./WhiteNegativBotton";
 class Header extends Component {
   render() {
     return (
@@ -14,10 +14,12 @@ class Header extends Component {
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit integer vulputate nisl eu odio porttitor pulvinar nunc congue bitur pretium.</p>
                     <div className="btn-wrap">
                         <div className="mb-5">
-                            <button className="btn btn-my mt-3" href="all_curses.html">Выбрать курс</button><span></span>
-                            <button className="btn btn-my mt-3" href="#">Программы лояльности</button>
+
+                            <WhiteNegativBotton data={{text:"Выбрать курс", href:"#"}} />
+
+                            <WhiteBotton data={{text:"Программы лояльности", href:"#"}}  />
+
                         </div>
-                        
                     </div>
                 </div>
                 <div className="col d-none d-lg-block">

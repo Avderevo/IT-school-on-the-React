@@ -1,0 +1,99 @@
+{
+    "courseCards":
+        [
+            {
+                "name_1": "Администратор",
+                "name_2": "Linux",
+                "description": "Старт 5 января",
+                "bg": "gradient-1",
+                "meta": "1"
+            },
+            {
+                "name_1": "Разработчик",
+                "name_2": "Python",
+                "description": "Начало 5 января",
+                "bg": "gradient-2",
+                "meta": "1"
+            },
+            {
+                "name_1": "Разработчик",
+                "name_2": "PHP",
+                "description": "Начало курса 10 января",
+                "bg": "gradient-3",
+                "meta": ""
+            },
+            {
+                "name_1": "Разработчик",
+                "name_2": "JS",
+                "description": "Начало курса в мае",
+                "bg": "gradient-4",
+                "meta": ""
+            },
+            {
+                "name_1": "DevOps",
+                "name_2": "инженер",
+                "description": "Старт курса в феврале",
+                "bg": "gradient-5",
+                "meta": ""
+            },
+            {
+                "name_1": "Разработчик",
+                "name_2": "Java",
+                "description": "Старт курса 7 декабря",
+                "bg": "gradient-6",
+                "meta": "1"
+            }
+
+        ],
+
+    "teachers":
+        [
+            {
+              "name": "Джаконда",
+              "description": "DevOps практики и инструменты",
+              "img": "tch1.jpg"
+            },
+            {
+              "name": "Джаконда",
+              "description": "DevOps практики и инструменты",
+              "img": "tch1.jpg"
+            },
+            {
+              "name": "Джаконда",
+              "description": "DevOps практики и инструменты",
+              "img": "tch1.jpg"
+            },
+            {
+              "name": "Джаконда",
+              "description": "DevOps практики и инструменты",
+              "img": "tch1.jpg"
+            }
+
+
+        ],
+    "additions":
+        [
+            {
+                "title": "Трудоустройство",
+                "description": "Нашим стутентам предлагают работу многие крупные компании",
+                "icon": "monetization_on"
+            },
+            {
+                "title": "Программа лояльности",
+                "description": "И реферальные программы. Как получить скидку?",
+                "icon": "money_off"
+            },
+            {
+                "title": "Блог",
+                "description": "Сообщество студентов, профессионалов и работодателей",
+                "icon": "people"
+            },
+            {
+                "title": "Мероприятия",
+                "description": "Задайте вопрос преподователю, примите участие в розыгрыше",
+                "icon": "laptop_mac"
+            }
+
+        ]
+
+}
