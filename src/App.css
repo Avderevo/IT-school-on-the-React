@@ -9,8 +9,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #484848;
 }
 
-
-/* //-----header---------- */
+/*----header---------- */
 
 .navbar-wrap{
     top:0;
@@ -38,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #1bbc9b; 
 }
 
-/* //--------header------- */
+/*--------header------- */
 
 .header-section {
     position: relative;
@@ -120,8 +119,9 @@ h1, h2, h3, h4, h5, h6 {
     margin: 5px 10px;
 }
 
-/* //---------advance--------
- */
+/* ---------advance--------*/
+
+
 .section-advance{
     margin-bottom: 40px;
 }
@@ -309,7 +309,7 @@ h1, h2, h3, h4, h5, h6 {
     visibility: hidden;
 }
 
-/* //-----------additions----------- */
+/*-----------additions----------- */
 
 .section-additions{
     margin-bottom: 50px;
@@ -386,7 +386,7 @@ a.hover-additions:hover {
     padding-top: 13px;
 }
 
-/* //--------teachers-------- */
+/*--------teachers-------- */
 
 .section-teachers{
     position: relative;
@@ -428,10 +428,10 @@ a.decor-none{
     text-align: center;
 }
 
-/* //---------footer----------- */
+/*---------footer----------- */
 
 .section-footer{
-    margi-bottom: 0;
+    margin-bottom: 0;
     background: #292929;
     position: relative;
     padding-top: 60px;
@@ -454,8 +454,8 @@ a.decor-none{
     color: #d2d2d2;
 }
 
-/* // ---------- modal-form ----------
- */
+/* ---------- modal-form ----------*/
+
 .text-center {
     text-align: center!important;
 }
@@ -491,8 +491,6 @@ a.decor-none{
 
 .form-signin .form-control {
     position: relative;
-   //box-sizing: border-box;
-    //height: auto;
     padding: 10px;
     font-size: 16px;
 }
@@ -518,13 +516,7 @@ a.decor-none{
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
-input[type="radio" i], input[type="checkbox" i] {
-    background-color: initial;
-    cursor: default;
-    margin: 10px 0.5ex;
-    padding: initial;
-    border: initial;
-}
+
 
 button, input {
     overflow: visible;
@@ -628,7 +620,7 @@ button, input {
     background-color: #fff;
 }
 
-/* //-------all_curses_card------ */
+/*-------all_curses_card------ */
 
 #all-curses{
     margin-bottom: 50px;
@@ -682,7 +674,6 @@ button, input {
 .curses-card h3{
     color: #fff;
     font-size: 30px;
-    //letter-spacing: 1px;
     font-weight: bold;
     text-align: left;
     margin-top: 10px;
@@ -695,8 +686,9 @@ button, input {
    text-align: left; 
 }
 
-/* //---------meta-2-----------
- */
+/*---------meta-2-----------*/
+
+
 .meta-2{
     font-size: 14px;
     color: #fff;
@@ -718,6 +710,158 @@ button, input {
 }
 
 
-/* //========================================
-//------------calendar--------------------
-//======================================== */
+/*=====================================
+==============login-page===============
+========================================*/
+
+
+#auth-card{
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+
+
+}
+
+.auth-card{
+    border:0;
+    margin: 0 auto;
+    float: none;
+}
+
+/*-----------auth-catd-header---------*/
+
+
+.authcard-header{
+    margin-bottom: 0;
+    background-image: -webkit-linear-gradient(30deg, #37927a ,  #196f58 );
+
+}
+
+.nav-authcard{
+    padding: .8rem;
+}
+.nav-authcard a{
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.4rem;
+    margin-bottom: 0.3rem;
+    z-index: 10;
+}
+
+.nav-authcard a:hover{
+    -webkit-transform: scale(2);
+    transform: scale(1.2);
+}
+
+.nav-authcard a:active{
+    color: #5bc0de;
+}
+
+.auth-card-title{
+    color: #127356;
+    font-weight: 600;
+    font-size: 2.5rem;
+
+}
+
+.auth-heading-devider {
+    margin-top: 0;
+    margin-left: 0;
+    width: 8rem;
+    height: 10px;
+    border: 0;
+    background: #127356;
+}
+
+
+#authcard-form{
+
+    position: relative;
+
+}
+
+/*------------footer-social---------------*/
+
+.authcard-footer-social{
+    padding-bottom: 1rem;
+}
+
+.authcard-footer-title{
+    color: #127356;
+    font-weight: 600;
+    font-size: 1.3rem;
+    letter-spacing: .1px;
+}
+
+.btn-authSocial{
+    width: 6rem;
+    color: #fff;
+}
+
+.btn-social{
+
+    font-size: 2.8rem;
+    color: #4f708d;
+    padding-left:  .6rem;
+    padding-right: .6rem;
+}
+
+/*---------------auth-card-body-----------*/
+
+
+.auth-form-control {
+    display: block;
+    width: 100%;
+    padding: .6rem 0;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    border: .1rem solid #707881;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.invalid--feedback {
+
+    font-size: 80%;
+    color: #dc3545;
+    position: relative;
+}
+
+.auth-form-signin {
+
+    max-width: 24rem;
+    padding: 15px;
+    margin: auto;
+}
+
+
+
+.auth-form-signin .form-control {
+    position: relative;
+    font-size: 16px;
+}
+
+
+
+.btn-authcard-submit{
+    padding: .6rem 3rem;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    border: 2px solid #fff;
+
+}
+
+.btn-social:hover {
+    color: #127356;
+}
