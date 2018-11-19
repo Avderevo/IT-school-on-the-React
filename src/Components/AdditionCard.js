@@ -1,13 +1,12 @@
-//AdditionCard.js
 import React, {Component} from "react";
 
 class AdditionCard extends Component {
     render() {
-        if (this.props.data) {
-            var data = this.props.data;
+        if (this.props) {
+            var data = this.props;
             return (
                 <div className="col-md-6">
-                    <div  key={data.title} className="card-additions mb-4 transition-scale">
+                    <div  className="card-additions mb-4 transition-scale">
                         <a href="" className="hover-additions">
                             <div className="card-additions-body">
                                 <div className="container">

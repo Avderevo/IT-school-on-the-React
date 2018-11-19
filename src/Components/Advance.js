@@ -1,14 +1,14 @@
-// Advance.js
 import React, { Component } from 'react';
 import CourseCard from "./CourseCard"
 class Advance extends Component {
 
     render() {
+        let course;
         if (this.props.data) {
             var data = this.props.data;
-            var course= data.map(function (item) {
+            course = data.map((item)=>{
                 return (
-                    <CourseCard data={item} />
+                    <CourseCard {...item} />
                 )
             });
         }

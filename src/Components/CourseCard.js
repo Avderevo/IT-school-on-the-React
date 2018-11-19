@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 
 class CourseCard extends Component {
     render() {
-        if (this.props.data) {
-            var data = this.props.data;
+        if (this.props) {
+            var data = this.props;
             return (
                 <div  key={data.name} className="col-lg-4 col-md-6 mb-4">
                     <div>

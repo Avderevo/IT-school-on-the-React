@@ -1,19 +1,14 @@
-// Teachers.js
-
 import React, { Component } from 'react';
-
+import Teacher from './Teacher';
 
 class Teachers extends Component {
   render() {
+      let teacher;
       if (this.props.data) {
           var data= this.props.data;
-          var teacher= data.map(function (item) {
+          teacher= data.map(function (item) {
               return(
-                      <div className="col-lg-3 col-md-6 d-none d-md-block">
-                          <a href=""><img className="rounded-circle mb-3 transition-scale" src={require("../img/"+item.img)} alt="" width="180" height="180" /></a>
-                          <h5>{item.name}</h5>
-                          <p>{item.description}</p>
-                      </div>
+                     <Teacher {...item}/>
               )
 
           });
