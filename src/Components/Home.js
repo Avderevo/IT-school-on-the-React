@@ -16,7 +16,8 @@ class Home extends Component {
         }
     }
 
-    getMyData(){
+
+   /* getMyData(){
         $.ajax({
             url: "http://localhost:3000/mydata.json",
             dataType: "json",
@@ -29,11 +30,15 @@ class Home extends Component {
                 alert(err);
             }
         });
+    }*/
+
+
+    componentDidMount() {
+        fetch('http://localhost:3000/mydata.json')
+            .then(response => response.json())
+            .then(data => this.setState({ myData:data }));
     }
 
-    componentDidMount(){
-        this.getMyData();
-    }
     render() {
         return (
             <div className="App">

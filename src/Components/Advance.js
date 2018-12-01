@@ -5,7 +5,7 @@ class Advance extends Component {
     render() {
         let course;
         if (this.props.data) {
-            var data = this.props.data;
+            let data = this.props.data;
             course = data.map((item)=>{
                 return (
                     <CourseCard {...item} />

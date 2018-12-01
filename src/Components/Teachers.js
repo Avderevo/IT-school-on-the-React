@@ -5,7 +5,7 @@ class Teachers extends Component {
   render() {
       let teacher;
       if (this.props.data) {
-          var data= this.props.data;
+          let data= this.props.data;
           teacher= data.map(function (item) {
               return(
                      <Teacher {...item}/>
