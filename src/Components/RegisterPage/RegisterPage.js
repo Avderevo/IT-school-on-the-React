@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import LoginHeader from'./components/LoginHeader'
-import SocialFooter from "./components/SocialFooter";
-import RegisterForm from './components/RegisterForm';
+import LoginHeader from '../FormComponents/LoginHeader'
+import SocialFooter from "../FormComponents/SocialFooter";
+import RegisterForm from './RegisterForm';
 
 
 class LoginPage extends Component{

@@ -1,10 +1,10 @@
 // Footer.js
 import React, { Component } from 'react';
-import fb from "../img/fb.png"
-import google from "../img/google.png"
-import picassa from "../img/picassa.png"
-import you_tube from "../img/you-tube.png"
-import twit from "../img/twit.png"
+import fb from "../../img/fb.png"
+import google from "../../img/google.png"
+import picassa from "../../img/picassa.png"
+import you_tube from "../../img/you-tube.png"
+import twit from "../../img/twit.png"
 
 class Footer extends Component {
   render() {

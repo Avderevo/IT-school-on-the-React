@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import LoginForm from './components/LoginForm';
-import LoginHeader from'./components/LoginHeader'
-import SocialFooter from "./components/SocialFooter";
+import {LoginForm} from './LoginForm';
+import LoginHeader from '../FormComponents/LoginHeader'
+import SocialFooter from "../FormComponents/SocialFooter";
 
 
 

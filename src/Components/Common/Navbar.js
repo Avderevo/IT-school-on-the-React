@@ -1,6 +1,7 @@
 // Navbar.js
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
+import { LoginNavButton} from "./LoginNavButton";
 
 class Navbar extends Component {
     render() {
@@ -23,19 +24,7 @@ class Navbar extends Component {
                                 <a className="nav-item nav-link" href="#">Компаниям</a>
                                 <a className="nav-item nav-link" href="#">Блог</a>
 
-                                <div className="icon-nav">
-                                    <div className="nav-item dropdown">
-
-                                       <Link className="nav-item btn btn-outline-success" to="/login/">вход или регистрация</Link>
-
-                                        <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <a className="dropdown-item" href="#">Мои курсы</a>
-                                            <a className="dropdown-item" href="#">Личный кабинет</a>
-                                            <div className="dropdown-divider"> </div>
-                                            <a className="dropdown-item" href="#">Выход</a>
-                                        </div>
-                                    </div>    
-                                </div>        
+                                <LoginNavButton/>
                             </div>
                         </div>          
                     </div>  

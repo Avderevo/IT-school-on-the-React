@@ -865,3 +865,572 @@ button, input {
 .btn-social:hover {
     color: #127356;
 }
+
+
+/*
+____________________________________
+==========lk.html===================
+*/
+
+/*--------lk-header---------*/
+#lk-header {
+    position: relative;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 2.5rem;
+    background-color: #e1ebf5;}
+
+   /* !*background-image: -webkit-linear-gradient(30deg, #013A6B ,  #0075DC );*!
+    @media (max-width: 1400px){
+        .display-4 {
+            font-size: 3rem;
+
+        }
+    }
+    @media (max-width: 900px){
+        .display-4 {
+            font-size: 2.7rem;
+
+        }
+    }
+    @media (max-width: 767px){
+        .display-4 {
+            font-size: 2rem;
+
+        }
+    }
+}*/
+
+.lk-header-title{
+    color: #282828;
+
+}
+
+/*----------------lk-navbar----------------*/
+
+.floatNavbar-block {
+    border-bottom: 1px solid #dcdcdc;
+    position: relative;
+    z-index: 20;
+    height: 70px;
+    width: 100%;
+    margin-bottom: .5rem;
+
+}
+
+.nav__scroll {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.floatNavbar-items{
+    max-height: 60px;
+    white-space: nowrap;
+    display: table;
+    padding-right: 10px;
+    width: 100%;
+
+}
+
+.floatNavbar-item{
+    display: inline-block;
+    padding: 0 3rem;
+    height: 100%;
+    line-height: 70px;
+    font-size: 16px;
+    color: #282828;
+    text-decoration: none;
+    vertical-align: top;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    margin-left: 0;
+
+}
+
+.floatNavbar-link{
+    display: inline-block;
+}
+
+.floatNavbar-bg{
+    background-image: -webkit-linear-gradient(30deg, #d5e6f7 ,  #d5e6f5 );
+}
+
+#float-nav a:hover{
+    text-decoration: none;
+    color: #fff;
+    background-color: #d5e6f9;
+}
+
+#float-nav a:active {
+    color: #fff;
+    background-color: #d5e6f9;
+
+}
+
+
+
+.nav-menu {
+    border-bottom: 1px solid #dcdcdc;
+    position: relative;
+    color: #fff;
+    z-index: 20;
+    height: 70px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.nav-items-course{
+    max-height: 60px;
+    white-space: nowrap;
+    display: table;
+    padding-right: 10px;
+    width: 100%;
+
+}
+
+.nav-item-menu{
+    display: inline-block;
+    padding: 0 50px;
+    height: 100%;
+    line-height: 70px;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    vertical-align: top;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    margin-left: 0;
+}
+
+.nav-menu-link{
+    display: inline-block;
+}
+
+.nav-menu-color{
+    background-image: -webkit-linear-gradient(30deg, #013A6B ,  #0075DC );
+}
+
+#menu a:hover{
+    text-decoration: none;
+    color: #fff;
+    background-color: #004E95;
+}
+
+#menu a:active {
+    color: #fff;
+    background-color: #004E95;
+
+}
+
+/*-------------lk-statistics--------------*/
+
+#lk-statistics{
+    padding: 3rem;
+}
+
+.lk-statistics-headline{
+    color: #282828;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.lk-statistics-item{
+    color: #282828;
+
+}
+
+/*-------------lk-program-nav-month----------------*/
+
+#lk-program-nav-month{
+    padding: 1rem;
+}
+
+.lk-month-nav-link{
+    background-color: #d5e6f7;
+    font-size: 1rem;
+    color: #282828;
+    margin-right: 0.4rem;
+    margin-bottom: 0.2rem;
+}
+
+
+#lk-program-nav-month a:hover {
+    text-decoration: none;
+    color: #282828;
+}
+
+
+/*-------------lk-listLesson-----------------*/
+
+#lk-listLesson{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.lk-lesson-btn {
+    display: inline-block;
+    text-align: left;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+
+
+}
+
+
+
+
+/* Добавление отступов к элементу с классом timeline */
+.timeline {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    position: relative;
+}
+
+/* Создание вертикальной линии с помощью псевдоэлеметна */
+.timeline::before {
+    content: "";
+    position: absolute;
+    width: .125rem;
+    height: 100%;
+    background-color: #2f4c6975;
+    left: 0.5rem;
+    top: 0;
+}
+
+/* добавление нижнего отступа и левого поля для элементов с классом timeline-wrapper */
+.timeline-wrapper {
+    margin-bottom: 1rem;
+    padding-left: 4rem;
+}
+
+/*
+!* убирание у последнего элемента .timeline-wrapper нижнего отступа *!
+.timeline-wrapper:last-child {
+    margin-bottom: 0;
+}
+*/
+
+/* стили для элементов таймлайна */
+.timeline-item {
+    position: relative;
+    background-color: #2f4c69;
+    color: #fff;
+    padding: 1.5rem;
+    border-radius: .25rem;
+
+}
+
+/* добавление контрольных точек на вертикальную линию */
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    width: .75rem;
+    height: .75rem;
+    background-color: #2f4c69;
+    border-radius: .4rem;
+    left: -2.85rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* добавление стрелочек к элементам таймлайна */
+.timeline-item::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 1rem solid transparent;
+    border-bottom: 1rem solid transparent;
+    border-right: 1rem solid #2f4c69;
+    left: -1rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* стили для блока, в котором будет отображаться название статьи */
+.timeline-item-header {
+    display: block;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+
+
+/* оформление блока, содержащего дату */
+.timeline-item-date {
+    display: block;
+    font-size: .8rem;
+    line-height: 2;
+    color: rgba(255, 255, 255, .8);
+}
+
+/* стили для блока, в который будет выводиться описание статьи */
+.timeline-item-description {
+    display: block;
+    font-size: .875rem;
+    color: rgba(255, 255, 255, .8);
+    line-height: 1.7;
+}
+
+
+.timeline-item a:hover{
+    text-decoration: none;
+    color: #4a90e2;
+}
+
+
+.lesson-body{
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    color: #fff;
+}
+
+.lesson-body-title{
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: .4rem;
+}
+
+.lesson-body-text{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.lesson-body-block{
+    margin-bottom: 2rem;
+}
+
+.lesson-body-btn{
+    background: #2f4c69;
+    padding: 6px 16px;
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border: 2px solid #fff;
+}
+
+.lesson-body button:hover{
+    text-decoration: none;
+    color:  #2f4c69;
+    background-color: #fff;
+}
+
+.lesson-body button:active{
+    text-decoration: none;
+    color:  #fff;
+    background-color: #2f4c69;
+}
+
+/*================================
+----------homework-chat-----------
+==================================*/
+
+
+
+
+.chat-homework-list{
+
+    position: relative;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-right: 1px solid #ededed;
+
+
+}
+
+.homework-title-block{
+    padding-left: 1.6rem;
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+    padding-right: .4rem;
+    width: 100%;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+    border-bottom: 1px solid #ededed;
+}
+
+
+.homework-name{
+    font-size: 1.1rem;
+    text-decoration: none;
+    display: table-cell;
+    outline: none;
+    vertical-align: middle;
+    color: #282828;
+    font-weight: 400;
+}
+
+
+.homework-title-icon{
+    margin-left: .2rem;
+
+}
+
+.course-teacher-box{
+    display: table-cell;
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    padding: 3px;
+    text-decoration: none;
+
+}
+
+.course-teacher-name{
+    padding-left: 15px;
+    display: table-cell;
+    vertical-align: middle;
+    font-weight: 300;
+    font-size: 14px;
+    color: #050505;
+    line-height: 17px;
+    text-decoration: none;
+}
+
+.course-one-teacher{
+    display: inline-block;
+
+    text-decoration: none;
+}
+
+.course-teacher-photo{
+    display: table-cell;
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    padding: 3px;
+    -webkit-border-radius: 60px;
+    border-radius: 60px;
+    border: 2px solid #2c6d82;
+
+
+}
+
+
+/*----------chat-header----------*/
+
+
+.chat-header{
+    position: relative;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 0;
+    background-color: #7952b3 ;
+}
+
+
+.chat-header-text{
+    font-size: 1.4rem;
+    color: #282828;
+    font-weight: 400;
+}
+
+.no_padding-col{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/*--------------chat-display---------*/
+.chat-display{
+    padding: 1.2rem;
+    position: relative;
+}
+
+.student-message-block{
+    width: 100%;
+    color: #282828;
+
+}
+
+.message-block{
+    padding: 1rem;
+    border-radius: 6px;
+    background-color: #9fcdff;
+
+}
+
+.message-text{
+    margin-bottom: .8rem;
+}
+
+.message-date{
+    font-size: smaller;
+    text-align: left;
+}
+
+.message-author-name{
+    font-size: smaller;
+    margin-left: .5rem;
+}
+
+.message-author-avatar{
+    text-align: left;
+    margin-right:0;
+}
+
+.message-form{
+    padding-right: .2rem;
+    padding-left: .2rem;
+
+}
+
+
+.col-input {
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: auto;
+    max-width: none;
+}
+
+.col-button {
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: auto;
+    max-width: none;
+}
+
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.modal-main {
+    position:fixed;
+    background: white;
+    width: 80%;
+    height: auto;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.display-block {
+    display: block;
+}
+
+.display-none {
+    display: none;
+}

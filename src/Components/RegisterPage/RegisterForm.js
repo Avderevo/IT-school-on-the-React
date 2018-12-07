@@ -1,19 +1,21 @@
 import React, {Component} from 'react';
-import FormInput from './FormInput';
-import FormErrors  from './FormErrors';
-import SubmitButton from './SubmitButton';
-import FormTitle from './FormTitle';
-import FormRadio from './FormRadio';
+import FormInput from '../FormComponents/FormInput';
+import FormErrors  from '../FormComponents/FormErrors';
+import SubmitButton from '../FormComponents/SubmitButton';
+import FormTitle from '../FormComponents/FormTitle';
+import FormRadio from '../FormComponents/FormRadio';
 
 
 class LoginForm extends Component{
     constructor(props){
         super(props);
         this.state = {
+            name:"",
             email:"",
             password:"",
+            password2:"",
             remember: '',
-            formErrors: {email: '', password: ''},
+            formErrors: {email: '', password: '', remember: '', password2: ''},
             emailValid: false,
             passwordValid: false,
             checkBoxValid: false,
@@ -30,16 +32,13 @@ class LoginForm extends Component{
         )
     };
 
-    handleOptionChange = (e)  => {
-        this.setState({
-            remember: e.target.value
-        });
-    };
 
     validateField(fieldName, value) {
         let fieldValidationErrors = this.state.formErrors;
         let emailValid = this.state.emailValid;
         let passwordValid = this.state.passwordValid;
+        let password2Valid = this.state.password2Valid;
+        let checkBoxValid = this.state.checkBoxValid;
 
         switch(fieldName) {
             case 'email':
@@ -52,6 +51,15 @@ class LoginForm extends Component{
                 fieldValidationErrors.password = passwordValid ? '': 'Пароль меньше 6 символов';
                 break;
 
+            case 'password2':
+                password2Valid = value === this.state.password;
+                fieldValidationErrors.password = password2Valid ? '': 'Пароли не совпадают';
+                break;
+
+            case 'remember':
+                checkBoxValid = value === this.state.remember;
+                fieldValidationErrors.remember = checkBoxValid ? '': 'Необходимо согласие';
+                break;
 
             default:
                 break;
@@ -59,27 +67,33 @@ class LoginForm extends Component{
         this.setState({formErrors: fieldValidationErrors,
             emailValid: emailValid,
             passwordValid: passwordValid,
+            password2Valid: password2Valid,
+            checkBoxValid: checkBoxValid
         }, this.validateForm);
     }
 
     validateForm() {
-        this.setState({formValid: this.state.emailValid && this.state.passwordValid });
+        this.setState({
+            formValid: this.state.emailValid && this.state.passwordValid
+                && this.state.password2Valid && this.state.checkBoxValid});
     }
 
     handleFormSubmit(e) {
         e.preventDefault();
         let userData = {
+            username: this.state.name,
             email: this.state.email,
             password: this.state.password
         };
-
         console.log(userData);
 
         this.setState({
+            name:"",
             email:"",
             password:"",
+            password2:"",
             remember: '',
-            formErrors: {email: '', password: ''},
+            formErrors: {email: '', password: '', remember: '', password2: ''},
             emailValid: false,
             passwordValid: false,
             checkBoxValid: false,
@@ -87,7 +101,7 @@ class LoginForm extends Component{
 
         });
 
-        fetch('http://example.com',{
+        fetch('http://localhost:8000/users/create_user/',{
             method: "POST",
             body: JSON.stringify(userData),
             headers: {
@@ -106,7 +120,17 @@ class LoginForm extends Component{
         return(
             <section id="authcard-form">
                 <form className="auth-form-signin js-user-login-form mb-3">
-                    <FormTitle title={"Войти"}/>
+                    <FormTitle title={"Регистрация"}/>
+                    <div className="mb-4">
+                        <FormInput
+                            type={'text'}
+                            title= {'Username'}
+                            name= {'name'}
+                            value={this.state.name}
+                            placeholder = {'Имя'}
+                            handleChange = {this.handleInput}
+                            classname={'form-control auth-form-control'}/>
+                    </div>
                     <div className="mb-4">
                         <FormInput
                             type={'email'}
@@ -131,27 +155,40 @@ class LoginForm extends Component{
                         <FormErrors
                             formErrors={this.state.formErrors.password} />
                     </div>
-                    <FormRadio
-                            label={"Запомнить меня"}
+                    <div className="mb-4">
+                        <FormInput
+                            type={'password'}
+                            title= {'Password2'}
+                            name= {'password2'}
+                            value={this.state.password2}
+                            placeholder = {'Повторите пароль'}
+                            handleChange = {this.handleInput}
+                            classname={'form-control auth-form-control'}/>
+                        <FormErrors
+                            formErrors={this.state.formErrors.password2} />
+                    </div>
 
-                            handleChange={this.handleOptionChange}
-                            checked={this.state.remember === 'remember_my'}
-                            value ={'remember_my'}
+                    <FormRadio
+                        label={"Согласен с условиями"}
+
+                        handleChange={this.handleInput}
+                        checked={this.state.remember === 'remember_my'}
+                        value ={'remember_my'}
+                        name={'remember'}
                     />
+                    <FormErrors
+                        formErrors={this.state.formErrors.remember} />
                     <SubmitButton
                         action = {this.handleFormSubmit}
                         type = {'submit'}
-                        title = {'Войти'}
+                        title = {'Регистрация'}
                         disabled = {this.state.formValid}
-                        />
-                    <div className="text-center mt-3">
-                        <a href="">Забыли пароль?</a>
-                    </div>
+                    />
                 </form>
             </section>
         )
     }
-}
 
+}
 
 export default LoginForm;

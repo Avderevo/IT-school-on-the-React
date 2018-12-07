@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import CourseCard from "./CourseCard"
+import CourseCard from "../Common/CourseCard"
 class Advance extends Component {
 
     render() {

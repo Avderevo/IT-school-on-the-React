@@ -1,8 +1,8 @@
 // Header.js
 import React, { Component } from 'react';
-import headerimg from "../img/itv2.png";
-import WhiteBotton from "./WhiteBotton";
-import WhiteNegativBotton from "./WhiteNegativBotton";
+import headerimg from "../../img/itv2.png";
+import WhiteBotton from "../Common/WhiteBotton";
+import WhiteNegativBotton from "../Common/WhiteNegativBotton";
 class Header extends Component {
   render() {
     return (
