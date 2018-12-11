@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import LkOneLesson from './LkOneLesson'
+import {LkOneLesson} from './LkOneLesson'
 import {studyAction} from "../../_actions";
 import connect from "react-redux/es/connect/connect";
 

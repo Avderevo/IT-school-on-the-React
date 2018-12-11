@@ -2,19 +2,19 @@ import { authHeader } from '../_helpers';
 
 
 
-export const studyService = {
-    getAllLesson,
+export const chatService = {
+    getAllHomework,
 };
 
 
 
-function getAllLesson() {
+function getAllHomework() {
     const requestOptions = {
         method: 'GET',
         headers: authHeader()
     };
 
-    return fetch('http://localhost:3000/studyroom.json', requestOptions).then(handleResponse);
+    return fetch('http://localhost:3000/homeworks.json', requestOptions).then(handleResponse);
 }
 
 
