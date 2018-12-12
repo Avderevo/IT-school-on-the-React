@@ -18,4 +18,3 @@ export function lessons(state = [], action) {
             return state
     }
 }
-

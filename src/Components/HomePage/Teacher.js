@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-
+import React from 'react';
 
 const Teacher = (props) => {
 
@@ -11,6 +10,5 @@ const Teacher = (props) => {
         </div>
     )
 };
-
 
 export default Teacher;

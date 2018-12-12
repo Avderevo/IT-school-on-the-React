@@ -6,6 +6,7 @@ import { alert } from './alert.reducer';
 import { lessons } from "./study.reducer";
 import {homeworks} from "./chat.reducer";
 import {openModal} from './modal.reducer';
+import {coursecard, teachers, additionsData} from  './school.reducer';
 
 const rootReducer = combineReducers({
     authentication,
@@ -14,6 +15,9 @@ const rootReducer = combineReducers({
     lessons,
     homeworks,
     openModal,
+    coursecard,
+    teachers,
+    additionsData
 });
 
 export default rootReducer;

@@ -1,24 +1,29 @@
-// Additions.js
 import React, { Component } from 'react';
 import AdditionCard from './AdditionCard';
+import {schoolAction} from "../../_actions";
+import connect from "react-redux/es/connect/connect";
+
 
 
 class Additions extends Component{
-    render() {
-        let additioncard;
-        if (this.props.data){
-            let data = this.props.data;
-            additioncard = data.map((item) => {
-                return <AdditionCard {...item}/>
-            });
-        }
 
+    componentDidMount() {
+        this.props.dispatch(schoolAction.getAdditionsData());
+    }
+
+    render() {
+        const {additionsData} = this.props;
 
         return (
             <section id="additions" className="section-additions">
                 <div className="container">
                     <div className="row">
-                        {additioncard}
+                        {additionsData.loading && <em>Loading data...</em>}
+                        {additionsData.error &&  <span className="text-danger">ERROR: {additionsData.error}</span>}
+                        {additionsData.items && additionsData.items.additions.map((item, index) =>
+                            <AdditionCard {...item} />
+                        )}
+
                     </div>
                 </div>
             </section>
@@ -26,5 +31,15 @@ class Additions extends Component{
     }
 }
 
-export default Additions;
+function mapStateToProps(state) {
+    const {additionsData} = state;
+    return {
+        additionsData
+    }
+
+}
+
+const connectedAdditions = connect(mapStateToProps)(Additions);
+export {connectedAdditions as Additions};
+
 

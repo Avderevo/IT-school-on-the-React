@@ -1,10 +1,9 @@
 // Navbar.js
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom'
 import { LoginNavButton} from "./LoginNavButton";
 
-class Navbar extends Component {
-    render() {
+const Navbar =() => {
 
         return (
       
@@ -32,7 +31,7 @@ class Navbar extends Component {
             </header>
       
     );
-  }
-}
+
+};
 
 export default Navbar;

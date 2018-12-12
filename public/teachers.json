@@ -1,0 +1,27 @@
+{
+  "Teachers":
+  [
+    {
+      "name": "Джаконда",
+      "description": "DevOps практики и инструменты",
+      "img": "tch1.jpg"
+    },
+    {
+      "name": "Джаконда",
+      "description": "DevOps практики и инструменты",
+      "img": "tch1.jpg"
+    },
+    {
+      "name": "Джаконда",
+      "description": "DevOps практики и инструменты",
+      "img": "tch1.jpg"
+    },
+    {
+      "name": "Джаконда",
+      "description": "DevOps практики и инструменты",
+      "img": "tch1.jpg"
+    }
+
+
+  ]
+}

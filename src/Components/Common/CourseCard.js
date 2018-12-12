@@ -1,26 +1,24 @@
-// CourseCard.js
-import React, { Component } from 'react';
+import React  from 'react';
 
-class CourseCard extends Component {
-    render() {
-        let data = this.props;
-        return (
-            <div  key={data.name} className="col-lg-4 col-md-6 mb-4">
-                <div>
-                    <div className={"card curses-card shadow curses-card-hover "+ data.bg} >
-                        <a href="#">
-                            <div className="card-body">
-                                <h3>{data.name_1}<br />{data.name_2}</h3>
+const CourseCard = (props) => {
 
-                                <hr className="heading-devider float-left" /><br />
-                                <div><h6>{data.description}</h6></div>
-                            </div>
-                        </a>
-                    </div>
+    return(
+        <div  key={props.name} className="col-lg-4 col-md-6 mb-4">
+            <div>
+                <div className={"card curses-card shadow curses-card-hover "+ props.bg} >
+                    <a href="#">
+                        <div className="card-body">
+                            <h3>{props.name_1}<br />{props.name_2}</h3>
+
+                            <hr className="heading-devider float-left" /><br />
+                            <div><h6>{props.description}</h6></div>
+                        </div>
+                    </a>
                 </div>
-                <span className={"meta-2 " + (data.meta ? 'show' : 'invisible')}>Успеть!</span>
             </div>
-        );
-    }
-}
+            <span className={"meta-2 " + (props.meta ? 'show' : 'invisible')}>Успеть!</span>
+        </div>
+    );
+};
+
 export default CourseCard;

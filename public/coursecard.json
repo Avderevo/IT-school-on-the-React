@@ -1,0 +1,48 @@
+{
+  "courseCards":
+  [
+    {
+      "name_1": "Администратор",
+      "name_2": "Linux",
+      "description": "Старт 5 января",
+      "bg": "gradient-1",
+      "meta": "1"
+    },
+    {
+      "name_1": "Разработчик",
+      "name_2": "Python",
+      "description": "Начало 5 января",
+      "bg": "gradient-2",
+      "meta": "1"
+    },
+    {
+      "name_1": "Разработчик",
+      "name_2": "PHP",
+      "description": "Начало курса 10 января",
+      "bg": "gradient-3",
+      "meta": ""
+    },
+    {
+      "name_1": "Разработчик",
+      "name_2": "JS",
+      "description": "Начало курса в мае",
+      "bg": "gradient-4",
+      "meta": ""
+    },
+    {
+      "name_1": "DevOps",
+      "name_2": "инженер",
+      "description": "Старт курса в феврале",
+      "bg": "gradient-5",
+      "meta": ""
+    },
+    {
+      "name_1": "Разработчик",
+      "name_2": "Java",
+      "description": "Старт курса 7 декабря",
+      "bg": "gradient-6",
+      "meta": "1"
+    }
+
+  ]
+}

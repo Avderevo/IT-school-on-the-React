@@ -4,16 +4,11 @@ import {connect} from 'react-redux';
 import { userActions } from '../../_actions';
 
 class LoginNavButton extends React.Component {
-    constructor(props) {
-        super();
-        this.logOut = this.logOut.bind(this);
-    }
 
-    logOut(event) {
+    logOut=(event) => {
         event.preventDefault();
-        const { dispatch } = this.props;
-        dispatch(userActions.logout())
-    }
+        this.props.dispatch(userActions.logout())
+    };
 
     render() {
         if (this.props.loggedIn) {
@@ -26,8 +21,6 @@ class LoginNavButton extends React.Component {
                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
                             className="material-icons md-36">person_pin</i>
                         </a>
-
-
                         <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                             <Link className="dropdown-item" to="#">Мои курсы</Link>
                             <Link className="dropdown-item" to="/studyroom/">Личный кабинет</Link>
