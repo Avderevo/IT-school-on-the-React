@@ -3,7 +3,7 @@ import { combineReducers } from 'redux';
 import { authentication } from './authentication.reducer';
 import { users } from './users.reducer';
 import { alert } from './alert.reducer';
-import { lessons } from "./study.reducer";
+import { lessons, userCourses } from "./study.reducer";
 import {homeworks} from "./chat.reducer";
 import {openModal} from './modal.reducer';
 import {coursecard, teachers, additionsData} from  './school.reducer';
@@ -17,7 +17,9 @@ const rootReducer = combineReducers({
     openModal,
     coursecard,
     teachers,
-    additionsData
+    additionsData,
+    userCourses
+
 });
 
 export default rootReducer;

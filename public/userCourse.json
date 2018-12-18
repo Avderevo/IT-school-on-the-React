@@ -1,0 +1,13 @@
+{
+  "usercourses":
+  [
+    {
+      "name":"course1",
+      "is_paid":true
+    },
+    {
+      "name":"course2",
+      "is_paid":false
+    }
+  ]
+}

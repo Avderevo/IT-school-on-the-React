@@ -8,17 +8,7 @@ import {studyAction} from "../../_actions";
 import { connect } from 'react-redux';
 
 
-
-
 class StudyRoomPage extends Component{
-/*
-
-    componentDidMount() {
-        this.props.dispatch(studyAction.getStudyRoom());
-    }
-*/
-
-
 
     render() {
 
@@ -36,20 +26,4 @@ class StudyRoomPage extends Component{
     }
 }
 
-/*
-
-function mapStateToProps(state) {
-    const { lessons } = state;
-
-    return {
-        lessons
-    };
-}
-
-const connectedStudyRoomPage = connect(mapStateToProps)(StudyRoomPage);
-export { connectedStudyRoomPage as StudyRoomPage };
-
-
-
-*/
 export default StudyRoomPage;

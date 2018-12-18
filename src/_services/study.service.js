@@ -4,18 +4,45 @@ import { authHeader } from '../_helpers';
 
 export const studyService = {
     getAllLesson,
+    courseTestSend,
+    getUserCourseList
 };
 
 
 
-function getAllLesson() {
+function getAllLesson(id) {
     const requestOptions = {
         method: 'GET',
         headers: authHeader()
     };
 
-    return fetch('http://localhost:3000/studyroom.json', requestOptions).then(handleResponse);
+    return fetch('http://localhost:8000/study'+id+'/', requestOptions).then(handleResponse);
 }
+
+
+function courseTestSend(testResult) {
+    const requestOptions = {
+        method: 'POST',
+        headers: {...authHeader(), 'Content-Type': 'application/json' },
+        body: JSON.stringify({testResult})
+    };
+
+    return fetch('http://localhost:8000/study/course_test/', requestOptions).then(handleResponse);
+
+}
+
+
+function getUserCourseList() {
+    const requestOptions = {
+        method: 'GET',
+        headers: authHeader()
+    };
+
+    return fetch('http://localhost:8000/study/user_courses/', requestOptions).then(handleResponse);
+}
+
+
+
 
 
 function handleResponse(response) {
@@ -30,3 +57,4 @@ function handleResponse(response) {
         return data;
     });
 }
+

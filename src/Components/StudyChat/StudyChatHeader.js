@@ -13,11 +13,15 @@ class StudyChatHeader extends Component{
 
         return(
             <div className="chat-header">
-                <div className="chat-header-text">
-                    Домашнее задание по программированию
+                <div className='chat-header-body'>
+                    <div className="chat-header-text">
+                        Домашнее задание по программированию
+                        <button className='btn btn-light float-right' onClick={this.handleOpenClick}>X</button>
+
+                    </div>
 
                 </div>
-                <button onClick={this.handleOpenClick}>close</button>
+
             </div>
         )
     }

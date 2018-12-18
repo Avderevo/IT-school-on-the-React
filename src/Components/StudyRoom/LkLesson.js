@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import {LkOneLesson} from './LkOneLesson'
 import {studyAction} from "../../_actions";
 import connect from "react-redux/es/connect/connect";
-
+import {withRouter} from 'react-router';
 
 class LkLesson extends Component{
 
     componentDidMount() {
-        this.props.dispatch(studyAction.getStudyRoom());
+        this.props.dispatch(studyAction.getStudyRoom(this.props.location.pathname));
     }
 
     render() {
@@ -21,9 +21,9 @@ class LkLesson extends Component{
 
                             {lessons.loading && <em>Loading lessons...</em>}
                             {lessons.error &&  <span className="text-danger">ERROR: {lessons.error}</span>}
-                            {lessons.items  && lessons.items.lesson.map((lesson, index) =>
+                            {lessons.items  && lessons.items.map((item, index) =>
 
-                                <LkOneLesson {...lesson} />
+                                <LkOneLesson {...item} />
 
                                 )}
                         </div>
@@ -44,5 +44,6 @@ function mapStateToProps(state) {
     };
 }
 
-const connectedLkLesson = connect(mapStateToProps)(LkLesson);
-export { connectedLkLesson as LkLesson };
+const connectedLkL = connect(mapStateToProps)(LkLesson);
+const connectedLkLesson = withRouter(connectedLkL);
+export {connectedLkLesson as LkLesson};

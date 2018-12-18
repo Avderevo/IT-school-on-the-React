@@ -1,4 +1,4 @@
-import { authHeader } from '../_helpers';
+import {authHeader, history} from '../_helpers';
 
 export const userService = {
     login,
@@ -30,6 +30,8 @@ function logout() {
     // remove user from local storage to log user out
     localStorage.removeItem('user');
 
+
+
 }
 
 function getAll() {
@@ -48,7 +50,7 @@ function handleResponse(response) {
             if (response.status === 401) {
                 // auto logout if 401 response returned from api
                 logout();
-                window.location.reload(true);
+               /* window.location.reload(true);*/
             }
 
             const error = (data && data.message) || response.statusText;

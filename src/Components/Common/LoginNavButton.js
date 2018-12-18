@@ -23,7 +23,7 @@ class LoginNavButton extends React.Component {
                         </a>
                         <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                             <Link className="dropdown-item" to="#">Мои курсы</Link>
-                            <Link className="dropdown-item" to="/studyroom/">Личный кабинет</Link>
+                            <Link className="dropdown-item" to="/study/">Личный кабинет</Link>
                             <div className="dropdown-divider"> </div>
                             <a className="dropdown-item" href="/logout" onClick={this.logOut}>Выход</a>
                         </div>

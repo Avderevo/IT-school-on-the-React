@@ -18,3 +18,23 @@ export function lessons(state = [], action) {
             return state
     }
 }
+
+export function userCourses(state = [], action) {
+    switch (action.type) {
+        case studyConstants.GET_USER_COURSES_REQUEST:
+            return {
+                loading: true
+            };
+        case studyConstants.GET_USER_COURSES_SUCCESS:
+            return {
+                items: action.userCourses
+            };
+        case studyConstants.GET_USER_COURSES_FAILURE:
+            return {
+                error: action.error
+            };
+        default:
+            return state
+    }
+}
+
