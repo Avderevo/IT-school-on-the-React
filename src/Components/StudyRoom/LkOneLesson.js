@@ -5,6 +5,9 @@ import connect from "react-redux/es/connect/connect";
 import  {modalAction} from "../../_actions";
 import {Link} from 'react-router-dom';
 import {withRouter} from 'react-router';
+import StadyChatForm from '../StudyChat/StudyChatForm';
+import {StudyChatHeader} from "../StudyChat/StudyChatHeader";
+import {ChatMessage} from "../StudyChat/ChatMessage";
 
 const style={
 
@@ -54,29 +57,60 @@ class LkOneLesson extends Component{
 
             <div className="col-12 timeline-wrapper">
                 <div className="timeline-item">
-                    <span className="timeline-item-date">{props.course.id}</span>
-                    <a onClick={this.handleClick}  className="timeline-item-header active">{props.lesson.lesson_number} {props.lesson.lesson_title}</a>
-                    <span className="timeline-item-description"></span>
-                    <div className={this.state.clickOpenLesson ? null : 'd-none'}>
+                    <div className='container'>
+                        <div className='row'>
+                            <div className='col-5 no_padding-col'>
 
-                        <div className="lesson-body">
-                            <div className="lesson-body-block">
-                                <div className="lesson-body-title">Опрос</div>
-                                <div className="lesson-body-text">Пройдите пожалуйста опрос о занятии</div>
-                            </div>
-                            <div className="lesson-body-block">
-                                <div className="lesson-body-title">Домашнее задание:</div>
-                                <div className="lesson-body-text">{props.lesson.homework_title}
+                                <span className="timeline-item-date">{props.course.id}</span>
+                                <a onClick={this.handleClick}  className="timeline-item-header active">{props.lesson.lesson_number} {props.lesson.lesson_title}</a>
+                                <span className="timeline-item-description"></span>
+                                <div className={this.state.clickOpenLesson ? null : 'd-none'}>
+
+                                    <div className="lesson-body">
+                                        <div className="lesson-body-block">
+                                            <div className="lesson-body-title">Опрос</div>
+                                            <div className="lesson-body-text">Пройдите пожалуйста опрос о занятии</div>
+                                        </div>
+                                        <div className="lesson-body-block">
+                                            <div className="lesson-body-title">Домашнее задание:</div>
+                                            <div className="lesson-body-text">{props.lesson.homework_title}
+                                            </div>
+                                            <div className="lesson-body-text">Статус: {props.homework_status}</div>
+                                        </div>
+                                        <div>
+                                            <Link onClick={this.handleOpenClick} to={pathname +`/chat/`+props.lesson.id} type="button" className="btn lesson-body-btn">Чат с преподователем</Link>
+                                            <StudyChatModal/>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div className="lesson-body-text">Статус: {props.homework_status}</div>
                             </div>
-                            <div>
-                                <Link onClick={this.handleOpenClick} to={pathname +`/chat/`+props.lesson.id} type="button" className="btn lesson-body-btn">Чат с преподователем</Link>
-                                <StudyChatModal/>
+                            <div className= {this.state.clickOpenLesson ? 'col-7 no_padding-col' : 'invisible' }>
+                                <div className='lesson-chat-wrapper'>
+                                    <div className='homework__modal-table'>
+                                        <div className='homework__modal-content-row'>
+                                            <div className='homework__modal-content-box'>
+                                                <div className='homework__modal-content'>
+                                                    <div className='homework__modal-chat'>
+                                                        <div className='homework-chat'>
+                                                            <div className='homework-chat__items'>
+
+
+                                                                <ChatMessage/>
+
+                                                            </div>
+                                                            <StadyChatForm/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         )
     }

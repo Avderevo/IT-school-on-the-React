@@ -41,12 +41,12 @@ class StudyChatForm extends Component{
 
     render(){
         return(
-            <div className="message-form">
+            <div className="message-form mt-2">
                 <form>
                     <div className="form-row align-items-center">
                         <div className="col-10">
                         <input
-                            className="form-control mb-2"
+                            className="form-control"
                             name="message"
                             type="text"
                             value={this.state.message}
@@ -56,9 +56,9 @@ class StudyChatForm extends Component{
                         </div>
                         <div className="col-button">
                             <button
-                                className = "btn btn-primary mb-2"
+                                className = "btn btn-primary"
                                 onClick= {this.submitChange}>
-                                Отправить
+                               GO
 
                             </button>
                         </div>
