@@ -1,10 +1,16 @@
 import React, {Component} from  'react';
+import {chatAction} from "../../_actions";
+import connect from "react-redux/es/connect/connect";
 
 class ChatMessage extends Component{
+
+   /* componentDidMount() {
+        this.props.dispatch(chatAction.getMessage());
+    }*/
     render(){
         return(
-            <div className="message-block">
-                <div className="student-message-block">
+            <div className="chat-message-block">
+                <div className="chat-message-content">
                     <div className="mb-3">
                         <span className='message-author-avatar'>;)</span>
                         <span className="message-author-name">Yury Avdeev</span>
@@ -25,4 +31,11 @@ class ChatMessage extends Component{
 
 }
 
-export default ChatMessage
+const mapStatetoProps = (props) => {
+    return props;
+};
+
+const connectedChatMessage = connect(mapStatetoProps)(ChatMessage);
+export {connectedChatMessage as ChatMessage}
+
+

@@ -1,11 +1,24 @@
-import StudyChatPage from '../StudyChat/StudyChatPage';
+import {StudyChatModal} from '../StudyChat/StudyChatModal';
 import React, {Component} from "react";
 import Modal from 'react-modal';
 import connect from "react-redux/es/connect/connect";
 import  {modalAction} from "../../_actions";
 import {Link} from 'react-router-dom';
+import {withRouter} from 'react-router';
 
+const style={
 
+    content: {
+        top: '0',
+        left: '0',
+        right: '0',
+        bottom: '0',
+        marginRight: '0',
+        /*transform: 'translate(-50%, -50%)',
+        height: '500px', // <-- This sets the height*/
+        overlfow: 'scroll' // <-- This tells the modal to scrol
+    }
+};
 
 
 class LkOneLesson extends Component{
@@ -17,6 +30,8 @@ class LkOneLesson extends Component{
 
         }
     }
+
+
 
 
     handleClick =()=>{
@@ -32,8 +47,9 @@ class LkOneLesson extends Component{
     };
 
     render(){
-    const props = this.props;
-    const click = this.props.openModal.click;
+        const pathname = this.props.location.pathname;
+        console.log(pathname);
+        const props = this.props;
         return(
 
             <div className="col-12 timeline-wrapper">
@@ -55,19 +71,8 @@ class LkOneLesson extends Component{
                                 <div className="lesson-body-text">Статус: {props.homework_status}</div>
                             </div>
                             <div>
-                                <button onClick={this.handleOpenClick} type="button" className="btn lesson-body-btn">Чат с преподователем</button>
-                                <Modal
-                                    isOpen={click}
-                                    onRequestClose={this.closeModal}
-                                    className="modal-style"
-                                    bodyOpenClassName="ReactModal__Body--open"
-                                    htmlOpenClassName="ReactModal__Html--open"
-                                >
-                                    <div className='learning-modal'>
-                                        <StudyChatPage handleClose={this.CloseModal} />
-                                    </div>
-
-                                </Modal>
+                                <Link onClick={this.handleOpenClick} to={pathname +`/chat/`+props.lesson.id} type="button" className="btn lesson-body-btn">Чат с преподователем</Link>
+                                <StudyChatModal/>
                             </div>
                         </div>
                     </div>
@@ -82,7 +87,7 @@ const mapStatetoProps = (props) => {
     return props;
 };
 
-const connectedLkOnLesson = connect(mapStatetoProps)(LkOneLesson);
+const connectedLkOnLesson = withRouter(connect(mapStatetoProps)(LkOneLesson));
 export {connectedLkOnLesson as LkOneLesson}
 
 

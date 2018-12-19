@@ -9,7 +9,7 @@ const ModalPaje = ({ handleClose, show, children }) => {
 
             <section  id="homework-chat">
                 <div className="row">
-                    <div className="col-md-3 no_padding-col">
+                    <div className="col-md-3 container__col_3 no_padding-col">
                         <div className="chat-homework-list">
                             <div className="homework-title-block">
                                 <a href="">

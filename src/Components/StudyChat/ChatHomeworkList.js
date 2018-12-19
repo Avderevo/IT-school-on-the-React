@@ -11,8 +11,8 @@ class ChatHomeworkList extends Component{
     render(){
         const {homeworks }= this.props;
         return(
-            <div className="col-md-3 no_padding-col">
-                <div className="chat-homework-list">
+            <div>
+
                     {homeworks.loading && <em>Loading homework...</em>}
                     {homeworks.error &&  <span className="text-danger">ERROR: {homeworks.error}</span>}
                     {homeworks.items  && homeworks.items.homeworks.map((homework, index) =>
@@ -26,14 +26,14 @@ class ChatHomeworkList extends Component{
 
                     )}
 
-                </div>
+
             </div>
         )
     }
 }
 
 
-function mapStateToProps(state) {
+function mapStatetoProps(state) {
     const { homeworks} = state;
 
     return {
@@ -41,5 +41,5 @@ function mapStateToProps(state) {
     };
 }
 
-const connectedChatHomeworkList = connect(mapStateToProps)(ChatHomeworkList);
+const connectedChatHomeworkList = connect(mapStatetoProps)(ChatHomeworkList);
 export { connectedChatHomeworkList as ChatHomeworkList };

@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import {modalAction} from "../../_actions";
 import connect from "react-redux/es/connect/connect";
+import {Link} from 'react-router-dom';
+
 
 class StudyChatHeader extends Component{
 
@@ -16,7 +18,7 @@ class StudyChatHeader extends Component{
                 <div className='chat-header-body'>
                     <div className="chat-header-text">
                         Домашнее задание по программированию
-                        <button className='btn btn-light float-right' onClick={this.handleOpenClick}>X</button>
+                        <Link className='btn btn-light float-right' to="" onClick={this.handleOpenClick}>X</Link>
 
                     </div>
 
