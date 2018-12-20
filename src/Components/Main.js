@@ -8,7 +8,9 @@ import TestPage from './TestPage/TestPage';
 import React, {Component} from 'react';
 import { PrivateRoute } from '../_components';
 import { history } from '../_helpers';
+/*
 import {StudyChatModal} from './StudyChat/StudyChatModal';
+*/
 
 
 
@@ -19,7 +21,9 @@ const Main = () => (
                     <PrivateRoute path="/studyroom/:id/" component={StudyRoomPage}/>
                     <PrivateRoute path='/study/' component={UserCourseList}/>
 
+{/*
                         <Route path="/studyroom/:id/chat/:lessonId/" component={StudyChatModal}/>
+*/}
 
 
                     <Route exact path='/signup/' component={RegisterPage}/>

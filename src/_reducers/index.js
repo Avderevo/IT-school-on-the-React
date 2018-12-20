@@ -4,7 +4,7 @@ import { authentication } from './authentication.reducer';
 import { users } from './users.reducer';
 import { alert } from './alert.reducer';
 import { lessons, userCourses } from "./study.reducer";
-import {homeworks} from "./chat.reducer";
+import {chatMessage, lessonMessage} from "./chat.reducer";
 import {openModal} from './modal.reducer';
 import {coursecard, teachers, additionsData} from  './school.reducer';
 
@@ -13,12 +13,13 @@ const rootReducer = combineReducers({
     users,
     alert,
     lessons,
-    homeworks,
+    chatMessage,
     openModal,
     coursecard,
     teachers,
     additionsData,
-    userCourses
+    userCourses,
+    lessonMessage
 
 });
 

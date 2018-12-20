@@ -1,27 +1,14 @@
+/*
 import {StudyChatModal} from '../StudyChat/StudyChatModal';
+*/
 import React, {Component} from "react";
 import Modal from 'react-modal';
 import connect from "react-redux/es/connect/connect";
 import  {modalAction} from "../../_actions";
 import {Link} from 'react-router-dom';
 import {withRouter} from 'react-router';
-import StadyChatForm from '../StudyChat/StudyChatForm';
-import {StudyChatHeader} from "../StudyChat/StudyChatHeader";
+import {StudyChatForm} from '../StudyChat/StudyChatForm';
 import {ChatMessage} from "../StudyChat/ChatMessage";
-
-const style={
-
-    content: {
-        top: '0',
-        left: '0',
-        right: '0',
-        bottom: '0',
-        marginRight: '0',
-        /*transform: 'translate(-50%, -50%)',
-        height: '500px', // <-- This sets the height*/
-        overlfow: 'scroll' // <-- This tells the modal to scrol
-    }
-};
 
 
 class LkOneLesson extends Component{
@@ -33,8 +20,6 @@ class LkOneLesson extends Component{
 
         }
     }
-
-
 
 
     handleClick =()=>{
@@ -51,8 +36,8 @@ class LkOneLesson extends Component{
 
     render(){
         const pathname = this.props.location.pathname;
-        console.log(pathname);
         const props = this.props;
+        const statisticId = this.props.id;
         return(
 
             <div className="col-12 timeline-wrapper">
@@ -78,8 +63,8 @@ class LkOneLesson extends Component{
                                             <div className="lesson-body-text">Статус: {props.homework_status}</div>
                                         </div>
                                         <div>
-                                            <Link onClick={this.handleOpenClick} to={pathname +`/chat/`+props.lesson.id} type="button" className="btn lesson-body-btn">Чат с преподователем</Link>
-                                            <StudyChatModal/>
+                                            {/*<Link onClick={this.handleOpenClick} to={pathname +`/chat/`+props.lesson.id} type="button" className="btn lesson-body-btn">Чат с преподователем</Link>
+                                            <StudyChatModal/>*/}
                                         </div>
                                     </div>
                                 </div>
@@ -92,13 +77,13 @@ class LkOneLesson extends Component{
                                                 <div className='homework__modal-content'>
                                                     <div className='homework__modal-chat'>
                                                         <div className='homework-chat'>
-                                                            <div className='homework-chat__items'>
 
 
-                                                                <ChatMessage/>
 
-                                                            </div>
-                                                            <StadyChatForm/>
+                                                                <ChatMessage statisticId={statisticId}/>
+
+
+                                                            <StudyChatForm statisticId={statisticId} />
                                                         </div>
                                                     </div>
                                                 </div>

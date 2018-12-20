@@ -1,4 +1,4 @@
-import {studyConstants, userConstants} from '../_constants';
+import {studyConstants, userConstants, chatConstants} from '../_constants';
 import {studyService} from '../_services';
 import { alertActions } from './';
 import {history} from "../_helpers";
@@ -6,7 +6,7 @@ import {history} from "../_helpers";
 
 export const studyAction = {
     getStudyRoom,
-    getUserCourseList
+    getUserCourseList,
 
 };
 
@@ -30,27 +30,6 @@ function getStudyRoom(id) {
 }
 
 
-function chatMessageSend(message) {
-    return dispatch => {
-        dispatch(request({ message }));
-
-        studyService.sendMessage(message)
-            .then(
-                user => {
-                    dispatch(success(user));
-                    history.push('/');
-                },
-                error => {
-                    dispatch(failure(error));
-                    dispatch(alertActions.error(error));
-                }
-            );
-    };
-
-    function request(user) { return { type: userConstants.LOGIN_REQUEST, user } }
-    function success(user) { return { type: userConstants.LOGIN_SUCCESS, user } }
-    function failure(error) { return { type: userConstants.LOGIN_FAILURE, error } }
-}
 
 function getUserCourseList() {
     return dispatch => {
@@ -70,3 +49,5 @@ function getUserCourseList() {
     function success(userCourses) { return { type: studyConstants.GET_USER_COURSES_SUCCESS, userCourses } }
     function failure(error) { return { type: studyConstants.GET_USER_COURSES_FAILURE, error } }
 }
+
+

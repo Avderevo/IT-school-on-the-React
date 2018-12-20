@@ -1,5 +1,6 @@
+/*
 import React, {Component} from 'react';
-import StudyChatForm from './StudyChatForm';
+import {StudyChatForm} from './StudyChatForm';
 import {ChatHomeworkList} from './ChatHomeworkList';
 import {StudyChatHeader} from './StudyChatHeader';
 import {ChatMessage} from './ChatMessage';
@@ -90,3 +91,4 @@ const mapStatetoProps = (props) => {
 
 const connectedStudyChatModal = connect(mapStatetoProps)(StudyChatModal);
 export {connectedStudyChatModal as StudyChatModal}
+*/

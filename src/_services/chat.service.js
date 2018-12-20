@@ -1,21 +1,34 @@
 import { authHeader } from '../_helpers';
 
 
-
 export const chatService = {
-    getAllHomework,
+    sendMessage,
+    getMessage
 };
 
 
 
-function getAllHomework() {
+function sendMessage(chatMessage) {
+    const requestOptions = {
+        method: 'POST',
+        headers: {...authHeader(), 'Content-Type': 'application/json' },
+        body: JSON.stringify(chatMessage)
+    };
+
+    return fetch('http://localhost:8000/study/create_message/',  requestOptions).then(handleResponse);
+}
+
+
+function getMessage(id) {
     const requestOptions = {
         method: 'GET',
         headers: authHeader()
     };
 
-    return fetch('http://localhost:3000/homeworks.json', requestOptions).then(handleResponse);
+    return fetch('http://localhost:8000/study/chat_message/'+id+'/', requestOptions).then(handleResponse);
 }
+
+
 
 
 function handleResponse(response) {

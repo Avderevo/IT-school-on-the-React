@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import {chatAction} from "../../_actions";
+import connect from "react-redux/es/connect/connect";
 
 class StudyChatForm extends Component{
 
@@ -17,29 +19,22 @@ class StudyChatForm extends Component{
     submitChange =(e) =>{
         e.preventDefault();
 
-        let messageData = {
-            'message': this.state.message
+        let chatMessage = {
+            'message': this.state.message,
+            'statisticId': this.props.statisticId
         };
 
         this.setState({
             message: ''
         });
 
-        fetch('http://localhost:8000/users/create_usegr/',{
-            method: "POST",
-            body: JSON.stringify(messageData),
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            },
-        }).then(response => {
-            response.json().then(data =>{
-                console.log("Successful" + data);
-            })
-        })
+        const { dispatch } = this.props;
+
+        dispatch(chatAction.sendMessage(chatMessage))
     };
 
     render(){
+
         return(
             <div className="message-form mt-2">
                 <form>
@@ -69,4 +64,13 @@ class StudyChatForm extends Component{
     }
 }
 
-export default StudyChatForm;
+
+const mapStatetoProps = (props) => {
+    return props;
+};
+
+const connectedStudyChatForm = connect(mapStatetoProps)(StudyChatForm);
+export {connectedStudyChatForm as StudyChatForm};
+
+
+
