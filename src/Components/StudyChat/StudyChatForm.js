@@ -1,13 +1,15 @@
 import React, {Component} from 'react';
-import {chatAction} from "../../_actions";
+import {chatAction, modalAction} from "../../_actions";
 import connect from "react-redux/es/connect/connect";
+import Message from './ChatMessage';
 
 class StudyChatForm extends Component{
 
     constructor(props){
         super(props);
         this.state = {
-            message: ''
+            message: '',
+            clickOpenLesson: false
         }
     }
 
@@ -28,9 +30,9 @@ class StudyChatForm extends Component{
             message: ''
         });
 
-        const { dispatch } = this.props;
 
-        dispatch(chatAction.sendMessage(chatMessage))
+        this.props.dispatch(chatAction.sendMessage(chatMessage));
+
     };
 
     render(){

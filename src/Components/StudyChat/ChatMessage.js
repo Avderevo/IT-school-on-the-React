@@ -1,42 +1,72 @@
 import React, {Component} from  'react';
-import {chatAction} from "../../_actions";
+import {chatService} from "../../_services";
 import connect from "react-redux/es/connect/connect";
+import {LkOneLesson} from "../StudyRoom/LkOneLesson";
+import {modalAction} from "../../_actions";
 
 class ChatMessage extends Component{
 
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            message: [],
+            Loading: false,
+            error: null,
+        };
+    }
+
+
 
     componentDidMount() {
-        this.props.dispatch(chatAction.getMessage(this.props.statisticId));
+        this.setState({ Loading: true });
+        chatService.getMessage(this.props.statisticId)
+            .then(response => response.json())
+            .then(data => this.setState({ message: data, Loading: false }))
+            .catch(error => this.setState({ error, Loading: false }));
     }
+
+
+
+/*
+
+        componentDidMount() {
+        this.props.dispatch(chatAction.getMessage(this.props.statisticId));
+    }*/
     render(){
 
-        const {lessonMessage} = this.props;
+
         return(
             <div className='homework-chat__items'>
 
-                <div className="chat-message-block">
-                    <div className="chat-message-content">
-                        <div className="mb-3">
-                            <span className='message-author-avatar'>;)</span>
-                            <span className="message-author-name">props</span>
-                        </div>
 
-                        <div className="message-text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aut
-                            consequatur cumque cupiditate debitis dolor eos laudantium magnam molestiae
-                            pariatur perferendis
-                            placeat possimus, quo quod repellat vel vitae, voluptates voluptatibus.
+                {this.state.Loading && <em>Loading message...</em>}
+                {this.state.error &&  <span className="text-danger">ERROR: {this.state.error}</span>}
+                {this.state.message  && this.state.message.map((item, index) =>
+
+                    <div className="chat-message-block">
+                        <div className="chat-message-content">
+                            <div className="mb-3">
+                                <span className='message-author-avatar'>;)</span>
+                                <span className="message-author-name">{item.user.username}</span>
+                            </div>
+
+                            <div className="message-text">
+                                {item.message_body}
+                            </div>
+                            <span className="message-date">{item.date}</span>
                         </div>
-                        <span className="message-date">24.11.18</span>
                     </div>
-                </div>
+
+                )}
+
+
             </div>
         )
     }
 
 }
 
-/*export default ChatMessage;*/
 
 
 const mapStatetoProps = (props) => {
@@ -45,6 +75,7 @@ const mapStatetoProps = (props) => {
 
 const connectedChatMessage = connect(mapStatetoProps)(ChatMessage);
 export {connectedChatMessage as ChatMessage}
+
 
 
 

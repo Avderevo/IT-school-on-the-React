@@ -1459,7 +1459,7 @@ ____________________________________
 .chat-message-block{
     padding: .5rem;
     border-radius: 6px;
-    background-color: #9fcdff;
+    background-color: #e0ecf9;
     position: relative;
    /* margin-right: 1rem;
     margin-left: .5rem;*/
@@ -1476,12 +1476,14 @@ ____________________________________
     padding: 6px 0;
     text-align: left;
     display: table-row;
+    color: #0c0c0c;
 
 }
 
 
 .message-text{
     margin-bottom: .8rem;
+    font-size: .95rem;
 }
 
 .message-date{
@@ -1490,7 +1492,7 @@ ____________________________________
 }
 
 .message-author-name{
-    font-size: smaller;
+    font-size: .8rem;
     margin-left: .5rem;
 }
 
