@@ -53,7 +53,7 @@ class StudyChatForm extends Component{
                         </div>
                         <div className="col-button">
                             <button
-                                className = "btn btn-primary"
+                                className = "btn btn-success"
                                 onClick= {this.submitChange}>
                                GO
 

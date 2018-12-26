@@ -38,3 +38,23 @@ export function userCourses(state = [], action) {
     }
 }
 
+
+export function oneCourse(state = {}, action) {
+    switch (action.type) {
+        case studyConstants.GETONECOURSE_REQUEST:
+            return {
+                loading: true
+            };
+        case studyConstants.GETONECOURSE_SUCCESS:
+            return {
+                items: action.oneCourse
+            };
+        case studyConstants.GETONECOURSE_FAILURE:
+            return {
+                error: action.error
+            };
+        default:
+            return state
+    }
+}
+

@@ -1,8 +1,10 @@
 // Header.js
 import React, { Component } from 'react';
 import headerimg from "../../img/itv2.png";
-import WhiteBotton from "../Common/WhiteBotton";
-import WhiteNegativBotton from "../Common/WhiteNegativBotton";
+import WhiteButton from "../Common/WhiteButton";
+import WhiteNegativButton from "../Common/WhiteNegativButton";
+
+
 class Header extends Component {
   render() {
     return (
@@ -15,9 +17,9 @@ class Header extends Component {
                     <div className="btn-wrap">
                         <div className="mb-5">
 
-                            <WhiteNegativBotton data={{text:"Выбрать курс", href:"#"}} />
+                            <WhiteNegativButton data={{text:"Выбрать курс", href:"/all_courses/"}} />
 
-                            <WhiteBotton data={{text:"Программы лояльности", href:"#"}}  />
+                            <WhiteButton data={{text:"Программы лояльности", href:"#"}}  />
 
                         </div>
                     </div>

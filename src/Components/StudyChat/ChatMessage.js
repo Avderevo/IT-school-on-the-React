@@ -18,21 +18,24 @@ class ChatMessage extends Component{
 
 
 
-    componentDidMount() {
+    getMessage =() => {
         this.setState({ Loading: true });
         chatService.getMessage(this.props.statisticId)
             .then(response => response.json())
             .then(data => this.setState({ message: data, Loading: false }))
             .catch(error => this.setState({ error, Loading: false }));
+
+    };
+
+    timeout = () => {
+        setInterval(this.getMessage, 30000); // Here
+    };
+
+    componentDidMount() {
+        this.getMessage();
+       /* this.timeout(); // Here*/
     }
 
-
-
-/*
-
-        componentDidMount() {
-        this.props.dispatch(chatAction.getMessage(this.props.statisticId));
-    }*/
     render(){
 
 

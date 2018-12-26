@@ -7,6 +7,7 @@ import {history} from "../_helpers";
 export const studyAction = {
     getStudyRoom,
     getUserCourseList,
+    getOneCourse
 
 };
 
@@ -50,4 +51,23 @@ function getUserCourseList() {
     function failure(error) { return { type: studyConstants.GET_USER_COURSES_FAILURE, error } }
 }
 
+
+function getOneCourse(name) {
+    return dispatch => {
+        dispatch(request());
+
+        studyService.getOneCourse(name)
+            .then(
+                oneCourse => dispatch(success(oneCourse)),
+                error => {
+                    dispatch(failure(error));
+                    dispatch(alertActions.error(error))
+                }
+            );
+    };
+
+    function request() { return { type: studyConstants.GETONECOURSE_REQUEST } }
+    function success(oneCourse) { return { type: studyConstants.GETONECOURSE_SUCCESS, oneCourse } }
+    function failure(error) { return { type: studyConstants.GETONECOURSE_FAILURE, error } }
+}
 

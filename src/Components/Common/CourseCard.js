@@ -1,4 +1,7 @@
 import React  from 'react';
+import { Link } from 'react-router-dom'
+
+
 
 const CourseCard = (props) => {
 
@@ -6,14 +9,15 @@ const CourseCard = (props) => {
         <div  key={props.name} className="col-lg-4 col-md-6 mb-4">
             <div>
                 <div className={"card curses-card shadow curses-card-hover "+ props.bg} >
-                    <a href="#">
+                    <Link
+                        to={'/course/'+props.name_2+'/'}>
                         <div className="card-body">
                             <h3>{props.name_1}<br />{props.name_2}</h3>
 
                             <hr className="heading-devider float-left" /><br />
                             <div><h6>{props.description}</h6></div>
                         </div>
-                    </a>
+                    </Link>
                 </div>
             </div>
             <span className={"meta-2 " + (props.meta ? 'show' : 'invisible')}>Успеть!</span>

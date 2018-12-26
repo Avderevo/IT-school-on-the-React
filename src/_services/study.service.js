@@ -5,7 +5,8 @@ import { authHeader } from '../_helpers';
 export const studyService = {
     getAllLesson,
     courseTestSend,
-    getUserCourseList
+    getUserCourseList,
+    getOneCourse
 };
 
 
@@ -42,6 +43,14 @@ function getUserCourseList() {
 }
 
 
+function getOneCourse(name) {
+    const requestOptions = {
+        method: 'GET',
+        headers: authHeader()
+    };
+
+    return fetch('http://localhost:8000/study/one_course/'+name, requestOptions).then(handleResponse);
+}
 
 
 

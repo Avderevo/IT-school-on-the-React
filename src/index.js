@@ -5,15 +5,15 @@ import ReactDOM from 'react-dom';
 import './style/index.css';
 import App from './App/App';
 import * as serviceWorker from './serviceWorker';
-import { Router } from 'react-router-dom';
+import { Router, BrowserRouter} from 'react-router-dom';
 import { Provider } from 'react-redux';
 import {history, store} from './_helpers';
 
 ReactDOM.render(
     <Provider store={store}>
-        <Router history={history}>
-        <App />
-        </Router>
+        <BrowserRouter history={history}>
+            <App />
+        </BrowserRouter>
     </Provider >
     , document.getElementById('root'));
 
