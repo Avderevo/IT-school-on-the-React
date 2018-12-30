@@ -1,8 +1,4 @@
-/*
-import {StudyChatModal} from '../StudyChat/StudyChatModal';
-*/
 import React, {Component} from "react";
-import Modal from 'react-modal';
 import connect from "react-redux/es/connect/connect";
 import  {modalAction} from "../../_actions";
 import {Link} from 'react-router-dom';
@@ -22,6 +18,7 @@ class LkOneLesson extends Component{
     }
 
 
+
     handleClick =()=>{
         this.setState({
             clickOpenLesson: !this.state.clickOpenLesson
@@ -29,15 +26,17 @@ class LkOneLesson extends Component{
 
     };
 
-    handleOpenClick = () => {
+/*    handleOpenClick = () => {
 
         this.props.dispatch(modalAction.openModal());
-    };
+    };*/
 
     render(){
         const pathname = this.props.location.pathname;
         const props = this.props;
         const statisticId = this.props.id;
+
+
         return(
 
             <div className="col-12 timeline-wrapper">
@@ -95,7 +94,6 @@ class LkOneLesson extends Component{
                         </div>
                     </div>
                 </div>
-
             </div>
         )
     }

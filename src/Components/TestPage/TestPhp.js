@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
 import {studyService} from "../../_services";
+import {withRouter} from 'react-router-dom';
 
 
-class TestPage extends Component{
+class TestPhp extends Component{
     constructor(props){
         super(props);
         this.state = {
@@ -21,22 +22,8 @@ class TestPage extends Component{
     handleFormSubmit=(e)=>{
         e.preventDefault();
 
+        studyService.courseTestSend(this.state, 'PHP');
 
-        studyService.courseTestSend(this.state)
-
-
-      /*  fetch('http://localhost:8000/study/course_test/',{
-            method: "POST",
-            body: JSON.stringify(testData),
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            },
-        }).then(response => {
-            response.json().then(data =>{
-                console.log("Successful" + data);
-            })
-        })*/
     };
 
 
@@ -84,4 +71,4 @@ class TestPage extends Component{
 
 }
 
-export  default TestPage;
+export  default withRouter(TestPhp);

@@ -1594,31 +1594,84 @@ ____________________________________
 /*=========================================
 ===========One-Course_page=================
 ===========================================*/
+.bg-linux{
+    background-image: -webkit-linear-gradient(30deg, #013A6B ,  #0075DC );
+}
+
+.bg-linux-priceCard{
+    background-color: #095ba2;
+}
+
+.bg-android{
+    background-image: -webkit-linear-gradient(30deg, #3c5f8c ,  #0075DC );
+}
+
+.bg-android-priceCard{
+    background-color: #378af7;
+}
+
+.bg-php{
+    background-image: -webkit-linear-gradient(30deg, #013A6B ,  #0075DC );
+}
+
+.bg-php-priceCard{
+    background-color: #378af7;
+}
+
+.bg-java{
+    background-image: -webkit-linear-gradient(30deg, #013A6B ,  #0075DC );
+}
+
+.bg-java-priceCard{
+    background-color: #378af7;
+}
+
+.bg-js{
+    background-image: -webkit-linear-gradient(30deg, #013A6B ,  #0075DC );
+}
+
+.bg-js-priceCard{
+    background-color: #378af7;
+}
+
+.bg-python{
+    background-image: -webkit-linear-gradient(30deg, #3c5f8c,  #49b0ff );
+}
+.bg-python-priceCard{
+    background-color: #44a6f1;
+}
+
+
 
 #one-course-header {
     position: relative;
     margin-bottom: 0;
     margin-top: 0;
     padding: 30px;
-    background-image: -webkit-linear-gradient(30deg, #013A6B ,  #0075DC );}
-@media (max-width: 1400px){
+
+}
+
+@media (max-width: 1400px) {
     .display-3 {
         font-size: 3.5rem;
 
     }
 }
-@media (max-width: 900px){
+
+@media (max-width: 900px) {
     .display-3 {
         font-size: 3rem;
 
     }
 }
-@media (max-width: 767px){
+
+@media (max-width: 767px) {
     .display-3 {
         font-size: 3rem;
 
     }
 }
+
 
 
 .one-course-header-title h4{
@@ -1698,7 +1751,6 @@ ____________________________________
     width: 18rem;
     margin-right: 10px;
     float: right;
-    background-color: #004E95;
     border: 0;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
@@ -1734,7 +1786,7 @@ ____________________________________
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
     border-radius: 4px;
-    border: 2px solid #004E95;
+    border: 2px solid;
     margin-right: 2rem;
     margin-bottom: 1.5rem;
     margin-top: 1.5rem;
@@ -1796,19 +1848,17 @@ ____________________________________
     display: inline-block;
 }
 
-.nav-menu-color{
-    background-image: -webkit-linear-gradient(30deg, #013A6B ,  #0075DC );
-}
+
 
 #menu a:hover{
     text-decoration: none;
     color: #fff;
-    background-color: #004E95;
+
 }
 
 #menu a:active {
     color: #fff;
-    background-color: #004E95;
+
 
 }
 /* ----------#about-course----------*/
@@ -2049,7 +2099,6 @@ ____________________________________
 
 #card-course-price{
     position: relative;
-    background-image: -webkit-linear-gradient(30deg, #013A6B ,  #0075DC );
     padding: 2rem;
     margin-bottom: 10rem;
 }
@@ -2157,4 +2206,62 @@ ____________________________________
 
 .container-col{
     display: inline-block;
+}
+
+/*=============================================================
+===============teacher-student-list-page=======================
+===============================================================*/
+
+#t-student-list-header{
+    background-color: #f5d36d;
+    margin-bottom: 3rem;
+}
+
+.t-student-list-header-body{
+    padding: 2rem;
+    color: #282828;
+}
+
+
+/*=============================================================
+===============teacher-1-student-page=======================
+===============================================================*/
+
+
+#t-1-student-header{
+    background-color: #f5d36d;
+    margin-bottom: 1rem;
+}
+
+.t-1-student-header-body{
+    padding: 2rem;
+    color: #282828;
+}
+
+/*-------------t-1-lesson------------*/
+
+#t-1-lessons-section{
+    margin-bottom: 5rem;
+}
+
+
+.t-1-lesson{
+    position: relative;
+    width: 100%;
+    border: 2px solid #454545;
+    border-radius: 6px;
+    padding: 1rem;
+    color: #454545;
+    margin-bottom: 1rem;
+    background-color: ghostwhite;
+
+}
+
+.teacher-chat-dz{
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+.t-1-lesson-body{
+
 }

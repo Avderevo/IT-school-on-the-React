@@ -3,6 +3,9 @@ import React from 'react';
 
 const LkStatistics = () => {
 
+
+
+
     return(
         <section id="lk-statistics">
             <div className="container">

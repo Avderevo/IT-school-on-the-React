@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux';
 
 import { authentication } from './authentication.reducer';
-import { users } from './users.reducer';
+import { users, detailUser } from './users.reducer';
 import { alert } from './alert.reducer';
-import { lessons, userCourses, oneCourse } from "./study.reducer";
+import { lessons, userCourses, oneCourse, allStudents, studentStatistics } from "./study.reducer";
 import {chatMessage, lessonMessage} from "./chat.reducer";
 import {openModal} from './modal.reducer';
 import {coursecard, teachers, additionsData} from  './school.reducer';
@@ -20,7 +20,10 @@ const rootReducer = combineReducers({
     additionsData,
     userCourses,
     lessonMessage,
-    oneCourse
+    oneCourse,
+    allStudents,
+    detailUser,
+    studentStatistics
 
 });
 

@@ -4,6 +4,7 @@ import Header from './Header';
 import {Additions} from './Additions';
 import {Teachers} from './Teachers';
 import {Advance} from './Advance';
+import { withRouter } from 'react-router-dom'
 
 
 const Home = () =>{
@@ -19,4 +20,4 @@ const Home = () =>{
 
 };
 
-export default Home;
+export default withRouter(Home);

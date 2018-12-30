@@ -1,4 +1,4 @@
-import { authHeader } from '../_helpers';
+import { authHeader, history } from '../_helpers';
 
 
 
@@ -6,7 +6,9 @@ export const studyService = {
     getAllLesson,
     courseTestSend,
     getUserCourseList,
-    getOneCourse
+    getOneCourse,
+    getAllStudents,
+    getStudentStatistics
 };
 
 
@@ -17,18 +19,23 @@ function getAllLesson(id) {
         headers: authHeader()
     };
 
-    return fetch('http://localhost:8000/study'+id+'/', requestOptions).then(handleResponse);
+    return fetch('http://localhost:8000/study/studyroom/'+id+'/', requestOptions).then(handleResponse);
 }
 
 
-function courseTestSend(testResult) {
+function courseTestSend(testResult, name) {
     const requestOptions = {
         method: 'POST',
-        headers: {...authHeader(), 'Content-Type': 'application/json' },
+        headers: {...authHeader(), 'Content-Type': 'application/json'},
         body: JSON.stringify({testResult})
     };
 
-    return fetch('http://localhost:8000/study/course_test/', requestOptions).then(handleResponse);
+    return fetch('http://localhost:8000/study/course_test/'+name+'/', requestOptions)
+        .then(function (response) {
+            if (response.ok) {
+                history.push('/')
+            }
+        });
 
 }
 
@@ -49,7 +56,37 @@ function getOneCourse(name) {
         headers: authHeader()
     };
 
-    return fetch('http://localhost:8000/study/one_course/'+name, requestOptions).then(handleResponse);
+    return fetch('http://localhost:8000/study/one_course/'+name+'/', requestOptions)
+        .then(handleResponse);
+
+
+
+}
+
+
+function getAllStudents(id) {
+    const requestOptions = {
+        method: 'GET',
+        headers: authHeader()
+    };
+
+    return fetch('http://localhost:8000/study/all_students/'+id+'/', requestOptions)
+        .then(handleResponse);
+
+
+
+}
+
+function getStudentStatistics(userId, courseId) {
+    const requestOptions = {
+        method: 'GET',
+        headers: authHeader()
+    };
+
+    return fetch('http://localhost:8000/study/students_statistics/'+userId+'/'+courseId+'/', requestOptions)
+        .then(handleResponse);
+
+
 }
 
 

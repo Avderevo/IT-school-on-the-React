@@ -19,3 +19,24 @@ export function users(state = {}, action) {
     }
 }
 
+
+
+export function detailUser(state = {}, action) {
+    switch (action.type) {
+        case userConstants.GET_DETAILUSER_REQUEST:
+            return {
+                loading: true
+            };
+        case userConstants.GET_DETAILUSER_SUCCESS:
+            return {
+                items: action.detailUser
+            };
+        case userConstants.GET_DETAILUSER_FAILURE:
+            return {
+                error: action.error
+            };
+        default:
+            return state
+    }
+}
+

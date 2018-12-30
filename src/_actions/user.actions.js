@@ -6,7 +6,7 @@ import { history } from '../_helpers';
 export const userActions = {
     login,
     logout,
-    /*getAll*/
+    getDetailUser
 };
 
 function login(username, password) {
@@ -35,15 +35,15 @@ function logout() {
     userService.logout();
     return {type: userConstants.LOGOUT}
 }
-/*
 
-function getAll() {
+
+function getDetailUser(userId) {
     return dispatch => {
         dispatch(request());
 
-        userService.getAll()
+        userService.getDetailUser(userId)
             .then(
-                users => dispatch(success(users)),
+                detailUser => dispatch(success(detailUser)),
                 error => {
                     dispatch(failure(error));
                     dispatch(alertActions.error(error))
@@ -51,10 +51,8 @@ function getAll() {
             );
     };
 
-    function request() { return { type: userConstants.GETALL_REQUEST } }
-    function success(users) { return { type: userConstants.GETALL_SUCCESS, users } }
-    function failure(error) { return { type: userConstants.GETALL_FAILURE, error } }
+    function request() { return { type: userConstants.GET_DETAILUSER_REQUEST } }
+    function success(detailUser) { return { type: userConstants.GET_DETAILUSER_SUCCESS, detailUser } }
+    function failure(error) { return { type: userConstants.GET_DETAILUSER_FAILURE, error } }
 }
-
-*/
 

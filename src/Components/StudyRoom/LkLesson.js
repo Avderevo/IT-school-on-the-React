@@ -7,7 +7,9 @@ import {withRouter} from 'react-router';
 class LkLesson extends Component{
 
     componentDidMount() {
-        this.props.dispatch(studyAction.getStudyRoom(this.props.location.pathname));
+        const id = this.props.location.state.id;
+        this.props.dispatch(studyAction.getStudyRoom(id));
+
     }
 
     render() {
@@ -44,6 +46,5 @@ function mapStateToProps(state) {
     };
 }
 
-const connectedLkL = connect(mapStateToProps)(LkLesson);
-const connectedLkLesson = withRouter(connectedLkL);
+const connectedLkLesson = withRouter(connect(mapStateToProps)(LkLesson));
 export {connectedLkLesson as LkLesson};

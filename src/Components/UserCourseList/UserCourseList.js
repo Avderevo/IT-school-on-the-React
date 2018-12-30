@@ -26,7 +26,8 @@ class UserCourseList extends Component{
                         {userCourses.items  && userCourses.items.map((course, index) =>
                             <div className='col-md-4'>
                                 <div className='userCourse-card'>
-                                    <Link to={'/studyroom/'+ course.course.id } >
+                                    <Link to={{pathname:'/studyroom/'+course.course.id,  state: {id:course.course.id}}}>
+
                                         <div className='userCourse-card-body'>
                                             <div className='userCourse-card-title'>
                                                 {course.course.name_1}

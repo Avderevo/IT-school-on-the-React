@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import OneCoursePageHeader from './OneCoursePageHeader';
+import {OneCoursePageHeader} from './OneCoursePageHeader';
 import OneCourseNavMenu from './OneCourseNavMenu';
 import OneCourseDescription from './OneCourseDescription';
 import OneCourseAdditions from './OneCourseAdditions';

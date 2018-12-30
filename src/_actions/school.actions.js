@@ -1,7 +1,6 @@
 import {schoolConstants} from '../_constants';
 import {schoolService} from '../_services';
 import { alertActions } from './';
-import {history} from "../_helpers";
 
 
 export const schoolAction = {

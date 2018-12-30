@@ -11,9 +11,9 @@ import {history, store} from './_helpers';
 
 ReactDOM.render(
     <Provider store={store}>
-        <BrowserRouter history={history}>
+        <Router history={history}>
             <App />
-        </BrowserRouter>
+        </Router>
     </Provider >
     , document.getElementById('root'));
 

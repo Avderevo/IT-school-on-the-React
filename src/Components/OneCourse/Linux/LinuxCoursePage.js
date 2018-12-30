@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
-import OneCoursePageHeader from './OneCoursePageHeader';
+import {OneCoursePageHeader} from './OneCoursePageHeader';
 import OneCourseNavMenu from './OneCourseNavMenu';
 import OneCourseDescription from './OneCourseDescription';
 import OneCourseAdditions from './OneCourseAdditions';
 import OneCourseTeachers from './OneCourseTeachers';
 import OneCoursePrice from './OneCoursePrice';
-import {schoolAction} from "../../../_actions";
-import connect from "react-redux/es/connect/connect";
-
 
 
 class LinuxCoursePage extends Component {

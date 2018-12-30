@@ -39,7 +39,7 @@ export function userCourses(state = [], action) {
 }
 
 
-export function oneCourse(state = {}, action) {
+export function oneCourse(state = [], action) {
     switch (action.type) {
         case studyConstants.GETONECOURSE_REQUEST:
             return {
@@ -58,3 +58,42 @@ export function oneCourse(state = {}, action) {
     }
 }
 
+export function allStudents(state = [], action) {
+    switch (action.type) {
+        case studyConstants.GETALLSTUDENTS_REQUEST:
+            return {
+                loading: true
+            };
+        case studyConstants.GETALLSTUDENTS_SUCCESS:
+            return {
+                items: action.allStudents
+            };
+        case studyConstants.GETALLSTUDENTS_FAILURE:
+            return {
+                error: action.error
+            };
+        default:
+            return state
+    }
+}
+
+
+
+export function studentStatistics(state = [], action) {
+    switch (action.type) {
+        case studyConstants.GET_STUDENTS_STATISTICS_REQUEST:
+            return {
+                loading: true
+            };
+        case studyConstants.GET_STUDENTS_STATISTICS_SUCCESS:
+            return {
+                items: action.studentStatistics
+            };
+        case studyConstants.GET_STUDENTS_STATISTICS_FAILURE:
+            return {
+                error: action.error
+            };
+        default:
+            return state
+    }
+}

@@ -4,9 +4,11 @@ import FormErrors  from '../FormComponents/FormErrors';
 import SubmitButton from '../FormComponents/SubmitButton';
 import FormTitle from '../FormComponents/FormTitle';
 import FormRadio from '../FormComponents/FormRadio';
-import login from "../../_actions"
 import { userActions } from '../../_actions';
 import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom'
+
+
 
 class LoginForm extends Component{
     constructor(props){
@@ -77,20 +79,6 @@ class LoginForm extends Component{
 
         this.setState({ submitted: true });
         const { username, password } = this.state;
-        const { dispatch } = this.props;
-        if (username && password) {
-            dispatch(userActions.login(username, password));
-        }
-    }
-
-    /*handleFormSubmit(e) {
-        e.preventDefault();
-        let userData = {
-            username: this.state.username,
-            password: this.state.password
-        };
-
-
         this.setState({
             username:"",
             password:"",
@@ -102,24 +90,19 @@ class LoginForm extends Component{
             formValid: false
 
         });
+        const { dispatch } = this.props;
+        if (username && password) {
+            dispatch(userActions.login(username, password));
 
-        fetch('http://localhost:8000/token-auth/',{
-            method: "POST",
-            body: JSON.stringify(userData),
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            },
-        }).then(response => {
-            response.json().then(data =>{
-                console.log("Successful" + data);
-            })
-        })
-    }*/
+
+
+        }
+    }
+
 
     render(){
-        const { loggingIn } = this.props;
-        const { username, password, submitted } = this.state;
+
+
 
         return(
             <section id="authcard-form">
@@ -178,5 +161,5 @@ function mapStateToProps(state) {
     };
 }
 
-const connectedLoginForm = connect(mapStateToProps)(LoginForm);
+const connectedLoginForm = withRouter(connect(mapStateToProps)(LoginForm));
 export { connectedLoginForm as LoginForm };

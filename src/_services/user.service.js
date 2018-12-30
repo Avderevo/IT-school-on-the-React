@@ -1,9 +1,11 @@
 import {authHeader, history} from '../_helpers';
 
+
 export const userService = {
     login,
     logout,
-    getAll
+    getAll,
+    getDetailUser
 };
 
 function login(username, password) {
@@ -20,6 +22,7 @@ function login(username, password) {
             if (user.token) {
                 // store user details and jwt token in local storage to keep user logged in between page refreshes
                 localStorage.setItem('user', JSON.stringify(user));
+                history.push('/');
             }
 
             return user;
@@ -42,6 +45,18 @@ function getAll() {
 
     return fetch('http://localhost:8000/users/create_user/', requestOptions).then(handleResponse);
 }
+
+
+function getDetailUser(id) {
+    const requestOptions = {
+        method: 'GET',
+        headers: authHeader()
+    };
+
+    return fetch('http://localhost:8000/users/'+id+'/', requestOptions).then(handleResponse);
+}
+
+
 
 function handleResponse(response) {
     return response.text().then(text => {
