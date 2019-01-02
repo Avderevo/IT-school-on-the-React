@@ -1,14 +1,15 @@
 import React  from 'react';
 import { Link } from 'react-router-dom'
 import {connect} from 'react-redux';
-import {studyAction} from '../../_actions';
+import {studyAction} from '../../../_actions/index';
 
 
-class StudentListPage extends React.Component {
+class CourseStudentListPage extends React.Component {
 
     componentDidMount() {
-        this.props.dispatch(studyAction.getAllStudents(1));
-        this.props.dispatch(studyAction.getOneCourse('Python'));
+        const courseId = this.props.location.state.courseId;
+        this.props.dispatch(studyAction.getAllStudents(courseId));
+        this.props.dispatch(studyAction.getOneCourse(courseId));
     }
 
     render(){
@@ -70,5 +71,5 @@ function mapStateToProps(props) {
     };
 }
 
-const connectedStudentListPage = connect(mapStateToProps)(StudentListPage);
-export { connectedStudentListPage as  StudentListPage };
+const connectedCourseStudentListPage = connect(mapStateToProps)(CourseStudentListPage);
+export { connectedCourseStudentListPage as  CourseStudentListPage };

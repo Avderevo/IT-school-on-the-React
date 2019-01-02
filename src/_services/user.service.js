@@ -47,14 +47,15 @@ function getAll() {
 }
 
 
-function getDetailUser(id) {
+function getDetailUser(userId) {
     const requestOptions = {
         method: 'GET',
         headers: authHeader()
     };
 
-    return fetch('http://localhost:8000/users/'+id+'/', requestOptions).then(handleResponse);
+    return fetch(`http://localhost:8000/users/${userId}/`, requestOptions).then(handleResponse);
 }
+
 
 
 

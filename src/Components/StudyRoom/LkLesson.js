@@ -7,8 +7,8 @@ import {withRouter} from 'react-router';
 class LkLesson extends Component{
 
     componentDidMount() {
-        const id = this.props.location.state.id;
-        this.props.dispatch(studyAction.getStudyRoom(id));
+        const courseId = this.props.location.state.courseId;
+        this.props.dispatch(studyAction.getStudyRoom(courseId));
 
     }
 

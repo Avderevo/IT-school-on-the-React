@@ -8,7 +8,9 @@ export const studyService = {
     getUserCourseList,
     getOneCourse,
     getAllStudents,
-    getStudentStatistics
+    getStudentStatistics,
+    getTeacherCourses,
+    changeHomeworkStatus
 };
 
 
@@ -19,18 +21,18 @@ function getAllLesson(id) {
         headers: authHeader()
     };
 
-    return fetch('http://localhost:8000/study/studyroom/'+id+'/', requestOptions).then(handleResponse);
+    return fetch(`http://localhost:8000/study/studyroom/${id}/`, requestOptions).then(handleResponse);
 }
 
 
-function courseTestSend(testResult, name) {
+function courseTestSend(testResult, courseId) {
     const requestOptions = {
         method: 'POST',
         headers: {...authHeader(), 'Content-Type': 'application/json'},
         body: JSON.stringify({testResult})
     };
 
-    return fetch('http://localhost:8000/study/course_test/'+name+'/', requestOptions)
+    return fetch(`http://localhost:8000/study/course_test/${courseId}/`, requestOptions)
         .then(function (response) {
             if (response.ok) {
                 history.push('/')
@@ -50,13 +52,13 @@ function getUserCourseList() {
 }
 
 
-function getOneCourse(name) {
+function getOneCourse(courseId) {
     const requestOptions = {
         method: 'GET',
         headers: authHeader()
     };
 
-    return fetch('http://localhost:8000/study/one_course/'+name+'/', requestOptions)
+    return fetch(`http://localhost:8000/study/one_course/${courseId}/`, requestOptions)
         .then(handleResponse);
 
 
@@ -64,15 +66,14 @@ function getOneCourse(name) {
 }
 
 
-function getAllStudents(id) {
+function getAllStudents(courseId) {
     const requestOptions = {
         method: 'GET',
         headers: authHeader()
     };
 
-    return fetch('http://localhost:8000/study/all_students/'+id+'/', requestOptions)
+    return fetch(`http://localhost:8000/users/all_students/${courseId}/`, requestOptions)
         .then(handleResponse);
-
 
 
 }
@@ -84,6 +85,31 @@ function getStudentStatistics(userId, courseId) {
     };
 
     return fetch('http://localhost:8000/study/students_statistics/'+userId+'/'+courseId+'/', requestOptions)
+        .then(handleResponse);
+
+
+}
+
+
+function getTeacherCourses() {
+    const requestOptions = {
+        method: 'GET',
+        headers: authHeader()
+    };
+
+    return fetch(`http://localhost:8000/study/teacher-courses/`, requestOptions).then(handleResponse);
+}
+
+
+
+function changeHomeworkStatus(data, statId) {
+    const requestOptions = {
+        method: "POST",
+        body: JSON.stringify(data),
+        headers: {...authHeader(), 'Content-Type': 'application/json'}
+    };
+
+    return fetch(`http://localhost:8000/study/change_homework_status/${statId}/`, requestOptions)
         .then(handleResponse);
 
 

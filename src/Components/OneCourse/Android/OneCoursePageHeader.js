@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import connect from "react-redux/es/connect/connect";
 import {studyAction} from "../../../_actions";
 import { Link} from 'react-router-dom';
+import {withRouter} from 'react-router';
 
 
 
@@ -9,7 +10,8 @@ import { Link} from 'react-router-dom';
 class OneCoursePageHeader extends Component{
 
     componentDidMount() {
-        this.props.dispatch(studyAction.getOneCourse('Android'));
+        const courseId = this.props.location.state.courseId;
+        this.props.dispatch(studyAction.getOneCourse(courseId));
     }
 
 
@@ -33,7 +35,7 @@ class OneCoursePageHeader extends Component{
                                     <p className="mb-5">Курс об администрировании систем на базе Linux, который направлен на
                                         получение знаний и формирование навыков построения и обслуживания высоконадежных
                                         высокодоступных систем</p>
-                                    <span className="orange-btn"><Link className="btn btn-one-course-header-orange" to={"/test/"+oneCourse.items.name_1}>Поступить на курс</Link></span>
+                                    <span className="orange-btn"><Link className="btn btn-one-course-header-orange" to={{pathname:`/test/${oneCourse.items.name_1}`, state:{courseId:oneCourse.items.id}}}>Поступить на курс</Link></span>
                                     <span id="positiv-btn"><a className="btn btn-one-course-header" href="#">Обучение сотрудников</a></span>
                                 </div>
                                 <div className="col-md-4 align-right">
@@ -61,12 +63,6 @@ class OneCoursePageHeader extends Component{
     }
 }
 
-/*
-
-export  default OneCoursePageHeader;
-*/
-
-
 
 function mapStateToProps(props) {
     const {oneCourse} = props;
@@ -76,7 +72,7 @@ function mapStateToProps(props) {
     };
 }
 
-const connectedOneCoursePageHeader = connect(mapStateToProps)(OneCoursePageHeader);
+const connectedOneCoursePageHeader = withRouter(connect(mapStateToProps)(OneCoursePageHeader));
 export {connectedOneCoursePageHeader as OneCoursePageHeader};
 
 

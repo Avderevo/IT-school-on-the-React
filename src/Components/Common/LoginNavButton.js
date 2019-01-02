@@ -11,7 +11,8 @@ class LoginNavButton extends React.Component {
     };
 
     render() {
-        if (this.props.loggedIn) {
+
+        if (this.props.authentication.loggedIn) {
             return (
 
                 <div className="icon-nav">
@@ -22,13 +23,21 @@ class LoginNavButton extends React.Component {
                             className="material-icons md-36">person_pin</i>
                         </a>
                         <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <Link className="dropdown-item" to="#">Мои курсы</Link>
-                            <Link className="dropdown-item" to="/study/">Личный кабинет</Link>
+
+
+                            {this.props.authentication.user.user.profile.status === 2 &&
+
+                            <Link className="dropdown-item" to="/teachers-room/courses/">Учительская</Link>}
+                            {this.props.authentication.user.user.profile.status === 1 &&
+
+                            <Link className="dropdown-item" to="/study/">Личный кабинет</Link>}
+
                             <div className="dropdown-divider"> </div>
                             <Link className="dropdown-item" to="/logout/" onClick={this.logOut}>Выход</Link>
                         </div>
                     </div>
                 </div>
+
             );
         } else {
             return (
@@ -41,9 +50,9 @@ class LoginNavButton extends React.Component {
 
 
 function mapStateToProps(state) {
-    const { loggedIn } = state.authentication;
+    const authentication = state.authentication;
     return {
-        loggedIn
+        authentication
     };
 }
 

@@ -4,6 +4,9 @@ import FormErrors  from '../FormComponents/FormErrors';
 import SubmitButton from '../FormComponents/SubmitButton';
 import FormTitle from '../FormComponents/FormTitle';
 import FormRadio from '../FormComponents/FormRadio';
+import FormSelector from '../FormComponents/FormSelector';
+import {withRouter} from 'react-router';
+import { history } from '../../_helpers';
 
 
 class LoginForm extends Component{
@@ -13,7 +16,9 @@ class LoginForm extends Component{
             name:"",
             email:"",
             password:"",
+            status: '1',
             password2:"",
+
             remember: '',
             formErrors: {email: '', password: '', remember: '', password2: ''},
             emailValid: false,
@@ -30,6 +35,15 @@ class LoginForm extends Component{
         this.setState({[name]: value},
             () => { this.validateField(name, value) }
         )
+    };
+
+    handleSelectorChange = (e) =>{
+        let value = e.target.value;
+        let name = e.target.name;
+        this.setState({[name]: value}
+        )
+
+
     };
 
 
@@ -83,7 +97,8 @@ class LoginForm extends Component{
         let userData = {
             username: this.state.name,
             email: this.state.email,
-            password: this.state.password
+            password: this.state.password,
+            status: this.state.status
         };
 
         this.setState({
@@ -108,9 +123,10 @@ class LoginForm extends Component{
                 'Content-Type': 'application/json'
             },
         }).then(response => {
-            response.json().then(data =>{
-                console.log("Successful" + data);
-            })
+            if(response.ok){
+                history.push('/login/')
+            }
+
         })
     }
 
@@ -120,6 +136,11 @@ class LoginForm extends Component{
             <section id="authcard-form">
                 <form className="auth-form-signin js-user-login-form mb-3">
                     <FormTitle title={"Регистрация"}/>
+                    <FormSelector
+                        handleChange={this.handleSelectorChange}
+                        value={this.state.status}
+                        name={'status'}
+                    />
                     <div className="mb-4">
                         <FormInput
                             type={'text'}
@@ -175,6 +196,7 @@ class LoginForm extends Component{
                         value ={'remember_my'}
                         name={'remember'}
                     />
+
                     <FormErrors
                         formErrors={this.state.formErrors.remember} />
                     <SubmitButton
@@ -190,4 +212,4 @@ class LoginForm extends Component{
 
 }
 
-export default LoginForm;
+export default withRouter(LoginForm);

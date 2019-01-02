@@ -1,23 +1,21 @@
 import React  from 'react';
 import {connect} from 'react-redux';
-import {studyAction} from '../../../_actions';
 import {withRouter} from 'react-router';
 import {TeacherRoomChatMessage} from './TeacherRoomChatMessage';
 import {TeacherRoomChatForm} from './TeacherRoomChatForm';
-
+import {history} from "../../../_helpers";
+import {studyService} from '../../../_services'
 
 
 class TeacherRoomOneUserLesson extends React.Component {
     constructor() {
         super();
-
         this.state = {
             clickOpenLesson: false,
+            status:'1'
 
         }
     }
-
-
 
     handleClick =()=>{
         this.setState({
@@ -26,14 +24,25 @@ class TeacherRoomOneUserLesson extends React.Component {
 
     };
 
+    handleSelectorChange = (e) =>{
+        let value = e.target.value;
+        let name = e.target.name;
+        this.setState({[name]: value}
+        )
 
 
-   /* componentDidMount() {
-        const {userId, courseId} = this.props.location.state;
+    };
 
-        this.props.dispatch(studyAction.getStudentStatistics(userId, courseId));
-}*/
+    handleFormSubmit = (e) => {
+        e.preventDefault();
+        let data =
+            {
+                status: this.state.status
+            };
 
+        const statId = this.props.id;
+        studyService.changeHomeworkStatus(data, statId);
+    };
 
 
     render(){
@@ -60,27 +69,27 @@ class TeacherRoomOneUserLesson extends React.Component {
 
                                         <div className=" teacher-chat-dz">
                                             <span className="h5">ДЗ: </span><span className="lead"> {studentLesson.lesson.homework_title}</span>
+                                            <p>Статус: {studentLesson.homework_status}</p>
                                         </div>
                                         <div className='mb-3'>
                                             <form className="form-inline">
                                                 <label className="my-1 mr-2"
                                                        htmlFor="inlineFormCustomSelectPref">Статус</label>
                                                 <select className="custom-select my-1 mr-sm-2"
-                                                        id="inlineFormCustomSelectPref">
-                                                    <option value="1">One</option>
-                                                    <option value="2">Two</option>
-                                                    <option value="3">Three</option>
+                                                        onChange={this.handleSelectorChange}
+                                                        value={this.state.status}
+                                                        name={'status'}
+                                                >
+                                                    <option value="1">Не активно</option>
+                                                    <option value='2'>Активно</option>
+                                                    <option value="3">На проверке</option>
+                                                    <option value="4">Принято</option>
                                                 </select>
 
-                                                <button type="submit" className="btn btn-primary">Submit</button>
+                                                <button onClick={this.handleFormSubmit} className="btn btn-primary">Submit</button>
                                             </form>
                                         </div>
-
-
                                     </div>
-
-
-
                                 </div>
                             </div>
                             <div className= {this.state.clickOpenLesson ? 'col-7 no_padding-col' : 'invisible' }>
@@ -92,10 +101,7 @@ class TeacherRoomOneUserLesson extends React.Component {
                                                     <div className='homework__modal-chat'>
                                                         <div className='homework-chat'>
 
-
-
                                                            <TeacherRoomChatMessage statisticId={statisticId}/>
-
 
                                                             <TeacherRoomChatForm statisticId={statisticId} />
                                                         </div>

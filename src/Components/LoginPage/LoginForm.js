@@ -10,6 +10,7 @@ import { withRouter } from 'react-router-dom'
 
 
 
+
 class LoginForm extends Component{
     constructor(props){
         super(props);
@@ -43,6 +44,8 @@ class LoginForm extends Component{
             remember: e.target.value
         });
     };
+
+
 
     validateField(fieldName, value) {
         let fieldValidationErrors = this.state.formErrors;
@@ -139,6 +142,7 @@ class LoginForm extends Component{
                             checked={this.state.remember === 'remember_my'}
                             value ={'remember_my'}
                     />
+
                     <SubmitButton
                         action = {this.handleFormSubmit}
                         type = {'submit'}

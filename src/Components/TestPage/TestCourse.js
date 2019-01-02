@@ -3,7 +3,7 @@ import {studyService} from "../../_services";
 import {withRouter} from 'react-router-dom';
 
 
-class TestPhp extends Component{
+class TestCourse extends Component{
     constructor(props){
         super(props);
         this.state = {
@@ -21,8 +21,9 @@ class TestPhp extends Component{
 
     handleFormSubmit=(e)=>{
         e.preventDefault();
+        const courseId = this.props.location.state.courseId;
 
-        studyService.courseTestSend(this.state, 'PHP');
+        studyService.courseTestSend(this.state, courseId);
 
     };
 
@@ -71,4 +72,4 @@ class TestPhp extends Component{
 
 }
 
-export  default withRouter(TestPhp);
+export  default withRouter(TestCourse);

@@ -5,8 +5,6 @@ import LkHeader from '../StudyRoom/LkHeader';
 import { Link } from 'react-router-dom';
 
 
-
-
 class UserCourseList extends Component{
 
     componentDidMount() {
@@ -26,7 +24,7 @@ class UserCourseList extends Component{
                         {userCourses.items  && userCourses.items.map((course, index) =>
                             <div className='col-md-4'>
                                 <div className='userCourse-card'>
-                                    <Link to={{pathname:'/studyroom/'+course.course.id,  state: {id:course.course.id}}}>
+                                    <Link to={{pathname:`/studyroom/${course.course.id}`,  state: {courseId:course.course.id}}}>
 
                                         <div className='userCourse-card-body'>
                                             <div className='userCourse-card-title'>
@@ -35,7 +33,10 @@ class UserCourseList extends Component{
                                                 {course.course.name_2}
                                             </div>
                                             <div className='userCourse-card-description mt-3'>
-                                                {course.is_paid ? 'Тест пройден, курс оплачен.' : 'Тест пройден, курс не оплачен.'}
+                                                Тест пройден
+                                            </div>
+                                            <div className='userCourse-card-description'>
+                                                {course.is_paid ? 'Курс оплачен' : 'Курс не оплачен'}
                                             </div>
                                         </div>
                                     </Link>

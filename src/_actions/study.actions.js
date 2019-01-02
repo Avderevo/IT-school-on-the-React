@@ -9,7 +9,8 @@ export const studyAction = {
     getUserCourseList,
     getOneCourse,
     getAllStudents,
-    getStudentStatistics
+    getStudentStatistics,
+    getTeacherCourses
 
 };
 
@@ -54,11 +55,11 @@ function getUserCourseList() {
 }
 
 
-function getOneCourse(name) {
+function getOneCourse(courseId) {
     return dispatch => {
         dispatch(request());
 
-        studyService.getOneCourse(name)
+        studyService.getOneCourse(courseId)
             .then(
                 oneCourse => dispatch(success(oneCourse)),
                 error => {
@@ -74,11 +75,11 @@ function getOneCourse(name) {
 }
 
 
-function getAllStudents(id) {
+function getAllStudents(courseId) {
     return dispatch => {
         dispatch(request());
 
-        studyService.getAllStudents(id)
+        studyService.getAllStudents(courseId)
             .then(
                 allStudents => dispatch(success(allStudents)),
                 error => {
@@ -112,4 +113,23 @@ function getStudentStatistics(userId, courseId) {
     function request() { return { type: studyConstants.GET_STUDENTS_STATISTICS_REQUEST }}
     function success(studentStatistics) { return { type: studyConstants.GET_STUDENTS_STATISTICS_SUCCESS, studentStatistics }}
     function failure(error) { return { type: studyConstants.GET_STUDENTS_STATISTICS_FAILURE, error }}
+}
+
+function getTeacherCourses() {
+    return dispatch => {
+        dispatch(request());
+
+        studyService.getTeacherCourses()
+            .then(
+                teacherCourses => dispatch(success(teacherCourses)),
+                error => {
+                    dispatch(failure(error));
+                    dispatch(alertActions.error(error))
+                }
+            );
+    };
+
+    function request() { return { type: studyConstants.GET_TEACHER_COURSES_REQUEST }}
+    function success(teacherCourses) { return { type: studyConstants.GET_TEACHER_COURSES_SUCCESS, teacherCourses }}
+    function failure(error) { return { type: studyConstants.GET_TEACHER_COURSES_FAILURE, error }}
 }

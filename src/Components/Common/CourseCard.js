@@ -10,7 +10,7 @@ const CourseCard = (props) => {
             <div>
                 <div className={"card curses-card shadow curses-card-hover "+ props.bg} >
                     <Link
-                        to={'/course/'+props.name_2+'/'}>
+                        to={{pathname:`/course/${props.name_2}`, state:{courseId:props.id}}}>
                         <div className="card-body">
                             <h3>{props.name_1}<br />{props.name_2}</h3>
 

@@ -97,3 +97,24 @@ export function studentStatistics(state = [], action) {
             return state
     }
 }
+
+
+
+export function teacherCourses(state = [], action) {
+    switch (action.type) {
+        case studyConstants.GET_TEACHER_COURSES_REQUEST:
+            return {
+                loading: true
+            };
+        case studyConstants.GET_TEACHER_COURSES_SUCCESS:
+            return {
+                items: action.teacherCourses
+            };
+        case studyConstants.GET_TEACHER_COURSES_FAILURE:
+            return {
+                error: action.error
+            };
+        default:
+            return state
+    }
+}

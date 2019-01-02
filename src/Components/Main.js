@@ -4,13 +4,9 @@ import RegisterPage from './RegisterPage/RegisterPage';
 import StudyRoomPage from './StudyRoom/StudyRoomPage';
 import {UserCourseList} from './UserCourseList/UserCourseList';
 import Home from './HomePage/Home';
-import TestLinux from './TestPage/TestLinux';
-import TestPython from './TestPage/TestPython';
-import TestPhp from './TestPage/TestPhp';
-import TestJs from './TestPage/TestJs';
-import TestJava from './TestPage/TestJava';
-import TestAndroid from './TestPage/TestAndroid';
-import React, {Component} from 'react';
+import TestCourse from './TestPage/TestCourse';
+import {TeacherCourseListPage} from './TeacherRoom/TeacherCoursesList/TaecherCoursesPage';
+import React from 'react';
 import { PrivateRoute } from '../_components';
 
 import AllCoursePage from './AllCourses/AllCoursePage';
@@ -21,7 +17,7 @@ import JsCoursePage from './OneCourse/Js/JsCoursePage';
 import AndroidCoursePage from './OneCourse/Android/AndroidCoursePage';
 import PhpCoursePage from './OneCourse/Php/PhpCoursePage';
 
-import {StudentListPage} from './TeacherRoom/StudentListPage';
+import {CourseStudentListPage} from './TeacherRoom/CourseStudentList/StudentListPage';
 import TeacherRoomOneUserPage from './TeacherRoom/TeacherRoomOneUser/TeacherRoomOneUserPage';
 
 
@@ -32,16 +28,13 @@ const Main = () => (
                 <Switch>
                     <PrivateRoute path="/studyroom/:id" component={StudyRoomPage}/>
                     <PrivateRoute path='/study/' component={UserCourseList}/>
-                    <PrivateRoute path='/test/Linux/' component={TestLinux}/>
-                    <PrivateRoute path='/test/Python/' component={TestPython}/>
-                    <PrivateRoute path='/test/Java/' component={TestJava}/>
-                    <PrivateRoute path='/test/Js/' component={TestJs}/>
-                    <PrivateRoute path='/test/Android/' component={TestAndroid}/>
-                    <PrivateRoute path='/test/Php/' component={TestPhp}/>
+                    <PrivateRoute path='/test/:course/' component={TestCourse}/>
 
+
+                    <PrivateRoute path='/teachers-room/courses/' component={TeacherCourseListPage}/>
                     <PrivateRoute path='/teachers-room/user/:id' component={TeacherRoomOneUserPage}/>
+                    <PrivateRoute path='/teachers-room/course/:id' component={CourseStudentListPage}/>
 
-                    <PrivateRoute path='/teachers-room/course/:id' component={StudentListPage}/>
 
 
                     <Route path='/course/Linux/' component={LinuxCoursePage} />
@@ -56,7 +49,6 @@ const Main = () => (
                     <Route path='/all_courses/' component={AllCoursePage}/>
                     <Route path='/login/' component={LoginPage}/>
                     <Route path='/' component={Home} />
-
 
 
                 </Switch>
