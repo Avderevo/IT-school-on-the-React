@@ -1191,7 +1191,7 @@ ____________________________________
 
 /* стили для блока, в котором будет отображаться название статьи */
 .timeline-item-header {
-    display: block;
+    display: inline;
     font-weight: bold;
     font-size: 1.4rem;
     color: #f3f1f1;
@@ -2257,6 +2257,11 @@ ____________________________________
 
 }
 
+.t-1-lesson-body  span:hover{
+    color: #378af7;
+
+}
+
 .teacher-chat-dz{
     margin-bottom: 3rem;
     margin-top: 3rem;
@@ -2264,4 +2269,42 @@ ____________________________________
 
 .t-1-lesson-body{
 
+}
+
+.lesson-name{
+    vertical-align: middle;
+    display: inline;
+
+}
+
+/*============numero-circle===================
+==============================================*/
+
+.numberCircle-positiv {
+    height: 40px;
+    width: 40px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+    background: ghostwhite;
+    border: 2px solid #454545;
+    margin-right: 1rem;
+}
+
+.numberCircle-negative {
+    height: 40px;
+    width: 40px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+    background: 0;
+    border: 2px solid #fff;
+    margin-right: 1rem;
+}
+
+.oneLesson-name{
+    vertical-align: middle;
+    display: inline;
 }

@@ -118,3 +118,25 @@ export function teacherCourses(state = [], action) {
             return state
     }
 }
+
+
+export function oneCourseStatistic(state = {}, action) {
+    switch (action.type) {
+        case studyConstants.GET_ONE_COURSE_STATISTIC_REQUEST:
+            return {
+                loading: true
+            };
+        case studyConstants.GET_ONE_COURSE_STATISTIC_SUCCESS:
+            return {
+                items: action.oneCourseStatistic
+            };
+        case studyConstants.GET_ONE_COURSE_STATISTIC_FAILURE:
+            return {
+                error: action.error
+            };
+        default:
+            return state
+    }
+}
+
+

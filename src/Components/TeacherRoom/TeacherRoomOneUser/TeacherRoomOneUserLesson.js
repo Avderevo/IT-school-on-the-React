@@ -3,7 +3,6 @@ import {connect} from 'react-redux';
 import {withRouter} from 'react-router';
 import {TeacherRoomChatMessage} from './TeacherRoomChatMessage';
 import {TeacherRoomChatForm} from './TeacherRoomChatForm';
-import {history} from "../../../_helpers";
 import {studyService} from '../../../_services'
 
 
@@ -57,10 +56,12 @@ class TeacherRoomOneUserLesson extends React.Component {
                             <div className="col-md-5 mt-3">
                                 <div className="t-1-lesson-body ">
                                     <div className="mb-3">
-                                        <div className='mb-2'>
-                                            <a onClick={this.handleClick}  className="h4">{studentLesson.lesson.lesson_number} {studentLesson.lesson.lesson_title}</a>
+                                        <div className='lesson-name'>
+                                            <span className="numberCircle-positiv h5">{studentLesson.lesson.lesson_number}</span>
+                                            <span onClick={this.handleClick}  className="h4 ml-2">
+                                                 {studentLesson.lesson.lesson_title}</span>
                                         </div>
-                                        <p>Time: {studentLesson.lesson.id}</p>
+                                        <p className='mt-3'>Time: {studentLesson.lesson.id}</p>
 
                                     </div>
 
@@ -69,7 +70,15 @@ class TeacherRoomOneUserLesson extends React.Component {
 
                                         <div className=" teacher-chat-dz">
                                             <span className="h5">ДЗ: </span><span className="lead"> {studentLesson.lesson.homework_title}</span>
-                                            <p>Статус: {studentLesson.homework_status}</p>
+                                            <p>Статус: &nbsp; {(() => {
+                                                switch (studentLesson.homework_status) {
+                                                    case 1:   return <span className='text-dark h6'>Не активно</span>;
+                                                    case 2: return <span className='text-danger h6'>Активно</span>;
+                                                    case 3:  return <span className='text-success h6'>На проверке</span>;
+                                                    case 4:  return <span className='text-primary h6'>Принято</span>;
+                                                    default:      return "Не активно";
+                                                }
+                                            })()}</p>
                                         </div>
                                         <div className='mb-3'>
                                             <form className="form-inline">

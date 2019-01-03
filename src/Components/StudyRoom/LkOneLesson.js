@@ -39,15 +39,19 @@ class LkOneLesson extends Component{
 
         return(
 
-            <div className="col-12 timeline-wrapper">
+            <div className="col-12 timeline-wrapper"  >
                 <div className="timeline-item">
                     <div className='container'>
                         <div className='row'>
                             <div className='col-5 no_padding-col'>
 
-                                <span className="timeline-item-date">{props.course.id}</span>
-                                <a onClick={this.handleClick}  className="timeline-item-header active">{props.lesson.lesson_number} {props.lesson.lesson_title}</a>
-                                <span className="timeline-item-description"></span>
+
+                                <div className='oneLesson-name '>
+                                    <span className='numberCircle-negative h5'>{props.lesson.lesson_number}</span>
+                                    <span onClick={this.handleClick}  className="timeline-item-header active ml-2">{props.lesson.lesson_title}</span>
+                                </div>
+
+                                <span className="timeline-item-date mt-2">Дата: {props.course.id}</span>
                                 <div className={this.state.clickOpenLesson ? null : 'd-none'}>
 
                                     <div className="lesson-body">
@@ -56,10 +60,18 @@ class LkOneLesson extends Component{
                                             <div className="lesson-body-text">Пройдите пожалуйста опрос о занятии</div>
                                         </div>
                                         <div className="lesson-body-block">
-                                            <div className="lesson-body-title">Домашнее задание:</div>
-                                            <div className="lesson-body-text">{props.lesson.homework_title}
-                                            </div>
-                                            <div className="lesson-body-text">Статус: {props.homework_status}</div>
+                                            <span className="lesson-body-title mr-1">ДЗ:</span>
+                                            <span className="lesson-body-text">{props.lesson.homework_title}
+                                            </span>
+                                            <div className="lesson-body-text">Статус: &nbsp; {(() => {
+                                                switch (props.homework_status) {
+                                                    case 1:   return <span className='text-white h5'>Не активно</span>;
+                                                    case 2: return <span className='text-danger h5'>Активно</span>;
+                                                    case 3:  return <span className='text-success h5'>На проверке</span>;
+                                                    case 4:  return <span className='text-primary h5'>Принято</span>;
+                                                    default:      return "Не активно";
+                                                }
+                                            })()}</div>
                                         </div>
                                         <div>
                                             {/*<Link onClick={this.handleOpenClick} to={pathname +`/chat/`+props.lesson.id} type="button" className="btn lesson-body-btn">Чат с преподователем</Link>
@@ -79,7 +91,7 @@ class LkOneLesson extends Component{
 
 
 
-                                                                <ChatMessage statisticId={statisticId}/>
+                                                                <ChatMessage  statisticId={statisticId}/>
 
 
                                                             <StudyChatForm statisticId={statisticId} />

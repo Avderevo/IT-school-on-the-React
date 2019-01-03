@@ -23,7 +23,7 @@ class TeacherRoomOneUserLessons extends React.Component {
                 <div className="container">
                     <div className="row">
 
-                        {studentStatistics.loading && <em>Loading coursess...</em>}
+                        {studentStatistics.loading && <em>Loading...</em>}
                         {studentStatistics.error &&  <span className="text-danger">ERROR: {studentStatistics.error}</span>}
                         {studentStatistics.items && studentStatistics.items.map((studentLesson, index) =>
                             <TeacherRoomOneUserLesson {...studentLesson} />

@@ -30,7 +30,7 @@ class Teachers extends Component{
                             {teachers.loading && <em>Loading coursess...</em>}
                             {teachers.error &&  <span className="text-danger">ERROR: {teachers.error}</span>}
                             {teachers.items && teachers.items.Teachers.map((item, index) =>
-                                <Teacher {...item} />
+                                <Teacher key={item.id} {...item} />
                             )}
 
                         </div>

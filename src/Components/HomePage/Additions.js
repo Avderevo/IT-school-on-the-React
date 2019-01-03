@@ -21,7 +21,7 @@ class Additions extends Component{
                         {additionsData.loading && <em>Loading data...</em>}
                         {additionsData.error &&  <span className="text-danger">ERROR: {additionsData.error}</span>}
                         {additionsData.items && additionsData.items.additions.map((item, index) =>
-                            <AdditionCard {...item} />
+                            <AdditionCard key={item.title} {...item} />
                         )}
 
                     </div>

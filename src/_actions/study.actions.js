@@ -10,7 +10,8 @@ export const studyAction = {
     getOneCourse,
     getAllStudents,
     getStudentStatistics,
-    getTeacherCourses
+    getTeacherCourses,
+    getOneCourseStatistic
 
 };
 
@@ -132,4 +133,23 @@ function getTeacherCourses() {
     function request() { return { type: studyConstants.GET_TEACHER_COURSES_REQUEST }}
     function success(teacherCourses) { return { type: studyConstants.GET_TEACHER_COURSES_SUCCESS, teacherCourses }}
     function failure(error) { return { type: studyConstants.GET_TEACHER_COURSES_FAILURE, error }}
+}
+
+function getOneCourseStatistic(courseId) {
+    return dispatch => {
+        dispatch(request());
+
+        studyService.getOneCourseStatistic(courseId)
+            .then(
+                oneCourseStatistic => dispatch(success(oneCourseStatistic)),
+                error => {
+                    dispatch(failure(error));
+                    dispatch(alertActions.error(error))
+                }
+            );
+    };
+
+    function request() { return { type: studyConstants.GET_ONE_COURSE_STATISTIC_REQUEST }}
+    function success(oneCourseStatistic) { return { type: studyConstants.GET_ONE_COURSE_STATISTIC_SUCCESS, oneCourseStatistic }}
+    function failure(error) { return { type: studyConstants.GET_ONE_COURSE_STATISTIC_FAILURE, error }}
 }

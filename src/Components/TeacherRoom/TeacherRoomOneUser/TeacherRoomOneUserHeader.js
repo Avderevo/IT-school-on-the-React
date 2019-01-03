@@ -20,7 +20,7 @@ class TeacherRoomOneUserHeader extends React.Component {
             <section id="t-1-student-header">
                 <div className="container">
                     <div className="t-1-student-header-body">
-                        {detailUser.loading && <em>Loading coursess...</em>}
+                        {detailUser.loading && <em>Loading...</em>}
                         {detailUser.error &&  <span className="text-danger">ERROR: {detailUser.error}</span>}
                         {detailUser.items &&
                         <div className="display-4">

@@ -25,7 +25,7 @@ class LkLesson extends Component{
                             {lessons.error &&  <span className="text-danger">ERROR: {lessons.error}</span>}
                             {lessons.items  && lessons.items.map((item, index) =>
 
-                                <LkOneLesson {...item} />
+                                <LkOneLesson  key={item.id} {...item} />
 
                                 )}
                         </div>

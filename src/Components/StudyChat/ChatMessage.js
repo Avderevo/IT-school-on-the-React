@@ -47,7 +47,7 @@ class ChatMessage extends Component{
                 {this.state.error &&  <span className="text-danger">ERROR: {this.state.error}</span>}
                 {this.state.message  && this.state.message.map((item, index) =>
 
-                    <div className="chat-message-block">
+                    <div className="chat-message-block" key={item.id}>
                         <div className="chat-message-content">
                             <div className="mb-3">
                                 <span className='message-author-avatar'>;)</span>

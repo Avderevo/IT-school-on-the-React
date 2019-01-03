@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import LkHeader from './LkHeader';
 import LkNavbar from './LkNavbar';
-import LkStatistics from './LkStatistics';
+import {LkStatistics} from './LkStatistics';
 import LkMonthNav from './LkMonthNavs';
 import {LkLesson} from './LkLesson';
 import {studyAction} from "../../_actions";

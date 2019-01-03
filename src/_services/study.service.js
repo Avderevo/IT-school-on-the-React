@@ -10,7 +10,8 @@ export const studyService = {
     getAllStudents,
     getStudentStatistics,
     getTeacherCourses,
-    changeHomeworkStatus
+    changeHomeworkStatus,
+    getOneCourseStatistic
 };
 
 
@@ -101,6 +102,16 @@ function getTeacherCourses() {
 }
 
 
+function getOneCourseStatistic(courseId) {
+    const requestOptions = {
+        method: 'GET',
+        headers: authHeader()
+    };
+
+    return fetch(`http://localhost:8000/study/course_statistic/${courseId}/`, requestOptions).then(handleResponse);
+}
+
+
 
 function changeHomeworkStatus(data, statId) {
     const requestOptions = {
@@ -114,6 +125,9 @@ function changeHomeworkStatus(data, statId) {
 
 
 }
+
+
+
 
 
 
