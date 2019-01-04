@@ -15,8 +15,6 @@ class LoginForm extends Component{
     constructor(props){
         super(props);
 
-        this.props.dispatch(userActions.logout());
-
         this.state = {
             username:"",
             password:"",

@@ -6,7 +6,8 @@ import { alertActions } from './';
 export const schoolAction = {
     getCourseCard,
     getTeachers,
-    getAdditionsData
+    getAdditionsData,
+    getAllCourses
 
 };
 
@@ -64,5 +65,25 @@ function getAdditionsData() {
     function request() {return{type: schoolConstants.GETADDITIONS_DATA_REQUEST}}
     function success(additionsData) {return {type: schoolConstants.GETADDITIONS_DATA_SUCCESS, additionsData} }
     function failure(error) {return{type: schoolConstants.GETADDITIONS_DATA_FAILURE, error}}
+
+}
+
+
+function getAllCourses() {
+    return dispatch => {
+        dispatch(request());
+        schoolService.getAllCourses()
+            .then(
+                allCourses => dispatch(success(allCourses)),
+                error => {
+                    dispatch(failure(error));
+                    dispatch(alertActions.error(error))
+                }
+
+            )
+    };
+    function request() {return{type: schoolConstants.GET_ALL_COURSES_REQUEST}}
+    function success(allCourses) {return {type: schoolConstants.GET_ALL_COURSES_SUCCESS, allCourses} }
+    function failure(error) {return{type: schoolConstants.GET_ALL_COURSES_FAILURE, error}}
 
 }

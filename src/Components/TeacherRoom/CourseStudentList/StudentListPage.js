@@ -46,7 +46,9 @@ class CourseStudentListPage extends React.Component {
                                         {allStudents.loading && <em>Loading coursess...</em>}
                                         {allStudents.error &&  <span className="text-danger">ERROR: {allStudents.error}</span>}
                                         {allStudents.items && allStudents.items.map((student, index) =>
-                                            <Link to={{pathname:"/teachers-room/user/"+student.id, state:{userId:student.id, courseId:1}}} className="list-group-item list-group-item-action ">{student.username}</Link>
+                                            <span key={student.id}>
+                                                <Link to={{pathname:"/teachers-room/user/"+student.id, state:{userId:student.id, courseId:1}}} className="list-group-item list-group-item-action ">{student.username}</Link>
+                                            </span>
                                         )}
 
 

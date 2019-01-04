@@ -11,7 +11,8 @@ export const studyService = {
     getStudentStatistics,
     getTeacherCourses,
     changeHomeworkStatus,
-    getOneCourseStatistic
+    getOneCourseStatistic,
+    registerTeacherOnCourse
 };
 
 
@@ -33,12 +34,7 @@ function courseTestSend(testResult, courseId) {
         body: JSON.stringify({testResult})
     };
 
-    return fetch(`http://localhost:8000/study/course_test/${courseId}/`, requestOptions)
-        .then(function (response) {
-            if (response.ok) {
-                history.push('/')
-            }
-        });
+    return fetch(`http://localhost:8000/study/course_test/${courseId}/`, requestOptions).then(handleResponse);
 
 }
 
@@ -121,11 +117,28 @@ function changeHomeworkStatus(data, statId) {
     };
 
     return fetch(`http://localhost:8000/study/change_homework_status/${statId}/`, requestOptions)
-        .then(handleResponse);
+        .then(handleResponse)
+
 
 
 }
 
+function registerTeacherOnCourse(courseId) {
+    const requestOptions = {
+        method: "POST",
+        headers: authHeader()
+    };
+
+    return fetch(`http://localhost:8000/study/teacher_register/${courseId}/`, requestOptions)
+        .then(handleResponse)
+        .then(request =>{
+            if (request.ok){
+                history.push('/')
+            }
+        })
+
+
+}
 
 
 
@@ -137,7 +150,10 @@ function handleResponse(response) {
         if (!response.ok) {
 
             const error = (data && data.message) || response.statusText;
+
             return Promise.reject(error);
+
+
         }
 
         return data;

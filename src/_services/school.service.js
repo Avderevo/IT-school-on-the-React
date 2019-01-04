@@ -3,7 +3,8 @@ import { authHeader } from '../_helpers';
 export const schoolService = {
     getCourseCard,
     getTeachers,
-    getAdditionsData
+    getAdditionsData,
+    getAllCourses
 };
 
 
@@ -35,6 +36,16 @@ function getAdditionsData() {
 
     return fetch('http://localhost:3000/additions.json', requestOptions).then(handleResponse);
 }
+
+function getAllCourses() {
+    const requestOptions = {
+        method: 'GET',
+        headers: authHeader()
+    };
+
+    return fetch('http://localhost:8000/study/all_courses/', requestOptions).then(handleResponse);
+}
+
 
 
 function handleResponse(response) {

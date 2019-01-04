@@ -26,11 +26,16 @@ class LoginNavButton extends React.Component {
 
 
                             {this.props.authentication.user.user.profile.status === 2 &&
+                                <span>
+                                    <Link className="dropdown-item" to="/teachers-room/courses/">Учительская</Link>
+                                </span>
 
-                            <Link className="dropdown-item" to="/teachers-room/courses/">Учительская</Link>}
+                           }
                             {this.props.authentication.user.user.profile.status === 1 &&
-
-                            <Link className="dropdown-item" to="/study/">Личный кабинет</Link>}
+                                <span>
+                                    <Link className="dropdown-item" to="/study/">Личный кабинет</Link>
+                                </span>
+                               }
 
                             <div className="dropdown-divider"> </div>
                             <Link className="dropdown-item" to="/logout/" onClick={this.logOut}>Выход</Link>

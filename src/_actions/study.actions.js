@@ -11,7 +11,9 @@ export const studyAction = {
     getAllStudents,
     getStudentStatistics,
     getTeacherCourses,
-    getOneCourseStatistic
+    getOneCourseStatistic,
+    registerTeacherOnCourse,
+    courseTestSend
 
 };
 
@@ -152,4 +154,51 @@ function getOneCourseStatistic(courseId) {
     function request() { return { type: studyConstants.GET_ONE_COURSE_STATISTIC_REQUEST }}
     function success(oneCourseStatistic) { return { type: studyConstants.GET_ONE_COURSE_STATISTIC_SUCCESS, oneCourseStatistic }}
     function failure(error) { return { type: studyConstants.GET_ONE_COURSE_STATISTIC_FAILURE, error }}
+}
+
+
+function registerTeacherOnCourse(courseId) {
+    return dispatch => {
+        dispatch(request());
+
+        studyService.registerTeacherOnCourse(courseId)
+            .then(
+                registerTeacher => {
+                    dispatch(success(registerTeacher));
+                    history.push({pathname:`/hello-page/`, state:{text:'Вы успешно зарегестрировались. Курс добавлен в личный кабинет.'}});
+                },
+
+                error => {
+                    dispatch(failure(error));
+                    history.push({pathname:`/hello-page/`, state:{text:error}});
+                }
+            );
+    };
+
+    function request() { return { type: studyConstants.REG_TEACHER_ON_COURSE_REQUEST }}
+    function success(registerTeacher) { return { type: studyConstants.REG_TEACHER_ON_COURSE_SUCCESS , registerTeacher}}
+    function failure(error) { return { type: studyConstants.REG_TEACHER_ON_COURSE_FAILURE, error }}
+}
+
+function courseTestSend(testResult, courseId) {
+    return dispatch => {
+        dispatch(request());
+
+        studyService.courseTestSend(testResult, courseId)
+            .then(
+                testSend => {
+                    dispatch(success(testSend));
+                    history.push({pathname:`/hello-page/`, state:{text:'Вы успешно прошли тест. Курс добавлен в личный кабинет.'}});
+                },
+
+                error => {
+                    dispatch(failure(error));
+                    history.push({pathname:`/hello-page/`, state:{text:error}});
+                }
+            );
+    };
+
+        function request() { return { type: studyConstants.TEST_COURSE_SEND_REQUEST }}
+    function success(testSend) { return { type: studyConstants.TEST_COURSE_SEND_SUCCESS, testSend}}
+    function failure(error) { return { type: studyConstants.TEST_COURSE_SEND_FAILURE, error }}
 }

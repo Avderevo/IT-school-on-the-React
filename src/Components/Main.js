@@ -4,8 +4,7 @@ import RegisterPage from './RegisterPage/RegisterPage';
 import StudyRoomPage from './StudyRoom/StudyRoomPage';
 import {UserCourseList} from './UserCourseList/UserCourseList';
 import Home from './HomePage/Home';
-import TestCourse from './TestPage/TestCourse';
-import {TeacherCourseListPage} from './TeacherRoom/TeacherCoursesList/TaecherCoursesPage';
+import {TestCourse} from './TestPage/TestCourse';
 import React from 'react';
 import { PrivateRoute } from '../_components';
 
@@ -19,6 +18,8 @@ import PhpCoursePage from './OneCourse/Php/PhpCoursePage';
 
 import {CourseStudentListPage} from './TeacherRoom/CourseStudentList/StudentListPage';
 import TeacherRoomOneUserPage from './TeacherRoom/TeacherRoomOneUser/TeacherRoomOneUserPage';
+import {TeacherCourseListPage} from './TeacherRoom/TeacherCoursesList/TaecherCoursesPage';
+import HelloPage from './Common/HelloPage';
 
 
 
@@ -44,6 +45,7 @@ const Main = () => (
                     <Route path='/course/Java/' component={JavaCoursePage} />
                     <Route path='/course/Android/' component={AndroidCoursePage} />
 */}
+                    <Route path='/hello-page/' component={HelloPage} />
 
                     <Route path='/signup/' component={RegisterPage}/>
                     <Route path='/all_courses/' component={AllCoursePage}/>

@@ -20,7 +20,7 @@ class CourseCards extends Component {
                         {coursecard.loading && <em>Loading coursess...</em>}
                         {coursecard.error &&  <span className="text-danger">ERROR: {coursecard.error}</span>}
                         {coursecard.items && coursecard.items.courseCards.map((card, index) =>
-                            <CourseCard {...card} />
+                            <CourseCard {...card} key={card.id} />
                         )}
                     </div>
                 </div>

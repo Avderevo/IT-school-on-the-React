@@ -2308,3 +2308,12 @@ ____________________________________
     vertical-align: middle;
     display: inline;
 }
+
+/*===============ChoiceOfCoursePage==================
+=====================================================*/
+
+.t-choice-course-header{
+    background-color: #f5d36d;
+    margin-bottom: 3rem;
+    padding: 1rem;
+}

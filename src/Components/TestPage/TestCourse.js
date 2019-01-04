@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import {studyService} from "../../_services";
 import {withRouter} from 'react-router-dom';
+import {studyAction} from "../../_actions";
+import connect from "react-redux/es/connect/connect";
 
 
 class TestCourse extends Component{
@@ -21,9 +23,10 @@ class TestCourse extends Component{
 
     handleFormSubmit=(e)=>{
         e.preventDefault();
+        const { dispatch } = this.props;
         const courseId = this.props.location.state.courseId;
 
-        studyService.courseTestSend(this.state, courseId);
+        dispatch(studyAction.courseTestSend(this.state, courseId));
 
     };
 
@@ -72,4 +75,15 @@ class TestCourse extends Component{
 
 }
 
-export  default withRouter(TestCourse);
+
+function mapStateToProps(state) {
+
+
+    return {
+        state
+    };
+}
+
+const connectedTestCourse= withRouter(connect(mapStateToProps)(TestCourse));
+export { connectedTestCourse as TestCourse };
+

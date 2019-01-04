@@ -59,3 +59,24 @@ export function additionsData(state = [], action) {
     }
 }
 
+
+export function allCourses(state = [], action) {
+    switch (action.type) {
+        case schoolConstants.GET_ALL_COURSES_REQUEST:
+            return {
+                loading: true
+            };
+        case schoolConstants.GET_ALL_COURSES_SUCCESS:
+            return {
+                items: action.allCourses
+            };
+        case schoolConstants.GET_ALL_COURSES_FAILURE:
+            return {
+                error: action.error
+            };
+        default:
+            return state
+    }
+}
+
+

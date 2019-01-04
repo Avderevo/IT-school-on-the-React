@@ -139,4 +139,41 @@ export function oneCourseStatistic(state = {}, action) {
     }
 }
 
+export function registerTeacher(state = {}, action) {
+    switch (action.type) {
+        case studyConstants.REG_TEACHER_ON_COURSE_REQUEST:
+            return {
+                sending: true
+            };
+        case studyConstants.REG_TEACHER_ON_COURSE_SUCCESS:
+            return {
+                register: action.registerTeacher
+            };
+        case studyConstants.REG_TEACHER_ON_COURSE_FAILURE:
+            return {
+                error: action.error
+            };
+        default:
+            return state
+    }
+}
 
+
+export function testSend(state = {}, action) {
+    switch (action.type) {
+        case studyConstants.TEST_COURSE_SEND_REQUEST:
+            return {
+                sending: true
+            };
+        case studyConstants.TEST_COURSE_SEND_SUCCESS:
+            return {
+                register: action.testSend
+            };
+        case studyConstants.TEST_COURSE_SEND_FAILURE:
+            return {
+                error: action.error
+            };
+        default:
+            return state
+    }
+}

@@ -3,10 +3,14 @@ import { combineReducers } from 'redux';
 import { authentication } from './authentication.reducer';
 import { users, detailUser } from './users.reducer';
 import { alert } from './alert.reducer';
-import { lessons, userCourses, oneCourse, allStudents, studentStatistics, teacherCourses, oneCourseStatistic } from "./study.reducer";
+
+import { lessons, userCourses, oneCourse,
+    allStudents, studentStatistics, teacherCourses,
+    oneCourseStatistic, registerTeacher, testSend } from "./study.reducer";
+
 import {chatMessage, lessonMessage} from "./chat.reducer";
 import {openModal} from './modal.reducer';
-import {coursecard, teachers, additionsData} from  './school.reducer';
+import {coursecard, teachers, additionsData, allCourses} from  './school.reducer';
 
 const rootReducer = combineReducers({
     authentication,
@@ -25,7 +29,10 @@ const rootReducer = combineReducers({
     detailUser,
     studentStatistics,
     teacherCourses,
-    oneCourseStatistic
+    oneCourseStatistic,
+    allCourses,
+    registerTeacher,
+    testSend
 
 });
 
