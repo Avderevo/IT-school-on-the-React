@@ -32,12 +32,12 @@ class OneCoursePageHeader extends Component{
                         <div className="container">
                             <div className="row">
                                 <div className="col-md-8 one-course-header-title">
-                                    <h4 className="display-3 mb-5">{oneCourse.items.name_2} {oneCourse.items.name_1}</h4>
+                                    <h4 className="display-3 mb-5">{oneCourse.items.full_name}</h4>
                                     <p className="mb-5">Курс об администрировании систем на базе Linux, который направлен на
                                         получение знаний и формирование навыков построения и обслуживания высоконадежных
                                         высокодоступных систем</p>
-                                    <span className="orange-btn"><Link className="btn btn-one-course-header-orange" to={{pathname:`/test/${oneCourse.items.name_1}`, state:{courseId:oneCourse.items.id}}}>Поступить на курс</Link></span>
-                                    <span id="positiv-btn"><a className="btn btn-one-course-header" href="#">Обучение сотрудников</a></span>
+                                    <span className="orange-btn"><Link className="btn btn-one-course-header-orange" to={{pathname:`/test/${oneCourse.items.name}`, state:{courseId:oneCourse.items.id}}}>Поступить на курс</Link></span>
+                                    <span id="positiv-btn"><Link className="btn btn-one-course-header" to="#">Обучение сотрудников</Link></span>
                                 </div>
                                 <div className="col-md-4 align-right">
                                     <div className="card shadow one-course-header-my-card h-100">
@@ -46,7 +46,7 @@ class OneCoursePageHeader extends Component{
                                             <h5>60 000 ₽ </h5>
                                             <p>В месяц: 11 500 ₽</p>
                                             <p>В кредит: около 7340 ₽ в месяц</p>
-                                            <a className="btn btn-one-course-header-my-card" href="#">Хочу дешевле</a>
+                                            <Link className="btn btn-one-course-header-my-card" to="#">Хочу дешевле</Link>
                                             <p>Продолжительность</p>
                                             <h5 className="mb-1">6 месяцев</h5>
                                             <p className="mb-4">4 часа в неделю</p>

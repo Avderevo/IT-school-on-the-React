@@ -15,7 +15,7 @@ function getCourseCard() {
         headers: authHeader()
     };
 
-    return fetch('http://localhost:3000/coursecard.json', requestOptions).then(handleResponse);
+    return fetch('http://localhost:8000/study/all_courses/', requestOptions).then(handleResponse);
 }
 
 function getTeachers() {

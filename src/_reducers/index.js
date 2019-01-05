@@ -10,7 +10,7 @@ import { lessons, userCourses, oneCourse,
 
 import {chatMessage, lessonMessage} from "./chat.reducer";
 import {openModal} from './modal.reducer';
-import {coursecard, teachers, additionsData, allCourses} from  './school.reducer';
+import {courseCard, teachers, additionsData, allCourses} from  './school.reducer';
 
 const rootReducer = combineReducers({
     authentication,
@@ -19,7 +19,7 @@ const rootReducer = combineReducers({
     lessons,
     chatMessage,
     openModal,
-    coursecard,
+    courseCard,
     teachers,
     additionsData,
     userCourses,

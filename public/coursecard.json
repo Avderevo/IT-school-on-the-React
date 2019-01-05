@@ -1,54 +1,61 @@
-{
-  "courseCards":
-  [
+[
+  {
+    "model": "study.course",
+    "pk": 1,
+    "fields":
     {
-      "name_1": "Администратор",
-      "name_2": "Linux",
-      "description": "Старт 5 января",
-      "bg": "gradient-1",
-      "meta": "1",
-      "id": "2"
-    },
-    {
-      "name_1": "Разработчик",
-      "name_2": "Python",
-      "description": "Начало 5 января",
-      "bg": "gradient-2",
-      "meta": "1",
-      "id": "1"
-    },
-    {
-      "name_1": "Разработчик",
-      "name_2": "PHP",
-      "description": "Начало курса 10 января",
-      "bg": "gradient-3",
-      "meta": "",
-      "id": "3"
-    },
-    {
-      "name_1": "Разработчик",
-      "name_2": "JS",
-      "description": "Начало курса в мае",
-      "bg": "gradient-4",
-      "meta": "",
-      "id": "4"
-    },
-    {
-      "name_1": "DevOps",
-      "name_2": "инженер",
-      "description": "Старт курса в феврале",
-      "bg": "gradient-5",
-      "meta": "",
-      "id": "5"
-    },
-    {
-      "name_1": "Разработчик",
-      "name_2": "Java",
-      "description": "Старт курса 7 декабря",
-      "bg": "gradient-6",
-      "meta": "1",
-      "id": "6"
+
+      "name": "Web-python", "full_name": "Web-разработчик на Python", "homework_all": 10, "label": true
     }
 
-  ]
-}
+  },
+  {
+    "model": "study.course",
+    "pk": 2,
+    "fields":
+    {
+      "name": "C++", "full_name": "Разработчик C++", "homework_all": 10, "label": true
+    }
+  },
+  {
+    "model": "study.course",
+    "pk": 3,
+    "fields":
+    {
+      "name": "Python", "full_name": "Pазработчик Python", "homework_all": 10, "label": true
+    }
+  },
+  {
+    "model": "study.course",
+    "pk": 4,
+    "fields":
+    {
+      "name": "Java", "full_name": "Разработчик Java", "homework_all": 10, "label": true
+    }
+  },
+  {
+    "model": "study.course",
+    "pk": 5,
+    "fields":
+    {
+      "name": "Php", "full_name": "Backend разаработчик на PHP", "homework_all": 10, "label": true
+    }
+  },
+  {
+    "model": "study.course",
+    "pk": 6,
+    "fields":
+    {
+      "name": "JS", "full_name": "Разработчик JavaScript", "homework_all": 10, "label": true
+    }
+  },
+  {
+    "model": "study.course",
+    "pk": 7,
+    "fields":
+    {
+      "name": "Android", "full_name": "Разработчик Android", "homework_all": 10, "label": true
+    }
+  }
+
+]

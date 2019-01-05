@@ -53,15 +53,15 @@ class TeacherRoomOneUserLesson extends React.Component {
                 <div className="t-1-lesson">
                     <div className="container">
                         <div className="row">
-                            <div className="col-md-5 mt-3">
+                            <div className="col-md mt-2">
                                 <div className="t-1-lesson-body ">
-                                    <div className="mb-3">
+                                    <div className="mb-1">
                                         <div className='lesson-name'>
                                             <span className="numberCircle-positiv h5">{studentLesson.lesson.lesson_number}</span>
-                                            <span onClick={this.handleClick}  className="h4 ml-2">
+                                            <span onClick={this.handleClick}  className="h4 ml-3">
                                                  {studentLesson.lesson.lesson_title}</span>
                                         </div>
-                                        <p className='mt-3'>Time: {studentLesson.lesson.id}</p>
+                                        <p className='mt-2'>Time: {studentLesson.lesson.id}</p>
 
                                     </div>
 

@@ -11,15 +11,15 @@ class CourseCards extends Component {
     }
 
     render() {
-        const {coursecard} = this.props;
+        const {courseCard} = this.props;
         return (
             <section id="all-curses">
                 <div className="container">
                     <div className="row">
 
-                        {coursecard.loading && <em>Loading coursess...</em>}
-                        {coursecard.error &&  <span className="text-danger">ERROR: {coursecard.error}</span>}
-                        {coursecard.items && coursecard.items.courseCards.map((card, index) =>
+                        {courseCard.loading && <em>Loading coursess...</em>}
+                        {courseCard.error &&  <span className="text-danger">ERROR: {courseCard.error}</span>}
+                        {courseCard.items && courseCard.items.map((card, index) =>
                             <CourseCard {...card} key={card.id} />
                         )}
                     </div>
@@ -30,10 +30,10 @@ class CourseCards extends Component {
 }
 
 function mapStateToProps(state) {
-    const {coursecard} = state;
+    const {courseCard} = state;
 
     return {
-        coursecard
+        courseCard
     };
 }
 

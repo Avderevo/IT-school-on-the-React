@@ -6,7 +6,7 @@ class OneCoursePrice extends Component {
 
     render() {
         return (
-            <section id="card-course-price" className='bg-Android'>
+            <section id="card-course-price">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-4">

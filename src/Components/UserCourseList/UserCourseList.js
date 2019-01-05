@@ -28,9 +28,8 @@ class UserCourseList extends Component{
 
                                         <div className='userCourse-card-body'>
                                             <div className='userCourse-card-title'>
-                                                {course.course.name_1}
-                                                <br/>
-                                                {course.course.name_2}
+                                                {course.course.full_name}
+
                                             </div>
                                             <div className='userCourse-card-description mt-3'>
                                                 Тест пройден

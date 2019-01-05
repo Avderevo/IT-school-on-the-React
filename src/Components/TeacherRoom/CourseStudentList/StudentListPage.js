@@ -15,6 +15,7 @@ class CourseStudentListPage extends React.Component {
     render(){
         const allStudents = this.props.allStudents;
         const oneCourse = this.props.oneCourse;
+        const courseId = this.props.location.state.courseId;
 
         return(
             <div>
@@ -27,7 +28,7 @@ class CourseStudentListPage extends React.Component {
                                 {oneCourse.error &&  <span className="text-danger">ERROR: {oneCourse.error}</span>}
                                 {oneCourse.items &&
                                 <div className="display-4">
-                                    {oneCourse.items.name_1} {oneCourse.items.name_2}
+                                    {oneCourse.items.full_name}
                                 </div>}
 
 
@@ -47,7 +48,7 @@ class CourseStudentListPage extends React.Component {
                                         {allStudents.error &&  <span className="text-danger">ERROR: {allStudents.error}</span>}
                                         {allStudents.items && allStudents.items.map((student, index) =>
                                             <span key={student.id}>
-                                                <Link to={{pathname:"/teachers-room/user/"+student.id, state:{userId:student.id, courseId:1}}} className="list-group-item list-group-item-action ">{student.username}</Link>
+                                                <Link to={{pathname:"/teachers-room/user/"+student.id, state:{userId:student.id, courseId:courseId}}} className="list-group-item list-group-item-action ">{student.username}</Link>
                                             </span>
                                         )}
 

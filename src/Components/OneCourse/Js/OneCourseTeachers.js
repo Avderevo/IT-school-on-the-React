@@ -13,7 +13,7 @@ class OneCourseTeachers extends Component{
                             <div className="text-centre">
                                 <div className="about-course-title mb-5">Преподаватели</div>
                                 <div className="course-teacher-big-photo">
-                                    <img className="rounded-circle" width="220" height="220" src="../img/tch1.jpg"
+                                    <img className="rounded-circle" width="220" height="220" src="../../../img/tch1.jpg"
                                          alt="Card image cap" />
                                 </div>
                                 <div>
@@ -42,7 +42,7 @@ class OneCourseTeachers extends Component{
                                                 <div className="course-teacher-box">
                                                     <div className="course-teacher-photo">
                                                         <img className="rounded-circle" width="60" height="60"
-                                                             src="../img/tch1.jpg" alt="Card image cap" />
+                                                             src="../../../img/tch1.jpg" alt="Card image cap" />
                                                     </div>
                                                     <div className="course-teacher-name">
                                                         tempor <br />incididunt
@@ -57,7 +57,7 @@ class OneCourseTeachers extends Component{
                                                 <div className="course-teacher-box">
                                                     <div className="course-teacher-photo">
                                                         <img className="rounded-circle" width="60" height="60"
-                                                             src="../img/tch1.jpg" alt="Card image cap" />
+                                                             src="../../../img/tch1.jpg" alt="Card image cap" />
                                                     </div>
                                                     <div className="course-teacher-name">tempor <br />incididunt
                                                     </div>
@@ -71,7 +71,7 @@ class OneCourseTeachers extends Component{
                                                 <div className="course-teacher-box">
                                                     <div className="course-teacher-photo">
                                                         <img className="rounded-circle" width="60" height="60"
-                                                             src="../img/tch1.jpg" alt="Card image cap" />
+                                                             src="../../../img/tch1.jpg" alt="Card image cap" />
                                                     </div>
                                                     <div className="course-teacher-name">
                                                         tempor <br />incididunt
@@ -86,7 +86,7 @@ class OneCourseTeachers extends Component{
                                                 <div className="course-teacher-box">
                                                     <div className="course-teacher-photo">
                                                         <img className="rounded-circle" width="60" height="60"
-                                                             src="../img/tch1.jpg" alt="Card image cap" />
+                                                             src="../../../img/tch1.jpg" alt="Card image cap" />
                                                     </div>
                                                     <div className="course-teacher-name">
                                                         tempor <br />incididunt

@@ -7,15 +7,7 @@ import OneCourseTeachers from './OneCourseTeachers';
 import OneCoursePrice from './OneCoursePrice';
 
 
-class LinuxCoursePage extends Component {
-
-/*
-
-    componentDidMount() {
-        this.props.dispatch(schoolAction.getOneCourse());
-    }
-*/
-
+class JavaCoursePage extends Component {
 
 
     render() {
@@ -36,18 +28,4 @@ class LinuxCoursePage extends Component {
     }
 }
 
-export default LinuxCoursePage;
-/*
-
-function mapStateToProps(state) {
-    const {additionsData} = state;
-    return {
-        additionsData
-    }
-
-}
-
-const connectedAdditions = connect(mapStateToProps)(Additions);
-export {connectedAdditions as Additions};
-
-*/
+export default JavaCoursePage;

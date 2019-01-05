@@ -10,16 +10,17 @@ import {withRouter} from 'react-router';
 class OneCoursePageHeader extends Component{
 
 
-        componentDidMount() {
-            this.props.dispatch(studyAction.getOneCourse('Js'));
-        }
+    componentDidMount() {
+        const courseId = this.props.location.state.courseId;
+        this.props.dispatch(studyAction.getOneCourse(courseId));
+    }
 
 
-        render() {
-            const oneCourse = this.props.oneCourse;
+    render() {
+        const oneCourse = this.props.oneCourse;
 
 
-            return (
+        return (
 
 
                 <section id="one-course-header">
@@ -58,10 +59,15 @@ class OneCoursePageHeader extends Component{
                     </div>
                 }
 
-            </section>
+                </section>
         );
     }
 }
+
+/*
+
+export  default OneCoursePageHeader;
+*/
 
 
 
@@ -73,7 +79,7 @@ function mapStateToProps(props) {
     };
 }
 
-const connectedOneCoursePageHeader = connect(mapStateToProps)(OneCoursePageHeader);
+const connectedOneCoursePageHeader = withRouter(connect(mapStateToProps)(OneCoursePageHeader));
 export {connectedOneCoursePageHeader as OneCoursePageHeader};
 
 

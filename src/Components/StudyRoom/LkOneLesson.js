@@ -43,7 +43,7 @@ class LkOneLesson extends Component{
                 <div className="timeline-item">
                     <div className='container'>
                         <div className='row'>
-                            <div className='col-5 no_padding-col'>
+                            <div className='col no_padding-col'>
 
 
                                 <div className='oneLesson-name '>

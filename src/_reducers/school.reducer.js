@@ -1,7 +1,7 @@
 import { schoolConstants } from '../_constants';
 
 
-export function coursecard(state = [], action) {
+export function courseCard(state = [], action) {
     switch (action.type) {
         case schoolConstants.GETCOURSECARD_REQUEST:
             return {
@@ -9,7 +9,7 @@ export function coursecard(state = [], action) {
             };
         case schoolConstants.GETCOURSECARD_SUCCESS:
             return {
-                items: action.coursecards
+                items: action.courseCards
             };
         case schoolConstants.GETCOURSECARD_FAILURE:
             return {

@@ -30,7 +30,6 @@ html, body{
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Open Sans', Arial;
     font-style: normal;
     text-rendering: optimizeLegibility;
     line-height: 1.1;
@@ -99,7 +98,6 @@ h1, h2, h3, h4, h5, h6 {
 .btn-white {
     background: 0 0;
     padding: 11px 25px;
-    font-family: 'Open sans';
     font-size: 15px;
     color: #fff;
     text-align: center;
@@ -114,7 +112,6 @@ h1, h2, h3, h4, h5, h6 {
 .btn-white-negativ {
     background: #fff;
     padding: 11px 25px;
-    font-family: 'Open sans';
     font-size: 15px;
     color: #37927a;
     text-align: center;
@@ -203,119 +200,6 @@ h1, h2, h3, h4, h5, h6 {
     
 }
 
-.cuadro_intro_hover{
-        padding: 0;
-        position: relative;
-        overflow: hidden;
-    }
-    .cuadro_intro_hover:hover .caption{
-        opacity: 1;
-        transform: translateY(-150px);
-        -webkit-transform:translateY(-150px);
-        -moz-transform:translateY(-150px);
-        -ms-transform:translateY(-150px);
-       -o-transform:translateY(-150px);
-    }
-    .cuadro_intro_hover img{
-        z-index: 4;
-    }
-    .cuadro_intro_hover .caption{
-        position: absolute;
-        top: 150px;
-        -webkit-transition:all 0.3s ease-in-out;
-        -moz-transition:all 0.3s ease-in-out;
-        -o-transition:all 0.3s ease-in-out;
-        -ms-transition:all 0.3s ease-in-out;
-        transition:all 0.3s ease-in-out;
-        width: 100%;
-
-    }
-    .cuadro_intro_hover .blur{
-        background-color: #2c6d82;
-        height: 150px;
-        z-index: 5;
-        position: absolute;
-        width: 100%;
-
-    }
-    .cuadro_intro_hover .caption-text{
-        z-index: 10;
-        color: #fff;
-        position: absolute;
-        text-align: left;
-        width: 100%;
-        
-        margin-top: 15px;
-        margin-left: 15px;
-        padding-right: 15px;
-    }
-
-    .cuadro_intro_hover p{
-        margin-top: 0;
-        margin-bottom: 5px;
-        font-size: 15px;
-    } 
-    .cuadro_intro_hover h5{
-        margin-top: 0;
-        margin-bottom: 5px;
-        font-size: 20px;
-        color: #fff;
-    }
-
-
-.gradient-1{
-  background-color: #013A6B;
-  background-image: -webkit-linear-gradient(30deg, #013A6B 58%,  #004E95 30%);
-}
-.gradient-2{
-  background-color: #34ADFF;
-  background-image: -webkit-linear-gradient(150deg, #34ADFF 35%, #4CBFFF 35%);
-}
-
-.gradient-3{
-  background-color: #dc644e;
-  background-image: -webkit-linear-gradient(110deg, #2c6d82 45%, #3a8096 35%);
-}
-
-.gradient-4{
-  background-color: #34ADFF;
-  background-image: -webkit-linear-gradient(40deg, #336896 60%, #4885b9 40%);
-}
-
-.gradient-5{
-  background-color: #34ADFF;
-  background-image: -webkit-linear-gradient(120deg,#325579 50%, #2e465f 50%);
-}
-
-.gradient-6{
-  background-color: #34ADFF;
-  background-image: -webkit-linear-gradient(30deg, #5bb9d2 45%, #84c3d4 45%);
-
-}
-
-.gradient-7{
-  background-color: #34ADFF;
-  background-image: -webkit-linear-gradient(280deg, #2f849e 45%, #4093ac 45%);
-
-}
-
-.gradient-8{
-  background-color: #34ADFF;
-  background-image: -webkit-linear-gradient(60deg, #1d89cf 45%, #2480bd 45%);
-
-}
-
-.gradient-9{
-  background-color: #34ADFF;
-  background-image: -webkit-linear-gradient(80deg, #4074a8 45%, #33689e 45%);
-
-}
-
-.gradient-10{
-  background-color: #34ADFF;
-  background-image: -webkit-linear-gradient(30deg, #5bb9d2 45%, #84c3d4 45%);
-
-}
 
 .meta {
     font-size: 14px;
@@ -663,13 +547,16 @@ button, input {
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
     border-radius: 4px;
-    will-change: transform, opacity;
+    min-height: 195px;
+    /*will-change: transform, opacity;*/
 
 }
 
+.course-card-wrapper{
+    color: #fff;
+}
 
-
-.curses-card a{
+.course-card-wrapper a{
     text-decoration: none;
 
     
@@ -683,16 +570,15 @@ button, input {
     background: #f24903;
 }
 
-.curses-card :hover{
+.curses-card:hover{
     background: #f24903;
     border: 0;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
     border-radius: 4px;
-    will-change: transform, opacity;
     }
 
-.curses-card :hover .heading-devider {
+.curses-card:hover .heading-devider {
      margin: 10px;
      width: 18rem;
      height: 2px;
@@ -1594,51 +1480,112 @@ ____________________________________
 /*=========================================
 ===========One-Course_page=================
 ===========================================*/
-.bg-linux{
+
+
+.gradient-Python{
+    background-color: #013A6B;
+    background-image: -webkit-linear-gradient(30deg, #013A6B 58%,  #004E95 30%);
+}
+
+.bg-Python{
     background-image: -webkit-linear-gradient(30deg, #013A6B ,  #0075DC );
 }
 
-.bg-linux-priceCard{
+.bg-priceCard-Python{
     background-color: #095ba2;
 }
 
-.bg-android{
-    background-image: -webkit-linear-gradient(30deg, #3c5f8c ,  #0075DC );
+
+
+.gradient-Php{
+    background-color: #dc644e;
+    background-image: -webkit-linear-gradient(110deg, #2c6d82 45%, #3a8096 35%);
 }
 
-.bg-android-priceCard{
-    background-color: #378af7;
-}
-
-.bg-php{
+.bg-Python{
     background-image: -webkit-linear-gradient(30deg, #013A6B ,  #0075DC );
 }
 
-.bg-php-priceCard{
-    background-color: #378af7;
+.bg-priceCard-Python{
+    background-color: #095ba2;
 }
 
-.bg-java{
+
+
+.gradient-Java{
+    background-color: #34ADFF;
+    background-image: -webkit-linear-gradient(40deg, #336896 60%, #4885b9 40%);
+}
+
+.bg-Java{
     background-image: -webkit-linear-gradient(30deg, #013A6B ,  #0075DC );
 }
 
-.bg-java-priceCard{
-    background-color: #378af7;
+.bg-priceCard-Java{
+    background-color: #095ba2;
 }
 
-.bg-js{
+
+
+.gradient-JS{
+    background-color: #34ADFF;
+    background-image: -webkit-linear-gradient(120deg,#325579 50%, #2e465f 50%);
+}
+
+.bg-JS{
     background-image: -webkit-linear-gradient(30deg, #013A6B ,  #0075DC );
 }
 
-.bg-js-priceCard{
-    background-color: #378af7;
+.bg-priceCard-JS{
+    background-color: #095ba2;
 }
 
-.bg-python{
-    background-image: -webkit-linear-gradient(30deg, #3c5f8c,  #49b0ff );
+
+
+
+.gradient-Web-python{
+    background-color: #34ADFF;
+    background-image: -webkit-linear-gradient(30deg, #5bb9d2 45%, #84c3d4 45%);
+
 }
-.bg-python-priceCard{
-    background-color: #44a6f1;
+
+.bg-Web-python{
+    background-image: -webkit-linear-gradient(30deg, #013A6B ,  #0075DC );
+}
+
+.bg-priceCard-Web-python{
+    background-color: #095ba2;
+}
+
+
+
+
+.gradient-Android{
+    background-color: #34ADFF;
+    background-image: -webkit-linear-gradient(60deg, #1d89cf 45%, #2480bd 45%);
+}
+
+.bg-Android{
+    background-image: -webkit-linear-gradient(30deg, #1d89cf ,  #0075DC );
+}
+
+.bg-priceCard-Android{
+    background-color: #1d89cf;
+}
+
+
+.gradient-C-plus-plus{
+    background-color: #34ADFF;
+    background-image: -webkit-linear-gradient(260deg, #2f7aab 45%, #4389bb 45%);
+
+}
+
+.bg-C-plus-plus{
+    background-image: -webkit-linear-gradient(30deg, #013A6B ,  #0075DC );
+}
+
+.bg-priceCard-C-plus-plus{
+    background-color: #095ba2;
 }
 
 
@@ -2207,10 +2154,34 @@ ____________________________________
 .container-col{
     display: inline-block;
 }
+/*=====================================================*/
+.teacherCourse-card {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border-color: #f8f8f8;
+    border-style: groove;
+    background-color: #fff;
+    min-height: 110px;
+    color: #484848;
+    border-radius: 4px;
+}
+
+.teacherCourse-card a:hover {
+    text-decoration: none;
+    color: #1d89cf;
+}
+
+.teacherCourse-card-title {
+    font-size: 1.8rem;
+    line-height: 2rem;
+}
 
 /*=============================================================
 ===============teacher-student-list-page=======================
 ===============================================================*/
+
+
+
 
 #t-student-list-header{
     background-color: #f5d36d;
@@ -2250,7 +2221,7 @@ ____________________________________
     width: 100%;
     border: 2px solid #454545;
     border-radius: 6px;
-    padding: 1rem;
+    padding: .5rem;
     color: #454545;
     margin-bottom: 1rem;
     background-color: ghostwhite;
@@ -2263,8 +2234,8 @@ ____________________________________
 }
 
 .teacher-chat-dz{
-    margin-bottom: 3rem;
-    margin-top: 3rem;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
 }
 
 .t-1-lesson-body{

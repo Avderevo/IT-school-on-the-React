@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {chatAction} from "../../../_actions";
+import {chatAction, modalAction} from "../../../_actions";
 import connect from "react-redux/es/connect/connect";
 import {withRouter} from 'react-router';
 
@@ -13,6 +13,9 @@ class TeacherRoomChatForm extends Component{
             clickOpenLesson: false
         }
     }
+
+
+
 
     handleChange =(e) => {
         let value = e.target.value;
@@ -31,15 +34,22 @@ class TeacherRoomChatForm extends Component{
             message: ''
         });
 
-
         this.props.dispatch(chatAction.sendMessage(chatMessage));
 
     };
 
+
+/*
+    handleOpenClick = () => {
+
+        this.props.dispatch(modalAction.openModal());
+
+    };*/
+
     render(){
 
         return(
-            <div className="message-form mt-2">
+            <div className="message-form mt-2 mb-2">
                 <form>
                     <div className="form-row align-items-center">
                         <div className="col-10">

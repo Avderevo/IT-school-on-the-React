@@ -64,7 +64,7 @@ class TeacherCourseListPage extends Component{
 
 
 
-                                            <option key={course.id} className=' text-info' value={course.id}>{course.name_1}</option>
+                                            <option key={course.id} className=' text-info' value={course.id}>{course.name}</option>
 
 
                                     )}
@@ -81,14 +81,12 @@ class TeacherCourseListPage extends Component{
                         {teacherCourses.error &&  <span className="text-danger">ERROR: {teacherCourses.error}</span>}
                         {teacherCourses.items  && teacherCourses.items.map((course, index) =>
                             <div className='col-md-4' key={course.id}>
-                                <div className='userCourse-card'>
+                                <div className='teacherCourse-card'>
                                     <Link to={{pathname:`/teachers-room/course/${course.course.id}`, state:{courseId:course.course.id}}}>
 
                                         <div className='userCourse-card-body'>
-                                            <div className='userCourse-card-title'>
-                                                {course.course.name_1}
-                                                <br/>
-                                                {course.course.name_2}
+                                            <div className='teacherCourse-card-title'>
+                                                {course.course.full_name}
                                             </div>
                                         </div>
                                     </Link>

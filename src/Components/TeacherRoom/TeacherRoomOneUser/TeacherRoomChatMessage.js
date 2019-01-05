@@ -1,6 +1,7 @@
 import React, {Component} from  'react';
 import {chatService} from "../../../_services";
 import connect from "react-redux/es/connect/connect";
+import {modalAction} from "../../../_actions";
 
 
 class TeacherRoomChatMessage extends Component{
@@ -26,16 +27,16 @@ class TeacherRoomChatMessage extends Component{
 
     };
 
-    timeout = () => {
-        setInterval(this.getMessage, 30000); // Here
-    };
+
 
     componentDidMount() {
         this.getMessage();
-       /* this.timeout(); // Here*/
+
     }
 
     render(){
+
+
 
 
         return(
@@ -46,7 +47,7 @@ class TeacherRoomChatMessage extends Component{
                 {this.state.error &&  <span className="text-danger">ERROR: {this.state.error}</span>}
                 {this.state.message  && this.state.message.map((item, index) =>
 
-                    <div className="chat-message-block">
+                    <div className="chat-message-block" key={item.date}>
                         <div className="chat-message-content">
                             <div className="mb-3">
                                 <span className='message-author-avatar'>;)</span>
@@ -71,11 +72,13 @@ class TeacherRoomChatMessage extends Component{
 
 
 
-const mapStatetoProps = (props) => {
+const mapStateToProps = (props) => {
+
+
     return props;
 };
 
-const connectedTeacherRoomChatMessage = connect(mapStatetoProps)(TeacherRoomChatMessage);
+const connectedTeacherRoomChatMessage = connect(mapStateToProps)(TeacherRoomChatMessage);
 export {connectedTeacherRoomChatMessage as TeacherRoomChatMessage}
 
 

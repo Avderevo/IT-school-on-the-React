@@ -17,7 +17,7 @@ function getCourseCard() {
 
         schoolService.getCourseCard()
             .then(
-                coursecards => dispatch(success(coursecards)),
+                courseCards=> dispatch(success(courseCards)),
                 error => {
                     dispatch(failure(error));
                     dispatch(alertActions.error(error))
@@ -26,7 +26,7 @@ function getCourseCard() {
     };
 
     function request() { return { type: schoolConstants.GETCOURSECARD_REQUEST } }
-    function success(coursecards) { return { type: schoolConstants.GETCOURSECARD_SUCCESS, coursecards } }
+    function success(courseCards) { return { type: schoolConstants.GETCOURSECARD_SUCCESS, courseCards } }
     function failure(error) { return { type: schoolConstants.GETCOURSECARD_FAILURE, error } }
 }
 

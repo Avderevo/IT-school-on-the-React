@@ -11,7 +11,7 @@ class Advance extends Component {
     }
 
     render() {
-        const {coursecard} = this.props;
+        const {courseCard} = this.props;
         return (
             <section id='advance' className="section-advance">
                 <div className="container">
@@ -20,9 +20,9 @@ class Advance extends Component {
                     </div>
                     <div className="row">
 
-                        {coursecard.loading && <em>Loading coursess...</em>}
-                        {coursecard.error &&  <span className="text-danger">ERROR: {coursecard.error}</span>}
-                        {coursecard.items && coursecard.items.courseCards.map((card, index) =>
+                        {courseCard.loading && <em>Loading coursess...</em>}
+                        {courseCard.error &&  <span className="text-danger">ERROR: {courseCard.error}</span>}
+                        {courseCard.items && courseCard.items.slice(0, 6).map((card, index) =>
                             <CourseCard key={card.id} {...card} />
                         )}
                     </div>
@@ -33,10 +33,10 @@ class Advance extends Component {
 }
 
 function mapStateToProps(state) {
-    const {coursecard} = state;
+    const {courseCard} = state;
 
     return {
-        coursecard
+        courseCard
     };
 }
 

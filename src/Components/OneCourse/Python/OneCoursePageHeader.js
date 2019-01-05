@@ -33,11 +33,11 @@ class OneCoursePageHeader extends Component{
                         <div className="container ">
                             <div className="row">
                                 <div className="col-md-8 one-course-header-title">
-                                    <h4 className="display-3 mb-5">{oneCourse.items.name_2} {oneCourse.items.name_1}</h4>
+                                    <h4 className="display-3 mb-5">{oneCourse.items.full_name}</h4>
                                     <p className="mb-5">Курс об администрировании систем на базе Linux, который направлен на
                                         получение знаний и формирование навыков построения и обслуживания высоконадежных
                                         высокодоступных систем</p>
-                                    <span className="orange-btn"><Link className="btn btn-one-course-header-orange" to={{pathname:`/test/${oneCourse.items.name_1}`, state:{courseId:oneCourse.items.id}}}>Поступить на курс</Link></span>
+                                    <span className="orange-btn"><Link className="btn btn-one-course-header-orange" to={{pathname:`/test/${oneCourse.items.name}`, state:{courseId:oneCourse.items.id}}}>Поступить на курс</Link></span>
                                     <span id="positiv-btn"><a className="btn btn-one-course-header" href="#">Обучение сотрудников</a></span>
                                 </div>
                                 <div className="col-md-4 align-right">
@@ -65,12 +65,6 @@ class OneCoursePageHeader extends Component{
         );
     }
 }
-
-/*
-
-export  default OneCoursePageHeader;
-*/
-
 
 
 function mapStateToProps(props) {
