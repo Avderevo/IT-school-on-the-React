@@ -18,7 +18,7 @@ class OneCourseTeachers extends Component{
                                 </div>
                                 <div>
                                     <p>
-                                        <div className="about-course-teachers"><b>Some quick example</b></div>
+                                        <span className="about-course-teachers"><b>Some quick example</b></span>
                                         <br /> text to build on the card title and make up the bulk of the card's content.
                                     </p>
                                 </div>

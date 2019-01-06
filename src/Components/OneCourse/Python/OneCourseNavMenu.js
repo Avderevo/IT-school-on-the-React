@@ -4,18 +4,15 @@ import { Link } from 'react-router-dom'
 
 
 class OneCourseNavMenu extends Component{
-    /*
-        componentDidMount() {
-            this.props.dispatch(studyAction.getStudyRoom(this.props.location.pathname));
-        }*/
+
 
     render() {
 
         return (
             <section id="nav-menu">
                 <div className="nav-menu">
-                    <div className="bg-python">
-                        <div id="menu" className=" bg-python nav-items-course">
+                    <div className="bg-Python">
+                        <div id="menu" className=" bg-Python nav-items-course">
                             <div className="container">
                                 <Link className="nav-item-menu nav-menu-link active" to="#">О курсе</Link>
                                 <Link className="nav-item-menu nav-menu-link" to="#">Процес обучения</Link>

@@ -1,11 +1,9 @@
 import React, {Component} from  'react';
 import {chatService} from "../../_services";
-import connect from "react-redux/es/connect/connect";
-import {LkOneLesson} from "../StudyRoom/LkOneLesson";
-import {modalAction} from "../../_actions";
+
 
 class ChatMessage extends Component{
-
+    _isMounted = false;
     constructor(props) {
         super(props);
 
@@ -27,13 +25,15 @@ class ChatMessage extends Component{
 
     };
 
-    timeout = () => {
-        setInterval(this.getMessage, 30000); // Here
-    };
+
 
     componentDidMount() {
+        this._isMounted = true;
         this.getMessage();
-       /* this.timeout(); // Here*/
+    }
+
+    componentWillUnmount() {
+        this._isMounted = false;
     }
 
     render(){
@@ -70,15 +70,4 @@ class ChatMessage extends Component{
 
 }
 
-
-
-const mapStatetoProps = (props) => {
-    return props;
-};
-
-const connectedChatMessage = connect(mapStatetoProps)(ChatMessage);
-export {connectedChatMessage as ChatMessage}
-
-
-
-
+export default ChatMessage;

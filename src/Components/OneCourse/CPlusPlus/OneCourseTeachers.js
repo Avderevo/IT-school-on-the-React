@@ -16,12 +16,12 @@ class OneCourseTeachers extends Component{
                                     <img className="rounded-circle" width="220" height="220" src="../../../img/tch1.jpg"
                                          alt="Card image cap" />
                                 </div>
-                                <div>
+                                <span>
                                     <p>
-                                        <div className="about-course-teachers"><b>Some quick example</b></div>
+                                        <span className="about-course-teachers"><b>Some quick example</b></span>
                                         <br /> text to build on the card title and make up the bulk of the card's content.
                                     </p>
-                                </div>
+                                </span>
                             </div>
                         </div>
                         <div className="col-md-8">

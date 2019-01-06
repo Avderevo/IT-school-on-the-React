@@ -3,42 +3,37 @@
   <component name="ChangeListManager">
     <list default="true" id="10bb4009-84b9-41ec-8654-4e8257f779e9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/coursecard.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/coursecard.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/AllCourses/CourseCards.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AllCourses/CourseCards.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Common/CourseCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Common/CourseCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/HomePage/Advance.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/HomePage/Advance.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/OneCourse/Android/OneCoursePageHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/OneCourse/Android/OneCoursePageHeader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/OneCourse/Android/OneCoursePrice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/OneCourse/Android/OneCoursePrice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/OneCourse/Android/OneCourseNavMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/OneCourse/Android/OneCourseNavMenu.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/OneCourse/Android/OneCourseTeachers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/OneCourse/Android/OneCourseTeachers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/OneCourse/CPlusPlus/OneCourseNavMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/OneCourse/CPlusPlus/OneCourseNavMenu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/OneCourse/CPlusPlus/OneCoursePageHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/OneCourse/CPlusPlus/OneCoursePageHeader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/OneCourse/CPlusPlus/OneCoursePrice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/OneCourse/CPlusPlus/OneCoursePrice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/OneCourse/CPlusPlus/OneCourseTeachers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/OneCourse/CPlusPlus/OneCourseTeachers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/OneCourse/Java/OneCourseNavMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/OneCourse/Java/OneCourseNavMenu.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/OneCourse/Java/OneCoursePageHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/OneCourse/Java/OneCoursePageHeader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/OneCourse/Java/OneCoursePrice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/OneCourse/Java/OneCoursePrice.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/OneCourse/Java/OneCourseTeachers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/OneCourse/Java/OneCourseTeachers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/OneCourse/Js/OneCourseNavMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/OneCourse/Js/OneCourseNavMenu.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/OneCourse/Js/OneCoursePageHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/OneCourse/Js/OneCoursePageHeader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/OneCourse/Js/OneCoursePrice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/OneCourse/Js/OneCoursePrice.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/OneCourse/Js/OneCourseTeachers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/OneCourse/Js/OneCourseTeachers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/OneCourse/Linux/LinuxCoursePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/OneCourse/Web-python/WebPythonCoursePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/OneCourse/Linux/OneCourseAdditions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/OneCourse/Web-python/OneCourseAdditions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/OneCourse/Linux/OneCourseCarouselComments.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/OneCourse/Web-python/OneCourseCarouselComments.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/OneCourse/Linux/OneCourseDescription.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/OneCourse/Web-python/OneCourseDescription.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/OneCourse/Linux/OneCourseNavMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/OneCourse/Web-python/OneCourseNavMenu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/OneCourse/Linux/OneCoursePageHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/OneCourse/Web-python/OneCoursePageHeader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/OneCourse/Linux/OneCoursePrice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/OneCourse/Web-python/OneCoursePrice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/OneCourse/Linux/OneCourseTeachers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/OneCourse/Web-python/OneCourseTeachers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/OneCourse/Php/OneCourseNavMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/OneCourse/Php/OneCourseNavMenu.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/OneCourse/Php/OneCoursePageHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/OneCourse/Php/OneCoursePageHeader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/OneCourse/Php/OneCoursePrice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/OneCourse/Php/OneCoursePrice.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/OneCourse/Php/OneCourseTeachers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/OneCourse/Php/OneCourseTeachers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/OneCourse/Python/OneCourseNavMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/OneCourse/Python/OneCourseNavMenu.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/OneCourse/Python/OneCoursePageHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/OneCourse/Python/OneCoursePageHeader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/OneCourse/Python/OneCoursePrice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/OneCourse/Python/OneCoursePrice.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/OneCourse/Python/OneCourseTeachers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/OneCourse/Python/OneCourseTeachers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/OneCourse/Web-python/OneCourseNavMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/OneCourse/Web-python/OneCourseNavMenu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/OneCourse/Web-python/OneCoursePageHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/OneCourse/Web-python/OneCoursePageHeader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/OneCourse/Web-python/OneCoursePrice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/OneCourse/Web-python/OneCoursePrice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/OneCourse/Web-python/OneCourseTeachers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/OneCourse/Web-python/OneCourseTeachers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/StudyChat/ChatMessage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/StudyChat/ChatMessage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/StudyRoom/LkOneLesson.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/StudyRoom/LkOneLesson.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/TeacherRoom/CourseStudentList/StudentListPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/TeacherRoom/CourseStudentList/StudentListPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/TeacherRoom/TeacherCoursesList/TaecherCoursesPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/TeacherRoom/TeacherCoursesList/TaecherCoursesPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/TeacherRoom/TeacherRoomOneUser/TeacherRoomChatForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/TeacherRoom/TeacherRoomOneUser/TeacherRoomChatForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/TeacherRoom/TeacherRoomOneUser/TeacherRoomChatMessage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/TeacherRoom/TeacherRoomOneUser/TeacherRoomChatMessage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/TeacherRoom/TeacherRoomOneUser/TeacherRoomOneUserLesson.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/TeacherRoom/TeacherRoomOneUser/TeacherRoomOneUserLesson.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/TeacherRoom/TeacherRoomOneUser/TeacherRoomOneUserLessons.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/TeacherRoom/TeacherRoomOneUser/TeacherRoomOneUserLessons.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/UserCourseList/UserCourseList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UserCourseList/UserCourseList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_actions/school.actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_actions/school.actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_reducers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_reducers/modal.reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_reducers/modal.reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_reducers/school.reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_reducers/school.reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_services/school.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_services/school.service.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/App.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -65,6 +60,7 @@
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.52" value="1" />
           <entry key="project.open.time.57" value="1" />
+          <entry key="project.open.time.60" value="1" />
           <entry key="project.open.time.68" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.72" value="1" />
@@ -75,14 +71,14 @@
           <entry key="project.open.time.82" value="1" />
           <entry key="project.open.time.86" value="1" />
           <entry key="project.open.time.90" value="1" />
-          <entry key="project.opened" value="20" />
+          <entry key="project.opened" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="16" />
           <entry key="html" value="10" />
-          <entry key="js" value="537" />
+          <entry key="js" value="576" />
           <entry key="json" value="9" />
           <entry key="jsx" value="4" />
           <entry key="md" value="1" />
@@ -94,20 +90,20 @@
           <entry key="HTML" value="10" />
           <entry key="JSON" value="9" />
           <entry key="JSX Harmony" value="4" />
-          <entry key="JavaScript" value="537" />
+          <entry key="JavaScript" value="576" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="ESLintLanguageService" value="19" />
+          <entry key="ESLintLanguageService" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="1635" />
+          <entry key="css" value="1658" />
           <entry key="html" value="6" />
-          <entry key="js" value="14098" />
+          <entry key="js" value="14292" />
           <entry key="json" value="51" />
           <entry key="jsx" value="3" />
           <entry key="md" value="1015" />
@@ -115,11 +111,11 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="1635" />
+          <entry key="CSS" value="1658" />
           <entry key="HTML" value="6" />
           <entry key="JSON" value="51" />
           <entry key="JSX Harmony" value="3" />
-          <entry key="JavaScript" value="14098" />
+          <entry key="JavaScript" value="14292" />
           <entry key="PLAIN_TEXT" value="1015" />
         </counts>
       </usages-collector>
@@ -127,32 +123,82 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Components/OneCourse/Android/OneCoursePageHeader.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Components/OneCourse/Python/OneCourseTeachers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="666">
-              <caret line="56" column="34" lean-forward="true" selection-start-line="56" selection-start-column="34" selection-end-line="56" selection-end-column="34" />
+            <state relative-caret-position="306">
+              <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Components/OneCourse/Php/OneCourseTeachers.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Components/OneCourse/Js/OneCourseTeachers.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Components/OneCourse/Android/OneCourseTeachers.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Components/StudyChat/ChatMessage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
               <folding>
-                <element signature="e#0#41#0" expanded="true" />
+                <element signature="e#0#40#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Components/OneCourse/Android/OneCoursePrice.js">
+        <entry file="file://$PROJECT_DIR$/src/Components/LoginPage/LoginForm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="64" selection-start-line="8" selection-start-column="64" selection-end-line="8" selection-end-column="64" />
+            <state relative-caret-position="-1134">
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/style/App.css">
+        <entry file="file://$PROJECT_DIR$/src/Components/StudyRoom/LkOneLesson.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="1493" column="20" lean-forward="true" selection-start-line="1493" selection-start-column="1" selection-end-line="1493" selection-end-column="20" />
+            <state relative-caret-position="151">
+              <caret line="99" column="54" lean-forward="true" selection-start-line="99" selection-start-column="54" selection-end-line="99" selection-end-column="54" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Components/TeacherRoom/TeacherCoursesList/TaecherCoursesPage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -172,35 +218,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Components/FormComponents/FormSelector.js" />
-        <option value="$PROJECT_DIR$/src/Components/RegisterPage/RegisterForm.js" />
-        <option value="$PROJECT_DIR$/src/Components/StudyRoom/StudyRoomPage.js" />
-        <option value="$PROJECT_DIR$/src/Components/StudyRoom/LkLesson.js" />
-        <option value="$PROJECT_DIR$/src/Components/StudyChat/ChatMessage.js" />
-        <option value="$PROJECT_DIR$/src/Components/HomePage/Additions.js" />
-        <option value="$PROJECT_DIR$/public/teachers.json" />
-        <option value="$PROJECT_DIR$/src/Components/HomePage/Teachers.js" />
-        <option value="$PROJECT_DIR$/src/Components/StudyRoom/LkStatistics.js" />
-        <option value="$PROJECT_DIR$/src/Components/TeacherRoom/TeacherRoomOneUser/TeacherRoomOneUserHeader.js" />
-        <option value="$PROJECT_DIR$/src/_constants/school.constants.js" />
-        <option value="$PROJECT_DIR$/src/Components/TeacherRoom/TeacherChoiceAndRegisterstrationOfCourses/ChoiceOfCoursesPage.js" />
-        <option value="$PROJECT_DIR$/src/Components/Common/LoginNavButton.js" />
-        <option value="$PROJECT_DIR$/src/_services/user.service.js" />
-        <option value="$PROJECT_DIR$/src/Components/Common/HelloPage.js" />
-        <option value="$PROJECT_DIR$/src/_constants/study.constants.js" />
-        <option value="$PROJECT_DIR$/src/Components/TestPage/TestCourse.js" />
-        <option value="$PROJECT_DIR$/src/_actions/user.actions.js" />
-        <option value="$PROJECT_DIR$/src/Components/LoginPage/LoginForm.js" />
-        <option value="$PROJECT_DIR$/src/_services/study.service.js" />
-        <option value="$PROJECT_DIR$/src/_actions/study.actions.js" />
         <option value="$PROJECT_DIR$/src/_reducers/study.reducer.js" />
         <option value="$PROJECT_DIR$/src/_reducers/modal.reducer.js" />
         <option value="$PROJECT_DIR$/src/Components/TeacherRoom/TeacherRoomOneUser/TeacherRoomChatMessage.js" />
         <option value="$PROJECT_DIR$/src/Components/TeacherRoom/TeacherRoomOneUser/TeacherRoomChatForm.js" />
-        <option value="$PROJECT_DIR$/src/Components/OneCourse/Python/OneCoursePageHeader.js" />
-        <option value="$PROJECT_DIR$/src/Components/OneCourse/Php/OneCoursePageHeader.js" />
         <option value="$PROJECT_DIR$/src/Components/OneCourse/Linux/OneCoursePageHeader.js" />
-        <option value="$PROJECT_DIR$/src/Components/OneCourse/Js/OneCoursePageHeader.js" />
         <option value="$PROJECT_DIR$/public/coursecard.json" />
         <option value="$PROJECT_DIR$/src/_actions/school.actions.js" />
         <option value="$PROJECT_DIR$/src/_reducers/school.reducer.js" />
@@ -209,20 +231,44 @@
         <option value="$PROJECT_DIR$/src/Components/HomePage/Advance.js" />
         <option value="$PROJECT_DIR$/src/Components/AllCourses/CourseCards.js" />
         <option value="$PROJECT_DIR$/src/Components/Common/CourseCard.js" />
-        <option value="$PROJECT_DIR$/src/Components/UserCourseList/UserCourseList.js" />
-        <option value="$PROJECT_DIR$/src/Components/StudyRoom/LkOneLesson.js" />
-        <option value="$PROJECT_DIR$/src/Components/TeacherRoom/TeacherRoomOneUser/TeacherRoomOneUserLessons.js" />
         <option value="$PROJECT_DIR$/src/Components/TeacherRoom/CourseStudentList/StudentListPage.js" />
         <option value="$PROJECT_DIR$/src/Components/TeacherRoom/TeacherRoomOneUser/TeacherRoomOneUserLesson.js" />
-        <option value="$PROJECT_DIR$/src/Components/TeacherRoom/TeacherCoursesList/TaecherCoursesPage.js" />
-        <option value="$PROJECT_DIR$/src/style/App.css" />
         <option value="$PROJECT_DIR$/src/Components/Main.js" />
         <option value="$PROJECT_DIR$/src/Components/OneCourse/CPlusPlus/CPlusPlusCoursePage.js" />
-        <option value="$PROJECT_DIR$/src/Components/OneCourse/Java/OneCoursePageHeader.js" />
-        <option value="$PROJECT_DIR$/src/Components/OneCourse/CPlusPlus/OneCoursePageHeader.js" />
-        <option value="$PROJECT_DIR$/src/Components/OneCourse/Python/OneCourseTeachers.js" />
         <option value="$PROJECT_DIR$/src/Components/OneCourse/Android/OneCoursePrice.js" />
+        <option value="$PROJECT_DIR$/src/Components/OneCourse/Web-python/OneCourseNavMenu.js" />
+        <option value="$PROJECT_DIR$/src/Components/OneCourse/Web-python/OneCoursePrice.js" />
+        <option value="$PROJECT_DIR$/src/Components/OneCourse/Web-python/OneCoursePageHeader.js" />
+        <option value="$PROJECT_DIR$/src/Components/OneCourse/CPlusPlus/OneCourseNavMenu.js" />
+        <option value="$PROJECT_DIR$/src/Components/OneCourse/CPlusPlus/OneCoursePrice.js" />
+        <option value="$PROJECT_DIR$/src/Components/OneCourse/CPlusPlus/OneCoursePageHeader.js" />
+        <option value="$PROJECT_DIR$/src/Components/OneCourse/Python/OneCourseNavMenu.js" />
+        <option value="$PROJECT_DIR$/src/Components/OneCourse/Python/OneCoursePrice.js" />
+        <option value="$PROJECT_DIR$/src/Components/OneCourse/Python/OneCoursePageHeader.js" />
+        <option value="$PROJECT_DIR$/src/Components/OneCourse/Java/OneCourseNavMenu.js" />
+        <option value="$PROJECT_DIR$/src/Components/OneCourse/Java/OneCoursePrice.js" />
+        <option value="$PROJECT_DIR$/src/Components/OneCourse/Java/OneCoursePageHeader.js" />
+        <option value="$PROJECT_DIR$/src/Components/OneCourse/Php/OneCoursePrice.js" />
+        <option value="$PROJECT_DIR$/src/Components/OneCourse/Php/OneCourseNavMenu.js" />
+        <option value="$PROJECT_DIR$/src/Components/OneCourse/Php/OneCoursePageHeader.js" />
+        <option value="$PROJECT_DIR$/src/Components/OneCourse/Js/OneCourseNavMenu.js" />
+        <option value="$PROJECT_DIR$/src/Components/OneCourse/Js/OneCoursePrice.js" />
+        <option value="$PROJECT_DIR$/src/Components/OneCourse/Js/OneCoursePageHeader.js" />
         <option value="$PROJECT_DIR$/src/Components/OneCourse/Android/OneCoursePageHeader.js" />
+        <option value="$PROJECT_DIR$/src/Components/OneCourse/Android/OneCourseNavMenu.js" />
+        <option value="$PROJECT_DIR$/src/style/App.css" />
+        <option value="$PROJECT_DIR$/src/Components/TeacherRoom/TeacherRoomOneUser/TeacherRoomOneUserLessons.js" />
+        <option value="$PROJECT_DIR$/src/Components/TeacherRoom/TeacherCoursesList/TaecherCoursesPage.js" />
+        <option value="$PROJECT_DIR$/src/Components/OneCourse/Web-python/OneCourseTeachers.js" />
+        <option value="$PROJECT_DIR$/src/Components/OneCourse/Python/OneCourseTeachers.js" />
+        <option value="$PROJECT_DIR$/src/Components/OneCourse/Php/OneCourseTeachers.js" />
+        <option value="$PROJECT_DIR$/src/Components/OneCourse/Js/OneCourseTeachers.js" />
+        <option value="$PROJECT_DIR$/src/Components/OneCourse/Java/OneCourseTeachers.js" />
+        <option value="$PROJECT_DIR$/src/Components/OneCourse/CPlusPlus/OneCourseTeachers.js" />
+        <option value="$PROJECT_DIR$/src/Components/OneCourse/Android/OneCourseTeachers.js" />
+        <option value="$PROJECT_DIR$/src/Components/UserCourseList/UserCourseList.js" />
+        <option value="$PROJECT_DIR$/src/Components/StudyRoom/LkOneLesson.js" />
+        <option value="$PROJECT_DIR$/src/Components/StudyChat/ChatMessage.js" />
       </list>
     </option>
   </component>
@@ -253,7 +299,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -306,15 +351,21 @@
               <item name="my-app" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Components" type="462c0819:PsiDirectoryNode" />
-              <item name="OneCourse" type="462c0819:PsiDirectoryNode" />
+              <item name="LoginPage" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="my-app" type="b2602c69:ProjectViewProjectNode" />
               <item name="my-app" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Components" type="462c0819:PsiDirectoryNode" />
-              <item name="OneCourse" type="462c0819:PsiDirectoryNode" />
-              <item name="Android" type="462c0819:PsiDirectoryNode" />
+              <item name="StudyChat" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Components" type="462c0819:PsiDirectoryNode" />
+              <item name="StudyRoom" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="my-app" type="b2602c69:ProjectViewProjectNode" />
@@ -326,6 +377,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -426,20 +478,21 @@
       <workItem from="1546415497361" duration="32535000" />
       <workItem from="1546527306310" duration="17885000" />
       <workItem from="1546602726261" duration="30582000" />
-      <workItem from="1546671112716" duration="24402000" />
+      <workItem from="1546671112716" duration="24713000" />
+      <workItem from="1546763518235" duration="11116000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="295822000" />
+    <option name="totallyTimeSpent" value="307249000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="30" width="1920" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7745505" visible="true" weight="0.17606747" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.77178425" visible="true" weight="0.17606747" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="npm" order="2" sideWeight="0.22544952" side_tool="true" visible="true" weight="0.17606747" />
+      <window_info id="npm" order="2" sideWeight="0.22821577" side_tool="true" visible="true" weight="0.17606747" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32934782" />
@@ -464,149 +517,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/_actions/study.actions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3618">
-          <caret line="204" selection-start-line="204" selection-end-line="204" />
-          <folding>
-            <element signature="e#0#75#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_actions/user.actions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="738">
-          <caret line="44" column="41" lean-forward="true" selection-start-line="44" selection-start-column="41" selection-end-line="44" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/LoginPage/LoginForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_reducers/chat.reducer.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_reducers/alert.reducer.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_actions/alert.actions.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_constants/study.constants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="26" column="69" lean-forward="true" selection-start-line="26" selection-start-column="69" selection-end-line="26" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/TeacherRoom/TeacherRoomOneUser/TeacherRoomOneUserHeader.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="5" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="12" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/StudyChat/StudyChatModal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-54">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/StudyChat/StudyChatHeader.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="6" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="11" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/TeacherRoom/TeacherRoomOneUser/TeacherRoomChatForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="601">
-          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/TeacherRoom/TeacherRoomOneUser/TeacherRoomChatMessage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_reducers/modal.reducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_actions/modal.actions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="28" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_constants/modal.constants.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_reducers/study.reducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="661">
-          <caret line="155" column="16" lean-forward="true" selection-start-line="155" selection-start-column="16" selection-end-line="155" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/coursecard.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="691">
-          <caret line="60" column="1" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_actions/school.actions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="28" column="101" selection-start-line="28" selection-start-column="101" selection-end-line="28" selection-end-column="101" />
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_reducers/school.reducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="46" lean-forward="true" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/_constants/index.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -614,9 +524,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="481">
           <caret line="32" column="15" lean-forward="true" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -634,9 +541,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="558">
           <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -644,9 +548,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
           <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -654,27 +555,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/OneCourse/Android/AndroidCoursePage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/StudyRoom/LkOneLesson.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="45" column="47" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/StudyRoom/LkLesson.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -694,72 +579,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/UserCourseList/UserCourseList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="30" column="73" lean-forward="true" selection-start-line="30" selection-start-column="73" selection-end-line="30" selection-end-column="73" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/TeacherRoom/CourseStudentList/StudentListPage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="17" column="60" lean-forward="true" selection-start-line="17" selection-start-column="60" selection-end-line="17" selection-end-column="60" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/TeacherRoom/TeacherRoomOneUser/TeacherRoomOneUserLessons.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/TeacherRoom/TeacherRoomOneUser/TeacherRoomOneUserLesson.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="52" column="44" lean-forward="true" selection-start-line="52" selection-start-column="44" selection-end-line="52" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/TeacherRoom/TeacherCoursesList/TaecherCoursesPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="547">
-          <caret line="92" column="38" lean-forward="true" selection-start-line="92" selection-start-column="38" selection-end-line="92" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/StudyRoom/LkStatistics.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-209">
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/OneCourse/Web-python/OneCourseNavMenu.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-209" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/OneCourse/Web-python/OneCourseCarouselComments.js">
@@ -776,36 +605,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="558">
           <caret line="31" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/OneCourse/CPlusPlus/OneCoursePageHeader.js">
+    <entry file="file://$PROJECT_DIR$/src/Components/OneCourse/Web-python/OneCourseNavMenu.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="78" column="6" lean-forward="true" selection-start-line="78" selection-start-column="6" selection-end-line="78" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/OneCourse/Java/OneCoursePageHeader.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/OneCourse/Python/OneCoursePageHeader.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="63" column="26" lean-forward="true" selection-start-line="63" selection-start-column="26" selection-end-line="63" selection-end-column="26" />
+        <state relative-caret-position="306">
+          <caret line="17" column="64" selection-start-line="17" selection-start-column="64" selection-end-line="17" selection-end-column="64" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
@@ -814,30 +620,113 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/OneCourse/Web-python/OneCoursePageHeader.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="52" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="52" />
+        <state relative-caret-position="360">
+          <caret line="41" column="119" selection-start-line="41" selection-start-column="119" selection-end-line="41" selection-end-column="119" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/OneCourse/Web-python/OneCourseTeachers.js">
+    <entry file="file://$PROJECT_DIR$/src/Components/OneCourse/Web-python/OneCoursePrice.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-702" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/OneCourse/Python/OneCourseTeachers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="43" lean-forward="true" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+        <state relative-caret-position="144">
+          <caret line="8" column="68" selection-start-line="8" selection-start-column="68" selection-end-line="8" selection-end-column="68" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/OneCourse/Js/OneCoursePageHeader.js">
+    <entry file="file://$PROJECT_DIR$/src/Components/OneCourse/CPlusPlus/OneCourseNavMenu.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+        <state relative-caret-position="306">
+          <caret line="17" column="65" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/OneCourse/CPlusPlus/OneCoursePrice.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="69" selection-start-line="8" selection-start-column="69" selection-end-line="8" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/OneCourse/CPlusPlus/OneCoursePageHeader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="42" column="116" selection-start-line="42" selection-start-column="116" selection-end-line="42" selection-end-column="116" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/OneCourse/Python/OneCoursePrice.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="64" selection-start-line="8" selection-start-column="64" selection-end-line="8" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/OneCourse/Python/OneCourseNavMenu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/OneCourse/Python/OneCoursePageHeader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="45" column="66" lean-forward="true" selection-start-line="45" selection-start-column="66" selection-end-line="45" selection-end-column="66" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/OneCourse/Java/OneCourseNavMenu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="58" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/OneCourse/Java/OneCoursePrice.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/OneCourse/Java/OneCoursePageHeader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="42" column="99" selection-start-line="42" selection-start-column="99" selection-end-line="42" selection-end-column="99" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/OneCourse/Php/OneCoursePrice.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="61" selection-start-line="8" selection-start-column="61" selection-end-line="8" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/OneCourse/Php/OneCourseNavMenu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="57" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
@@ -846,8 +735,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/OneCourse/Php/OneCoursePageHeader.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-11">
-          <caret line="53" column="79" lean-forward="true" selection-start-line="53" selection-start-column="79" selection-end-line="53" selection-end-column="79" />
+        <state relative-caret-position="324">
+          <caret line="42" column="112" selection-start-line="42" selection-start-column="112" selection-end-line="42" selection-end-column="112" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/OneCourse/Js/OneCoursePrice.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="60" selection-start-line="8" selection-start-column="60" selection-end-line="8" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/OneCourse/Js/OneCoursePageHeader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="42" column="107" selection-start-line="42" selection-start-column="107" selection-end-line="42" selection-end-column="107" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/OneCourse/Js/OneCourseNavMenu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="41" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/OneCourse/Android/OneCoursePageHeader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="24" column="73" selection-start-line="24" selection-start-column="73" selection-end-line="24" selection-end-column="73" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
@@ -857,23 +783,138 @@
     <entry file="file://$PROJECT_DIR$/src/Components/OneCourse/Android/OneCoursePrice.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
-          <caret line="8" column="64" selection-start-line="8" selection-start-column="64" selection-end-line="8" selection-end-column="64" />
+          <caret line="8" column="65" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/OneCourse/Android/OneCourseNavMenu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="61" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/style/App.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
-          <caret line="1493" column="20" lean-forward="true" selection-start-line="1493" selection-start-column="1" selection-end-line="1493" selection-end-column="20" />
+          <caret line="1568" column="60" selection-start-line="1568" selection-start-column="60" selection-end-line="1568" selection-end-column="60" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/OneCourse/Android/OneCoursePageHeader.js">
+    <entry file="file://$PROJECT_DIR$/src/Components/TeacherRoom/TeacherRoomOneUser/TeacherRoomOneUserLesson.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="666">
-          <caret line="56" column="34" lean-forward="true" selection-start-line="56" selection-start-column="34" selection-end-line="56" selection-end-column="34" />
+        <state relative-caret-position="522">
+          <caret line="52" column="44" lean-forward="true" selection-start-line="52" selection-start-column="44" selection-end-line="52" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/TeacherRoom/TeacherRoomOneUser/TeacherRoomOneUserLessons.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/OneCourse/Php/OneCourseTeachers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/OneCourse/CPlusPlus/OneCourseTeachers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/OneCourse/Java/OneCourseTeachers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/OneCourse/Js/OneCourseTeachers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/UserCourseList/UserCourseList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="73" selection-start-line="24" selection-start-column="73" selection-end-line="24" selection-end-column="73" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/OneCourse/Web-python/OneCourseTeachers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="24" column="34" lean-forward="true" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/OneCourse/Android/OneCourseTeachers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/TeacherRoom/TeacherCoursesList/TaecherCoursesPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/StudyRoom/LkOneLesson.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="99" column="54" lean-forward="true" selection-start-line="99" selection-start-column="54" selection-end-line="99" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/OneCourse/Python/OneCourseTeachers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/LoginPage/LoginForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1134">
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/StudyChat/ChatMessage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
           </folding>
         </state>
       </provider>

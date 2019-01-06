@@ -22,7 +22,7 @@ class UserCourseList extends Component{
                         {userCourses.loading && <em>Loading lessons...</em>}
                         {userCourses.error &&  <span className="text-danger">ERROR: {userCourses.error}</span>}
                         {userCourses.items  && userCourses.items.map((course, index) =>
-                            <div className='col-md-4'>
+                            <div className='col-md-4' key={course.course.id}>
                                 <div className='userCourse-card'>
                                     <Link to={{pathname:`/studyroom/${course.course.id}`,  state: {courseId:course.course.id}}}>
 

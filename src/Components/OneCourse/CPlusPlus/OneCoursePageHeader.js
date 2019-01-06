@@ -23,7 +23,7 @@ class OneCoursePageHeader extends Component{
         return (
 
 
-                <section id="one-course-header">
+                <section id="one-course-header" className='bg-C-plus-plus'>
                     {oneCourse.loading && <em>Loading coursess...</em>}
                     {oneCourse.error &&  <span className="text-danger">ERROR: {oneCourse.error}</span>}
                     {oneCourse.items &&
@@ -40,7 +40,7 @@ class OneCoursePageHeader extends Component{
                                 <span id="positiv-btn"><a className="btn btn-one-course-header" href="#">Обучение сотрудников</a></span>
                             </div>
                             <div className="col-md-4 align-right">
-                                <div className="card shadow one-course-header-my-card h-100">
+                                <div className="card shadow one-course-header-my-card h-100 bg-priceCard-C-plus-plus">
                                     <div className="card-body">
                                         <p>Общая стоимость</p>
                                         <h5>60 000 ₽ </h5>

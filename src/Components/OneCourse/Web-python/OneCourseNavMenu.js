@@ -14,8 +14,8 @@ class OneCourseNavMenu extends Component{
         return (
             <section id="nav-menu">
                 <div className="nav-menu">
-                    <div className="nav-menu-color">
-                        <div id="menu" className=" nav-menu-color nav-items-course">
+                    <div className="bg-Web-python">
+                        <div id="menu" className=" bg-Web-python nav-items-course">
                             <div className="container">
                                 <Link className="nav-item-menu nav-menu-link active" to="#">О курсе</Link>
                                 <Link className="nav-item-menu nav-menu-link" to="#">Процес обучения</Link>

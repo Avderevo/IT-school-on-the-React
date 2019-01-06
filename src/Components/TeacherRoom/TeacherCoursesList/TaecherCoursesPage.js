@@ -58,15 +58,11 @@ class TeacherCourseListPage extends Component{
                                         name={'courseId'}
                                 >
                                     <option>Выберите курс</option>
-                                    {allCourses.loading && <em>Loading...</em>}
-                                    {allCourses.error &&  <span className="text-danger">ERROR: {allCourses.error}</span>}
+                                    {allCourses.loading && <option>Loading...</option>}
+                                    {allCourses.error &&  <option className="text-danger">ERROR: {allCourses.error}</option>}
                                     {allCourses.items  && allCourses.items.map((course, index) =>
 
-
-
-                                            <option key={course.id} className=' text-info' value={course.id}>{course.name}</option>
-
-
+                                        <option key={course.id} className=' text-info' value={course.id}>{course.name}</option>
                                     )}
 
                                 </select>

@@ -1488,11 +1488,11 @@ ____________________________________
 }
 
 .bg-Python{
-    background-image: -webkit-linear-gradient(30deg, #013A6B ,  #0075DC );
+    background-image: -webkit-linear-gradient(30deg, #004E95 ,  #0075DC );
 }
 
 .bg-priceCard-Python{
-    background-color: #095ba2;
+    background-color: #0075DC;
 }
 
 
@@ -1502,12 +1502,12 @@ ____________________________________
     background-image: -webkit-linear-gradient(110deg, #2c6d82 45%, #3a8096 35%);
 }
 
-.bg-Python{
-    background-image: -webkit-linear-gradient(30deg, #013A6B ,  #0075DC );
+.bg-Php {
+    background-image: -webkit-linear-gradient(30deg, #337084 , #78a6b5 )
 }
 
-.bg-priceCard-Python{
-    background-color: #095ba2;
+.bg-priceCard-Php{
+    background-color: #3a8096;
 }
 
 
@@ -1518,26 +1518,26 @@ ____________________________________
 }
 
 .bg-Java{
-    background-image: -webkit-linear-gradient(30deg, #013A6B ,  #0075DC );
+    background-image: -webkit-linear-gradient(30deg, #336896 ,  #6aa2d2 );
 }
 
 .bg-priceCard-Java{
-    background-color: #095ba2;
+    background-color: #4885b9;
 }
 
 
 
 .gradient-JS{
     background-color: #34ADFF;
-    background-image: -webkit-linear-gradient(120deg,#325579 50%, #2e465f 50%);
+    background-image: -webkit-linear-gradient(120deg, #325579 50%, #2e465f 50%);
 }
 
 .bg-JS{
-    background-image: -webkit-linear-gradient(30deg, #013A6B ,  #0075DC );
+    background-image: -webkit-linear-gradient(30deg, #2e465f, #4a7096 );
 }
 
 .bg-priceCard-JS{
-    background-color: #095ba2;
+    background-color: #325579;
 }
 
 
@@ -1550,11 +1550,11 @@ ____________________________________
 }
 
 .bg-Web-python{
-    background-image: -webkit-linear-gradient(30deg, #013A6B ,  #0075DC );
+    background-image: -webkit-linear-gradient(30deg,  #5bb9d2 ,  #0075DC );
 }
 
 .bg-priceCard-Web-python{
-    background-color: #095ba2;
+    background-color: #0075DC;
 }
 
 
@@ -1566,7 +1566,7 @@ ____________________________________
 }
 
 .bg-Android{
-    background-image: -webkit-linear-gradient(30deg, #1d89cf ,  #0075DC );
+    background-image: -webkit-linear-gradient(30deg, #2677ad, #1d89cf);
 }
 
 .bg-priceCard-Android{
@@ -1581,11 +1581,11 @@ ____________________________________
 }
 
 .bg-C-plus-plus{
-    background-image: -webkit-linear-gradient(30deg, #013A6B ,  #0075DC );
+    background-image: -webkit-linear-gradient(30deg, #013A6B ,  #4389bb );
 }
 
 .bg-priceCard-C-plus-plus{
-    background-color: #095ba2;
+    background-color: #4389bb;
 }
 
 

@@ -4,7 +4,7 @@ import  {modalAction} from "../../_actions";
 import {Link} from 'react-router-dom';
 import {withRouter} from 'react-router';
 import {StudyChatForm} from '../StudyChat/StudyChatForm';
-import {ChatMessage} from "../StudyChat/ChatMessage";
+import ChatMessage from "../StudyChat/ChatMessage";
 
 
 class LkOneLesson extends Component{

@@ -11,7 +11,8 @@ class OneCoursePageHeader extends Component{
 
 
         componentDidMount() {
-            this.props.dispatch(studyAction.getOneCourse('Js'));
+            const courseId = this.props.location.state.courseId;
+            this.props.dispatch(studyAction.getOneCourse(courseId));
         }
 
 
@@ -22,7 +23,7 @@ class OneCoursePageHeader extends Component{
             return (
 
 
-                <section id="one-course-header">
+                <section id="one-course-header" className='bg-JS'>
                     {oneCourse.loading && <em>Loading coursess...</em>}
                     {oneCourse.error &&  <span className="text-danger">ERROR: {oneCourse.error}</span>}
                     {oneCourse.items &&
@@ -39,7 +40,7 @@ class OneCoursePageHeader extends Component{
                                 <span id="positiv-btn"><a className="btn btn-one-course-header" href="#">Обучение сотрудников</a></span>
                             </div>
                             <div className="col-md-4 align-right">
-                                <div className="card shadow one-course-header-my-card h-100">
+                                <div className="card shadow one-course-header-my-card h-100 bg-priceCard-JS">
                                     <div className="card-body">
                                         <p>Общая стоимость</p>
                                         <h5>60 000 ₽ </h5>
@@ -73,7 +74,7 @@ function mapStateToProps(props) {
     };
 }
 
-const connectedOneCoursePageHeader = connect(mapStateToProps)(OneCoursePageHeader);
+const connectedOneCoursePageHeader = withRouter(connect(mapStateToProps)(OneCoursePageHeader));
 export {connectedOneCoursePageHeader as OneCoursePageHeader};
 
 
