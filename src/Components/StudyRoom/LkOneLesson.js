@@ -51,7 +51,7 @@ class LkOneLesson extends Component{
                                     <span onClick={this.handleClick}  className="timeline-item-header active ml-2">{props.lesson.lesson_title}</span>
                                 </div>
 
-                                <span className="timeline-item-date mt-2">Дата: {props.course.id}</span>
+                                <span className="timeline-item-date mt-2">Дата: {props.lesson.date_start}</span>
                                 <div className={this.state.clickOpenLesson ? null : 'd-none'}>
 
                                     <div className="lesson-body">
