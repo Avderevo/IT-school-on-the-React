@@ -81,7 +81,7 @@ function getStudentStatistics(userId, courseId) {
         headers: authHeader()
     };
 
-    return fetch('http://localhost:8000/study/students_statistics/'+userId+'/'+courseId+'/', requestOptions)
+    return fetch(`http://localhost:8000/study/students_statistics/${userId}/${courseId}/`, requestOptions)
         .then(handleResponse);
 
 

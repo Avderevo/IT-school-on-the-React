@@ -13,8 +13,7 @@ const Home = () =>{
         <div className="App">
             <Header />
             <Advance />
-            <Additions />
-            <Teachers />
+
         </div>
     );
 

@@ -25,7 +25,7 @@ function getMessage(id) {
         headers: authHeader()
     };
 
-    return fetch('http://localhost:8000/study/chat_message/'+id+'/', requestOptions)
+    return fetch(`http://localhost:8000/study/chat_message/${id}/`, requestOptions)
 }
 
 

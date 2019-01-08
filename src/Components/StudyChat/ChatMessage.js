@@ -3,7 +3,6 @@ import {chatService} from "../../_services";
 
 
 class ChatMessage extends Component{
-    _isMounted = false;
     constructor(props) {
         super(props);
 
@@ -13,8 +12,6 @@ class ChatMessage extends Component{
             error: null,
         };
     }
-
-
 
     getMessage =() => {
         this.setState({ Loading: true });
@@ -26,15 +23,10 @@ class ChatMessage extends Component{
     };
 
 
-
     componentDidMount() {
-        this._isMounted = true;
         this.getMessage();
     }
 
-    componentWillUnmount() {
-        this._isMounted = false;
-    }
 
     render(){
 
@@ -60,14 +52,10 @@ class ChatMessage extends Component{
                             <span className="message-date">{item.date}</span>
                         </div>
                     </div>
-
                 )}
-
-
             </div>
         )
     }
-
 }
 
 export default ChatMessage;
